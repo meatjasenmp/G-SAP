@@ -551,6 +551,9 @@ video {
 .flex {
   display: flex;
 }
+.w-64 {
+  width: 16rem;
+}
 .w-32 {
   width: 8rem;
 }
@@ -593,7 +596,7 @@ video {
   .primary_navigation ul a {
     font-family: "MagdelinBold", sans-serif; }
   .primary_navigation ul li:not(:last-child) {
-    margin-right: 2rem; }
+    margin-right: 2.5rem; }
 
 .ribbon p {
   line-height: 1.5; }
