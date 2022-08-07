@@ -1,0 +1,11 @@
+.primary_navigation ul {
+	display: flex;
+
+	a {
+		font-family: "MagdelinBold", sans-serif;
+	}
+
+	li:not(:last-child) {
+		margin-right: 2rem;
+	}
+}
