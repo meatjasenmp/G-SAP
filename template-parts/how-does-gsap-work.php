@@ -48,7 +48,7 @@
         <img src="<?php echo $desktop_image['url']; ?>" alt="<?php echo $desktop_image['alt']; ?>">
     </div>
     <div class="earned_results flex items-center max-w-screen-lg mx-auto">
-        <div class="bg-gsap-blue text-white flex-none w-[640px] rounded-md p-8 mr-8">
+        <div class="bg-gsap-blue text-white flex-none w-[600px] rounded-md p-8 mr-8">
             <div class="flex">
                 <div class="mr-6">
                     <figure class="w-12 mb-4">
