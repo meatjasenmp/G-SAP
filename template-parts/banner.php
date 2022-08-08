@@ -7,8 +7,8 @@
     $page_banner_images = $page_banner['page_banner_images'];
 ?>
 
-<section class="site_banner">
-    <article>
+<section class="site_banner flex items-center">
+    <article class="max-w-lg mr-28">
         <h1 class="text-gsap-blue"><?php echo $page_banner_header; ?></h1>
 
         <?php echo $page_banner_content_content; ?>
@@ -25,4 +25,17 @@
         </ul>
 
     </article>
+    <div class="relative flex-none w-2/5 h-[38vh]">
+        <figure class="absolute bottom-0 right-0 z-10">
+            <?php get_template_part('template-parts/global/life-circle'); ?>
+        </figure>
+        <?php foreach($page_banner_images as $page_banner_image): $image = $page_banner_image['image']; $label = $page_banner_image['label'] ?>
+            <div class="absolute top-0">
+                <p class="absolute -right-[-6rem] top-20 leading-3 text-white font-magdelinBold text-xs"><?php echo $label; ?></p>
+                <figure>
+                    <img class="w-full rounded-[50%]" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+                </figure>
+            </div>
+        <?php endforeach; ?>
+    </div>
 </section>

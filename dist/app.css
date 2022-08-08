@@ -535,6 +535,24 @@ video {
 .right-0 {
   right: 0px;
 }
+.-right-\[1rem\] {
+  right: -1rem;
+}
+.-right-\[-1rem\] {
+  right: 1rem;
+}
+.-right-\[-3rem\] {
+  right: 3rem;
+}
+.-right-\[-6rem\] {
+  right: 6rem;
+}
+.top-4 {
+  top: 1rem;
+}
+.top-20 {
+  top: 5rem;
+}
 .z-10 {
   z-index: 10;
 }
@@ -554,11 +572,35 @@ video {
 .-ml-\[9rem\] {
   margin-left: -9rem;
 }
+.mr-20 {
+  margin-right: 5rem;
+}
+.mr-28 {
+  margin-right: 7rem;
+}
 .flex {
   display: flex;
 }
+.h-\[70vh\] {
+  height: 70vh;
+}
+.h-\[60vh\] {
+  height: 60vh;
+}
+.h-\[40vh\] {
+  height: 40vh;
+}
+.h-\[38vh\] {
+  height: 38vh;
+}
 .w-6 {
   width: 1.5rem;
+}
+.w-2\/5 {
+  width: 40%;
+}
+.w-full {
+  width: 100%;
 }
 .w-64 {
   width: 16rem;
@@ -569,11 +611,23 @@ video {
 .max-w-\[1440px\] {
   max-width: 1440px;
 }
+.max-w-lg {
+  max-width: 32rem;
+}
+.flex-none {
+  flex: none;
+}
 .items-center {
   align-items: center;
 }
+.justify-between {
+  justify-content: space-between;
+}
 .overflow-x-hidden {
   overflow-x: hidden;
+}
+.rounded-\[50\%\] {
+  border-radius: 50%;
 }
 .p-12 {
   padding: 3rem;
@@ -590,8 +644,18 @@ video {
 .font-magdelinBold {
   font-family: MagdelinBold, sans-serif;
 }
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
 .font-light {
   font-weight: 300;
+}
+.leading-3 {
+  line-height: .75rem;
+}
+.leading-4 {
+  line-height: 1rem;
 }
 .text-gsap-blue {
   --tw-text-opacity: 1;
@@ -614,7 +678,8 @@ video {
     margin-right: 2.5rem; }
 
 .ribbon p {
-  line-height: 1.5; }
+  line-height: 1.5;
+  margin-bottom: 0; }
 
 .ribbon a {
   text-decoration: underline; }
@@ -635,7 +700,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+strong {
   font-family: "MagdelinBold", sans-serif; }
 
 h1,
@@ -644,8 +710,8 @@ h3,
 h4,
 h5,
 h6,
-p:not(:last-child),
-li:not(:last-child) {
+p,
+li {
   margin-bottom: 1rem; }
 
 h1 {

@@ -15,7 +15,8 @@ h2,
 h3,
 h4,
 h5,
-h6, {
+h6,
+strong {
 	font-family: "MagdelinBold", sans-serif;
 }
 
@@ -25,8 +26,8 @@ h3,
 h4,
 h5,
 h6,
-p:not(:last-child),
-li:not(:last-child) {
+p,
+li {
 	margin-bottom: 1rem;
 }
 
