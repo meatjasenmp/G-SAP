@@ -62,7 +62,7 @@
                             <?php foreach($list as $item ): $checkbox = $item['checkbox']; $text = $item['text']; ?>
                                 <?php echo ($i % 2 === 0) ? '<div>' : '';  $i++; ?>
                                     <div class="flex items-center mb-3 last:mb-0">
-                                        <img class="mr-2" src="<?php echo $checkbox['url']; ?>" alt="<?php echo $checkbox['alt']; ?>">
+                                        <img class="mr-2 w-4" src="<?php echo $checkbox['url']; ?>" alt="<?php echo $checkbox['alt']; ?>">
                                         <span class="text-sm font-magdelinBold"><?php echo $text; ?></span>
                                     </div>
                                 <?php echo ($i % 2 === 0) ? '</div>' : ''?>
