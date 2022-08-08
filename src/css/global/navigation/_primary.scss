@@ -5,6 +5,10 @@
 		font-family: "MagdelinBold", sans-serif;
 	}
 
+	li {
+		margin-bottom: 0;
+	}
+
 	li:not(:last-child) {
 		margin-right: 2.5rem;
 	}

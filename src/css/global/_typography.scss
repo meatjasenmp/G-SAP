@@ -1,0 +1,47 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+p {
+	font-size: clamp(var(--min), var(--val), var(--max));
+	line-height: clamp(var(--lh-min), var(--lh-val), var(--lh-max));
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, {
+	font-family: "MagdelinBold", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p:not(:last-child),
+li:not(:last-child) {
+	margin-bottom: 1rem;
+}
+
+h1 {
+	--min: 1rem;
+	--val: 4vw;
+	--max: 1.75rem;
+	--lh-min: 0.5;
+	--lh-val: 1;
+	--lh-max: 1.2;
+}
+
+p,
+li {
+	--min: 0.8rem;
+	--val: 4vw;
+	--max: 1rem;
+}

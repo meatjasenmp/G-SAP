@@ -16,8 +16,9 @@ module.exports = {
         "grotto-xl": "3.5rem",
       },
       colors: {
-        "ups-blue": "#0037BF",
-        highlight: "#DDFF4D",
+        "gsap-blue": "#0D3691",
+        "gsap-orange": "#FF8900",
+        "gsap-green": "#2EB16B",
       },
       fontFamily: {
         magdelin: ["MagdelinRegular", "sans-serif"],
