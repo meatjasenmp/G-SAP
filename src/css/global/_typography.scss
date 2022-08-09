@@ -40,6 +40,15 @@ h1 {
 	--lh-max: 1.2;
 }
 
+h2 {
+	--min: .95rem;
+	--val: 3vw;
+	--max: 1.40rem;
+	--lh-min: 0.65;
+	--lh-val: 1.2;
+	--lh-max: 1.35;
+}
+
 p,
 li {
 	--min: 0.8rem;

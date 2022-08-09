@@ -19,7 +19,7 @@
 ?>
 
 <section class="about mt-20">
-    <div class="flex justify-between items-center">
+    <div class="flex justify-between items-center max-w-7xl mx-auto">
         <div>
             <figure class="relative">
                 <div class="absolute top-12 left-12">
@@ -27,6 +27,9 @@
                     <span class="block"><?php echo $biography_image_title_title; ?></span>
                 </div>
                 <img class="rounded-full max-w-2xl" src="<?php echo $biography_image_image['url']; ?>" alt="<?php echo $biography_image_image['alt']; ?>">
+                <figure class="absolute bottom-[3.5rem] right-0 z-10">
+                    <?php get_template_part('template-parts/global/life-circle'); ?>
+                </figure>
             </figure>
         </div>
         <div class="flex-none max-w-[400px]">
@@ -35,11 +38,11 @@
             <?php echo $biography_content_content; ?>
         </div>
     </div>
-    <div>
-        <h5><?php echo $about_mission_statement_subheader; ?></h5>
-        <?php echo $about_mission_statement_content; ?>
+    <div class="max-w-xl mx-auto text-center mt-20">
+        <h5 class="uppercase text-gsap-blue tracking-wider mb-1 text-sm"><?php echo $about_mission_statement_subheader; ?></h5>
+        <p class="text-[1.15rem]"><?php echo strip_tags($about_mission_statement_content, ''); ?></p>
     </div>
-    <div>
+    <div class="mt-20">
         <blockquote>
             <h1><?php echo $about_quote_content; ?></h1>
             <cite><?php echo $about_quote_citation; ?></cite>
