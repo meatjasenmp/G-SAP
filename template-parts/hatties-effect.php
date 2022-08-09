@@ -34,11 +34,11 @@
                     <table class="table-auto bg-white text-sm">
                         <?php if($hatties_content_table['header']): ?>
                             <thead>
-                            <tr class="bg-gsap-blue text-xs text-white text-left uppercase">
-                                <?php foreach($hatties_content_table['header'] as $header): ?>
-                                    <th class="px-4 py-2 border-l border-b border-r dark:border-slate-100"><?php echo $header['c']; ?></th>
-                                <?php endforeach; ?>
-                            </tr>
+                                <tr class="bg-gsap-blue text-xs text-white text-left uppercase">
+                                    <?php foreach($hatties_content_table['header'] as $header): ?>
+                                        <th class="px-4 py-2 border-l border-b border-r dark:border-slate-100"><?php echo $header['c']; ?></th>
+                                    <?php endforeach; ?>
+                                </tr>
                             </thead>
                         <?php endif; ?>
                         <tbody>
