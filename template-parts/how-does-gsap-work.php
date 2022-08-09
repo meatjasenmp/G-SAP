@@ -35,8 +35,8 @@
             <?php foreach($columns as $column):  ?>
                 <?php foreach($column as $item): $image = $item['image']; $content = $item['content'] ?>
                     <div class="column flex-none w-72 mr-8 last:mr-0">
-                        <figure>
-                            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+                        <figure class="mb-2">
+                            <img class="h-[22px]" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
                         </figure>
                         <?php echo $content; ?>
                     </div>
