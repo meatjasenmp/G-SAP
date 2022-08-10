@@ -656,6 +656,9 @@ video {
 .h-\[22px\] {
   height: 22px;
 }
+.h-20 {
+  height: 5rem;
+}
 .w-6 {
   width: 1.5rem;
 }
@@ -698,6 +701,9 @@ video {
 .w-32 {
   width: 8rem;
 }
+.w-1\/2 {
+  width: 50%;
+}
 .max-w-\[1440px\] {
   max-width: 1440px;
 }
@@ -730,6 +736,9 @@ video {
 }
 .flex-none {
   flex: none;
+}
+.flex-grow {
+  flex-grow: 1;
 }
 .table-auto {
   table-layout: auto;
