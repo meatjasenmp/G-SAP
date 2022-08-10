@@ -578,6 +578,9 @@ video {
 .mt-20 {
   margin-top: 5rem;
 }
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
 .mr-28 {
   margin-right: 7rem;
 }
@@ -625,12 +628,6 @@ video {
 }
 .-ml-\[9rem\] {
   margin-left: -9rem;
-}
-.mb-0 {
-  margin-bottom: 0px;
-}
-.mb-1 {
-  margin-bottom: 0.25rem;
 }
 .block {
   display: block;
@@ -713,6 +710,9 @@ video {
 .max-w-\[400px\] {
   max-width: 400px;
 }
+.max-w-xl {
+  max-width: 36rem;
+}
 .max-w-lg {
   max-width: 32rem;
 }
@@ -724,15 +724,6 @@ video {
 }
 .max-w-screen-lg {
   max-width: 900px;
-}
-.max-w-md {
-  max-width: 28rem;
-}
-.max-w-xl {
-  max-width: 36rem;
-}
-.max-w-4xl {
-  max-width: 56rem;
 }
 .max-w-3xl {
   max-width: 48rem;
@@ -840,27 +831,16 @@ video {
 .font-magdelinBold {
   font-family: MagdelinBold, sans-serif;
 }
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-.text-\[1\.35rem\] {
-  font-size: 1.35rem;
-}
 .text-\[1\.15rem\] {
   font-size: 1.15rem;
+}
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 .font-light {
   font-weight: 300;

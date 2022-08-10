@@ -14,8 +14,7 @@
     $about_mission_statement_subheader = $about_mission_statement['sub_header'];
     $about_mission_statement_content = $about_mission_statement['content'];
     $about_quote = $about['quote'];
-    $about_quote_content = $about_quote['content'];
-    $about_quote_citation = $about_quote['citation'];
+    $about_quote_image = $about_quote['image'];
 ?>
 
 <section class="about mt-20">
@@ -43,9 +42,8 @@
         <p class="text-[1.15rem]"><?php echo strip_tags($about_mission_statement_content, ''); ?></p>
     </div>
     <div class="mt-20">
-        <blockquote>
-            <h1><?php echo $about_quote_content; ?></h1>
-            <cite><?php echo $about_quote_citation; ?></cite>
-        </blockquote>
+        <figure class="max-w-2xl mx-auto">
+            <img src="<?php echo $about_quote_image['url'] ?>" alt="<?php echo $about_quote_image['alt'] ?>">
+        </figure>
     </div>
 </section>
