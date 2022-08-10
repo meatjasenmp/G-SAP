@@ -12,8 +12,10 @@
     $icap_banner_content_footer_header_underline = $icap_banner_content_footer_header['underline'];
     $icap_banner_content_footer_header_content = $icap_banner_content_footer['content'];
     $icap_learn_more = $icap['learn_more'];
+    $icap_learn_more_sub_header = $icap_learn_more['sub_header'];
+    $icap_learn_more_columns = $icap_learn_more['columns'];
+    $icap_learn_more_background_image = $icap_learn_more['background_image'];
 ?>
-
 <section class="icap mt-20 relative w-screen left-2/4 right-2/4 ml-[-50vw] mr-[-50vw] text-white">
     <div class="flex">
         <div class="flex-none w-1/2">
@@ -52,7 +54,7 @@
                                 <figure class="mr-3">
                                     <img class="w-8" src="<?php echo $icap_banner_content_footer_header_image['url']; ?>" alt="<?php echo $icap_banner_content_footer_header_image['alt']; ?>" />
                                 </figure>
-                                <h4 class="uppercase tracking-[.2rem] mb-0 text-[1.50rem] flex-grow"><?php echo $icap_banner_content_footer_header_text; ?></h4>
+                                <h4 class="uppercase tracking-[.5rem] mb-0 text-[1.15rem] flex-grow"><?php echo $icap_banner_content_footer_header_text; ?></h4>
                             </div>
                             <figure class="mt-2">
                                 <img class="w-full" src="<?php echo $icap_banner_content_footer_header_underline['url'];?>" alt="<?php echo $icap_banner_content_footer_header_underline['alt'];?>" />
@@ -63,6 +65,22 @@
                         <?php echo $icap_banner_content_footer_header_content; ?>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="relative text-black">
+        <?php get_template_part('template-parts/global/pulsating-button'); ?>
+        <figure class="absolute top-0 left-0 h-full w-full bg-cover"  style="background: url('<?php echo $icap_learn_more_background_image['url']; ?>')"></figure>
+        <div class="relative z-10 mx-auto pt-12 pb-20">
+            <h3 class="uppercase text-center font-magdelin tracking-widest"><?php echo $icap_learn_more_sub_header; ?></h3>
+            <div class="flex max-w-7xl mx-auto mt-12">
+                <?php foreach($icap_learn_more_columns as $column): $column_sub_header = $column['column']['sub_header']; $column_header = $column['column']['header']; $column_content = $column['column']['content']; ?>
+                    <div class="column w-1/3 mr-12 last:mr-0">
+                        <span class="block text-xs text-gsap-blue font-magdelinBold mb-1"><?php echo $column_sub_header; ?></span>
+                        <h5 class="text-gsap-blue mb-1"><?php echo $column_header; ?></h5>
+                        <?php echo $column_content; ?>
+                    </div>
+                <?php endforeach; ?>
             </div>
         </div>
     </div>
