@@ -490,8 +490,14 @@ video {
 .left-0{
   left: 0px;
 }
+.left-\[-6rem\]{
+  left: -6rem;
+}
 .top-\[-1\.25rem\]{
   top: -1.25rem;
+}
+.right-\[-6rem\]{
+  right: -6rem;
 }
 .right-\[10rem\]{
   right: 10rem;
@@ -511,6 +517,10 @@ video {
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
+}
+.my-auto{
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .ml-\[10rem\]{
   margin-left: 10rem;
@@ -593,6 +603,9 @@ video {
 .-ml-\[9rem\]{
   margin-left: -9rem;
 }
+.ml-1{
+  margin-left: 0.25rem;
+}
 .block{
   display: block;
 }
@@ -671,6 +684,9 @@ video {
 .w-\[35px\]{
   width: 35px;
 }
+.w-\[0\.75rem\]{
+  width: 0.75rem;
+}
 .w-\[20px\]{
   width: 20px;
 }
@@ -721,6 +737,13 @@ video {
 }
 .table-auto{
   table-layout: auto;
+}
+.rotate-180{
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.transform{
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .flex-col{
   flex-direction: column;
@@ -807,10 +830,6 @@ video {
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-.py-20{
-  padding-top: 5rem;
-  padding-bottom: 5rem;
 }
 .pt-12{
   padding-top: 3rem;
@@ -991,7 +1010,8 @@ li {
 .carousel-cell {
   min-height: 100%; }
   .carousel-cell .cell-wrap {
-    transform: scale(0.85); }
+    transform: scale(0.85);
+    transition: all 0.5s ease-out; }
 
 .carousel-cell {
   opacity: 0.5 !important;
@@ -1006,16 +1026,13 @@ li {
   max-width: 16rem;
   margin: 0 auto; }
 
-.carousel-cell,
-.carousel-cell .cell-wrap {
-  transition: all 0.5s ease-out; }
-
 .flickity-page-dots {
   bottom: -45px; }
 
 .flickity-page-dot {
   background: #C7C7C7;
-  margin: 0 4px; }
+  margin: 0 4px;
+  transition: all 0.5s ease-out; }
 
 .flickity-page-dot.is-selected {
   background: #FF8900; }

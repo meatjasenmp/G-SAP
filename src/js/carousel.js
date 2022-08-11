@@ -2,6 +2,8 @@ import Flickity from "flickity";
 
 const carousel = () => {
   const element = document.querySelector(".carousel");
+  const carouselNext = document.querySelector(".carousel-next");
+  const carouselPrev = document.querySelector(".carousel-prev");
   if (!element) return;
   const flkty = new Flickity(element, {
     imagesLoaded: true,
@@ -11,18 +13,13 @@ const carousel = () => {
     prevNextButtons: false,
   });
 
-  Flickity.prototype._createResizeClass = function () {
-    this.element.classList.add("flickity-resize");
-  };
+  carouselNext.addEventListener("click", function () {
+    flkty.next(true);
+  });
 
-  Flickity.createMethods.push("_createResizeClass");
-
-  var resize = Flickity.prototype.resize;
-  Flickity.prototype.resize = function () {
-    this.element.classList.remove("flickity-resize");
-    resize.call(this);
-    this.element.classList.add("flickity-resize");
-  };
+  carouselPrev.addEventListener("click", function () {
+    flkty.previous(true);
+  });
 
   return flkty;
 };

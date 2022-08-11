@@ -4,6 +4,7 @@
 	min-height: 100%;
 	.cell-wrap {
 		transform: scale(0.85);
+		transition: all 0.5s ease-out;
 	}
 }
 
@@ -26,11 +27,6 @@
 	margin: 0 auto;
 }
 
-.carousel-cell,
-.carousel-cell .cell-wrap {
-	transition: all 0.5s ease-out;
-}
-
 .flickity-page-dots {
 	bottom: -45px;
 }
@@ -38,6 +34,7 @@
 .flickity-page-dot {
 	background: #C7C7C7;
 	margin: 0 4px;
+	transition: all 0.5s ease-out;
 }
 
 .flickity-page-dot.is-selected {
