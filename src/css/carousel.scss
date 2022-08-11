@@ -1,0 +1,26 @@
+@import "~flickity/dist/flickity.min.css";
+
+.carousel-cell {
+	min-height: 100%;
+	.cell-wrap {
+		opacity: 0.5;
+		transform: scale(0.5);
+	}
+}
+
+.carousel-cell.is-selected {
+	.cell-wrap {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.carousel-cell .hero {
+	max-width: 16rem;
+	margin: 0 auto;
+}
+
+.carousel-cell,
+.carousel-cell .cell-wrap {
+	transition: all 0.5s ease-out;
+}
