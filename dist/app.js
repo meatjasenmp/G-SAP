@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/styles.scss */ \"./src/css/styles.scss\");\n/* harmony import */ var _js_banner__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/banner */ \"./src/js/banner.js\");\n\n\n\nwindow.addEventListener(\n  \"load\",\n  function () {\n    (0,_js_banner__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n  },\n  false\n);\n\n\n//# sourceURL=webpack://gps/./src/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/styles.scss */ \"./src/css/styles.scss\");\n/* harmony import */ var _js_banner__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/banner */ \"./src/js/banner.js\");\n/* harmony import */ var _js_carousel__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/carousel */ \"./src/js/carousel.js\");\n\n\n\n\nwindow.addEventListener(\n  \"load\",\n  function () {\n    (0,_js_banner__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n    (0,_js_carousel__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n  },\n  false\n);\n\n\n//# sourceURL=webpack://gps/./src/app.js?");
 
 /***/ }),
 
@@ -37,6 +37,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst debounce = (func, delay) => {\n  let timer;\n  return function () {\n    const context = this;\n    const args = arguments;\n    clearTimeout(timer);\n    timer = setTimeout(() => {\n      func.apply(context, args);\n    }, delay);\n  };\n};\n\nconst banner = () => {\n  const siteBanner = document.querySelector(\".site_banner\");\n  if (siteBanner) {\n    const bannerImagesContainer = siteBanner.querySelector(\".banner_images\");\n    const images = siteBanner.querySelectorAll(\".banner_image\");\n    let imageHeight = images[0].clientHeight;\n\n    const setContainerHeight = () => {\n      imageHeight = images[0].clientHeight;\n      bannerImagesContainer.style.height = imageHeight + \"px\";\n    };\n\n    window.addEventListener(\"resize\", debounce(setContainerHeight, 100));\n\n    setContainerHeight();\n  }\n  return null;\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (banner);\n\n\n//# sourceURL=webpack://gps/./src/js/banner.js?");
+
+/***/ }),
+
+/***/ "./src/js/carousel.js":
+/*!****************************!*\
+  !*** ./src/js/carousel.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst carousel = () => {};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (carousel);\n\n\n//# sourceURL=webpack://gps/./src/js/carousel.js?");
 
 /***/ })
 
