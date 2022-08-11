@@ -1,5 +1,6 @@
 <?php
     $resources = get_group_field('content_blocks', 'resources', 29);
+    $resources_background = $resources['background'];
     $resources_sub_header = $resources['sub_header'];
     $resources_header = $resources['header'];
     $resources_header_text = $resources_header['text'];
@@ -8,8 +9,9 @@
     $resources_carousel_cells = $resources_carousel['cells'];
 ?>
 
-<section class="resources bg-gsap-blue text-white pt-20 pb-40 relative w-screen left-2/4 right-2/4 ml-[-50vw] mr-[-50vw]">
-    <div class="max-w-[1440px] mx-auto">
+<section class="resources text-white pt-20 pb-40 relative w-screen left-2/4 right-2/4 ml-[-50vw] mr-[-50vw]">
+    <figure class="absolute top-0 left-0 h-full w-full bg-cover"  style="background: url('<?php echo $resources_background['url']; ?>')"></figure>
+    <div class="max-w-[1440px] mx-auto relative z-10">
         <div class="max-w-xl mx-auto text-center">
             <h5 class="uppercase tracking-widest text-sm"><?php echo $resources_sub_header; ?></h5>
             <h1 class="mb-3"><?php echo $resources_header_text; ?></h1>
