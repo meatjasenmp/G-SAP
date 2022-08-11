@@ -6,6 +6,8 @@ const carousel = () => {
   const flkty = new Flickity(element, {
     imagesLoaded: true,
     initialIndex: 1,
+    wrapAround: true,
+    freeScroll: true,
   });
 
   Flickity.prototype._createResizeClass = function () {

@@ -985,11 +985,15 @@ li {
 .carousel-cell {
   min-height: 100%; }
   .carousel-cell .cell-wrap {
-    opacity: 0.5;
-    transform: scale(0.5); }
+    transform: scale(0.85); }
+
+.carousel-cell {
+  opacity: 0.5 !important;
+  transition: opacity 1s ease !important; }
+  .carousel-cell.is-selected {
+    opacity: 1 !important; }
 
 .carousel-cell.is-selected .cell-wrap {
-  opacity: 1;
   transform: scale(1); }
 
 .carousel-cell .hero {
