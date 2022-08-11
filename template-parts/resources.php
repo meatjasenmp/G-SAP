@@ -8,7 +8,7 @@
     $resources_carousel_cells = $resources_carousel['cells'];
 ?>
 
-<section class="resources bg-gsap-blue text-white py-20 relative w-screen left-2/4 right-2/4 ml-[-50vw] mr-[-50vw]">
+<section class="resources bg-gsap-blue text-white pt-20 pb-40 relative w-screen left-2/4 right-2/4 ml-[-50vw] mr-[-50vw]">
     <div class="max-w-[1440px] mx-auto">
         <div class="max-w-xl mx-auto text-center">
             <h5 class="uppercase tracking-widest text-sm"><?php echo $resources_sub_header; ?></h5>

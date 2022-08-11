@@ -8,6 +8,7 @@ const carousel = () => {
     initialIndex: 1,
     wrapAround: true,
     freeScroll: true,
+    prevNextButtons: false,
   });
 
   Flickity.prototype._createResizeClass = function () {

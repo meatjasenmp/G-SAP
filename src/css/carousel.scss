@@ -30,3 +30,16 @@
 .carousel-cell .cell-wrap {
 	transition: all 0.5s ease-out;
 }
+
+.flickity-page-dots {
+	bottom: -45px;
+}
+
+.flickity-page-dot {
+	background: #C7C7C7;
+	margin: 0 4px;
+}
+
+.flickity-page-dot.is-selected {
+	background: #FF8900;
+}
