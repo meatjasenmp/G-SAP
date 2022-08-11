@@ -19,6 +19,7 @@ module.exports = {
         "gsap-blue": "#0D3691",
         "gsap-orange": "#FF8900",
         "gsap-green": "#2EB16B",
+        "gsap-gray": "#646464",
       },
       fontFamily: {
         magdelin: ["MagdelinRegular", "sans-serif"],
