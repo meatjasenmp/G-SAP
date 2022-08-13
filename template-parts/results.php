@@ -1,3 +1,5 @@
 <section class="results py-20">
-    <canvas id="credit-sufficient-students"></canvas>
+    <div class="relative">
+        <canvas id="credit-sufficient-students"></canvas>
+    </div>
 </section>

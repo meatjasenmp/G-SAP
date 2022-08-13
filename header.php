@@ -17,7 +17,7 @@
                 <div>
                     <?php get_template_part('template-parts/global/gsap-logo-combined'); ?>
                 </div>
-                <div class="ml-[10rem]">
+                <div class="ml-[10rem] hidden">
                     <?php get_template_part('template-parts/navigation/primary'); ?>
                 </div>
             </div>
