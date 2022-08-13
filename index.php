@@ -5,6 +5,7 @@
 <?php get_template_part('template-parts/hatties-effect'); ?>
 <?php get_template_part('template-parts/about'); ?>
 <?php get_template_part('template-parts/icap'); ?>
+<?php get_template_part('template-parts/results'); ?>
 <?php get_template_part('template-parts/resources'); ?>
 
 <?php get_footer(); ?>

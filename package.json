@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
+    "chart.js": "^3.9.1",
     "flickity": "^3.0.0",
     "fslightbox": "^3.3.1",
     "plyr": "^3.6.12"
