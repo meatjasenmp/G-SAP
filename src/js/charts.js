@@ -82,7 +82,11 @@ const creditSufficientStudy = () => {
         plugins: {
           title: {
             display: true,
-            text: "Credit Sufficient Students",
+            text: "CREDIT SUFFICIENT STUDENTS",
+            font: {
+              family: "MagdelinRegular",
+              size: 14,
+            },
           },
           legend: {
             position: "bottom",
