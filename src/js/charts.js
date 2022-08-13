@@ -7,6 +7,9 @@ import {
   LineController,
   PointElement,
   LineElement,
+  Title,
+  Legend,
+  Tooltip,
 } from "chart.js";
 
 Chart.register(
@@ -16,11 +19,14 @@ Chart.register(
   CategoryScale,
   LineController,
   LineElement,
-  PointElement
+  PointElement,
+  Legend,
+  Title,
+  Tooltip
 );
 
-const percentage = (num, per) => {
-  return (num / 100) * per;
+const percentage = (partialValue, totalValue) => {
+  return Number((partialValue / totalValue) * 100).toFixed(2);
 };
 
 const creditSufficientStudy = () => {
@@ -57,15 +63,15 @@ const creditSufficientStudy = () => {
           {
             label: "Percentage of Credit Sufficient Students",
             data: [
-              percentage(1164, 70),
-              percentage(1201, 84),
-              percentage(1218, 81),
-              percentage(1238, 84),
-              percentage(1201, 85),
-              percentage(1164, 79),
-              percentage(1285, 83),
+              percentage(995, 1164),
+              percentage(1061, 1201),
+              percentage(1027, 1218),
+              percentage(1011, 1238),
+              percentage(1012, 1201),
+              percentage(819, 1164),
+              percentage(1086, 1285),
             ],
-            backgroundColor: "#2EB16B",
+            backgroundColor: "#A5A5A5",
             type: "line",
             yAxisID: "y2",
             order: 0,
@@ -73,6 +79,15 @@ const creditSufficientStudy = () => {
         ],
       },
       options: {
+        plugins: {
+          title: {
+            display: true,
+            text: "Credit Sufficient Students",
+          },
+          legend: {
+            position: "bottom",
+          },
+        },
         scales: {
           x: {
             stacked: true,
