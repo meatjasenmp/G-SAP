@@ -100,7 +100,6 @@ const creditSufficientStudy = () => {
             stacked: true,
           },
           y2: {
-            type: "linear",
             display: true,
             position: "right",
           },
