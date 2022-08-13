@@ -46,16 +46,11 @@ const creditSufficientStudy = () => {
             label: "Total Number of Students Enrolled",
             data: [1164, 1201, 1218, 1238, 1201, 1164, 1285],
             backgroundColor: "#0D3691",
-            stack: "stack",
-            order: 3,
           },
           {
             label: "Total Number of Credit Sufficient Students",
             data: [995, 1061, 1027, 1011, 1012, 819, 1086],
             backgroundColor: "#FF8900",
-            stack: "stack",
-            order: 2,
-            yAxisID: "y2",
           },
           {
             label: "Percentage of Credit Sufficient Students",
@@ -70,22 +65,22 @@ const creditSufficientStudy = () => {
             ],
             backgroundColor: "#2EB16B",
             type: "line",
-            order: 0,
-            yAxisID: "y",
+            yAxisID: "y2",
           },
         ],
       },
       options: {
         scales: {
+          x: {
+            stacked: true,
+          },
           y: {
-            type: "linear",
-            display: true,
-            position: "right",
+            stacked: true,
           },
           y2: {
             type: "linear",
             display: true,
-            position: "left",
+            position: "right",
           },
         },
       },
