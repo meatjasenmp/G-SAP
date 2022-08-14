@@ -668,6 +668,12 @@ video {
 .h-\[100vh\]{
   height: 100vh;
 }
+.h-\[80vh\]{
+  height: 80vh;
+}
+.h-\[90vh\]{
+  height: 90vh;
+}
 .w-72{
   width: 18rem;
 }
@@ -742,6 +748,12 @@ video {
 }
 .w-\[14rem\]{
   width: 14rem;
+}
+.w-\[80vw\]{
+  width: 80vw;
+}
+.w-\[90vw\]{
+  width: 90vw;
 }
 .max-w-3xl{
   max-width: 48rem;
