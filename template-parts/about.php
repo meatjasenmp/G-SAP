@@ -18,15 +18,15 @@
 ?>
 
 <section class="about mt-20">
-    <div class="flex flex-col flex-col-reverse md:flex-row justify-between items-center max-w-7xl mx-auto">
-        <div class="md:mr-8">
+    <div class="flex justify-between items-center max-w-7xl mx-auto">
+        <div>
             <figure class="relative">
-                <div class="mb-4 lg:absolute top-12 lg:left-12">
+                <div class="absolute top-12 left-12">
                     <span class="block font-magdelinBold"><?php echo $biography_image_title_name; ?></span>
                     <span class="block"><?php echo $biography_image_title_title; ?></span>
                 </div>
-                <img class="rounded-full lg:max-w-2xl" src="<?php echo $biography_image_image['url']; ?>" alt="<?php echo $biography_image_image['alt']; ?>">
-                <figure class="absolute bottom-0 md:w-20 lg:bottom-[3.5rem] right-0 z-10">
+                <img class="rounded-full max-w-2xl" src="<?php echo $biography_image_image['url']; ?>" alt="<?php echo $biography_image_image['alt']; ?>">
+                <figure class="absolute bottom-[3.5rem] right-0 z-10">
                     <?php get_template_part('template-parts/global/life-circle'); ?>
                 </figure>
             </figure>

@@ -79,7 +79,6 @@ const creditSufficientStudy = () => {
         ],
       },
       options: {
-        maintainAspectRatio: false,
         plugins: {
           title: {
             display: true,

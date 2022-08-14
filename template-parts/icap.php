@@ -17,13 +17,13 @@
     $icap_learn_more_background_image = $icap_learn_more['background_image'];
 ?>
 <section class="icap mt-20 relative w-screen left-2/4 right-2/4 ml-[-50vw] mr-[-50vw] text-white">
-    <div class="flex flex-col">
-        <div class="flex-none lg:w-1/2">
+    <div class="flex">
+        <div class="flex-none w-1/2">
             <figure>
                 <img src="<?php echo $icap_banner_image['url']; ?>" alt="<?php echo $icap_banner_image['alt']; ?>">
             </figure>
         </div>
-        <div class="bg-gsap-blue flex flex-col py-12 justify-center lg:w-1/2">
+        <div class="bg-gsap-blue flex flex-col justify-center w-1/2">
             <div class="max-w-2xl mx-auto">
                 <div class="text-center font-magdelinBold mb-6">
                     <?php echo $icap_banner_content_header; ?>
@@ -71,11 +71,11 @@
     <div class="relative text-black">
         <?php get_template_part('template-parts/global/pulsating-button'); ?>
         <figure class="absolute top-0 left-0 h-full w-full bg-cover"  style="background: url('<?php echo $icap_learn_more_background_image['url']; ?>')"></figure>
-        <div class="relative z-10 mx-auto p-8 lg:pt-12 lg:pb-20">
+        <div class="relative z-10 mx-auto pt-12 pb-20">
             <h3 class="uppercase text-center font-magdelin tracking-widest"><?php echo $icap_learn_more_sub_header; ?></h3>
-            <div class="flex flex-col lg:max-w-7xl mx-auto mt-12">
+            <div class="flex max-w-7xl mx-auto mt-12">
                 <?php foreach($icap_learn_more_columns as $column): $column_sub_header = $column['column']['sub_header']; $column_header = $column['column']['header']; $column_content = $column['column']['content']; ?>
-                    <div class="column mb-6 lg:w-1/3 lg:mr-12 last:mb-0 last:mr-0">
+                    <div class="column w-1/3 mr-12 last:mr-0">
                         <span class="block text-xs text-gsap-blue font-magdelinBold mb-1"><?php echo $column_sub_header; ?></span>
                         <h5 class="text-gsap-blue mb-1"><?php echo $column_header; ?></h5>
                         <?php echo $column_content; ?>

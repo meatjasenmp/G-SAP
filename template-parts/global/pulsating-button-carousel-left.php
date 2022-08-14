@@ -1,4 +1,4 @@
-<div class="pulsating__button__container hidden absolute w-[35px] h-[35px] left-[-6rem] top-0 bottom-0 my-auto">
+<div class="pulsating__button__container absolute w-[35px] h-[35px] left-[-6rem] top-0 bottom-0 my-auto">
     <div class="bg border-gsap-orange border absolute w-[35px] h-[35px] rounded-full left-0 right-0 top-[-1.25rem] mx-auto"></div>
     <div class="bg border-gsap-orange border absolute w-[35px] h-[35px] rounded-full left-0 right-0 top-[-1.25rem] mx-auto"></div>
     <button class="pulsating__button carousel-prev flex justify-center items-center absolute z-50 bg-gsap-orange outline-0 w-[35px] h-[35px] rounded-full left-0 right-0 mx-auto top-[-1.25rem]">
