@@ -17,12 +17,12 @@
         <div class="relative z-10">
             <h3 class="uppercase text-center font-magdelin tracking-widest"><?php echo $hatties_cta; ?></h3>
             <div class="flex p-6 flex-col text-black lg:mt-16 max-w-5xl mx-auto">
-                <div class="flex-none lg:max-w-sm lg:mr-20 text-center">
+                <div class="flex-none md:max-w-lg md:mb-10 md:mx-auto lg:mr-20 text-center">
                     <h1 class="uppercase"><?php echo $hatties_content_header; ?></h1>
                     <?php echo $hatties_content_content; ?>
                 </div>
                 <div>
-                    <table class="table-auto bg-white text-sm">
+                    <table class="table-auto bg-white text-sm w-full">
                         <?php if($hatties_content_table['header']): ?>
                             <thead>
                                 <tr class="bg-gsap-blue text-xs text-white text-left uppercase">

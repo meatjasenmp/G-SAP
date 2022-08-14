@@ -46,20 +46,20 @@
         </div>
     </div>
     <div class="hero_image">
-        <img class="hidden lg:block" src="<?php echo $desktop_image['url']; ?>" alt="<?php echo $desktop_image['alt']; ?>">
+        <img class="hidden" src="<?php echo $desktop_image['url']; ?>" alt="<?php echo $desktop_image['alt']; ?>">
         <?php foreach($mobile_images as $mobile_image): ?>
             <div class="mb-6 last:mb-0">
                 <h5 class="text-gsap-blue mb-0"><?php echo $mobile_image['label']; ?></h5>
                 <figure>
-                    <img class="lg:hidden" src="<?php echo $mobile_image['image']['url']; ?>" alt="<?php echo $mobile_image['image']['alt']; ?>">
+                    <img src="<?php echo $mobile_image['image']['url']; ?>" alt="<?php echo $mobile_image['image']['alt']; ?>">
                 </figure>
             </div>
         <?php endforeach; ?>
     </div>
-    <div class="earned_results flex flex-col items-center max-w-screen-lg mx-auto relative w-screen left-2/4 right-2/4 ml-[-50vw] mr-[-50vw]">
-        <div class="bg-gsap-blue text-white flex-none mb-3 lg:w-[600px] lg:rounded-md p-8 lg:mr-8">
-            <div class="flex flex-col">
-                <div class="lg:mr-6">
+    <div class="earned_results flex flex-col md:flex-row items-center max-w-screen-lg mx-auto relative w-screen left-2/4 right-2/4 ml-[-50vw] mr-[-50vw] md:-mx-0 md:w-auto md:left-0 md:right-0">
+        <div class="bg-gsap-blue text-white lg:flex-none mb-3 lg:w-[600px] lg:rounded-md p-8 lg:mr-8">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:mr-6">
                     <figure class="w-12 mb-4">
                         <img src="<?php echo $earned_results_column_image['url']; ?>" alt="<?php echo $earned_results_column_image['alt']; ?>">
                     </figure>
