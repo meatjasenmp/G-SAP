@@ -17,13 +17,13 @@
     $icap_learn_more_background_image = $icap_learn_more['background_image'];
 ?>
 <section class="icap mt-20 relative w-screen left-2/4 right-2/4 ml-[-50vw] mr-[-50vw] text-white">
-    <div class="flex">
-        <div class="flex-none w-1/2">
+    <div class="flex flex-col">
+        <div class="flex-none lg:w-1/2">
             <figure>
                 <img src="<?php echo $icap_banner_image['url']; ?>" alt="<?php echo $icap_banner_image['alt']; ?>">
             </figure>
         </div>
-        <div class="bg-gsap-blue flex flex-col justify-center w-1/2">
+        <div class="bg-gsap-blue flex flex-col py-12 justify-center lg:w-1/2">
             <div class="max-w-2xl mx-auto">
                 <div class="text-center font-magdelinBold mb-6">
                     <?php echo $icap_banner_content_header; ?>

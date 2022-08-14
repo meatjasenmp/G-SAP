@@ -16,8 +16,8 @@
     <div class="max-w-[1440px] mx-auto pt-12 pb-20">
         <div class="relative z-10">
             <h3 class="uppercase text-center font-magdelin tracking-widest"><?php echo $hatties_cta; ?></h3>
-            <div class="flex text-black mt-16 max-w-5xl mx-auto">
-                <div class="flex-none max-w-sm mr-20">
+            <div class="flex p-6 flex-col text-black lg:mt-16 max-w-5xl mx-auto">
+                <div class="flex-none lg:max-w-sm lg:mr-20 text-center">
                     <h1 class="uppercase"><?php echo $hatties_content_header; ?></h1>
                     <?php echo $hatties_content_content; ?>
                 </div>
