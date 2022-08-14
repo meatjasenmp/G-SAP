@@ -19,8 +19,8 @@
                 </div>
             </footer>
         </div>
-        <div class="copyright bg-black text-white w-screen left-2/4 relative right-2/4 ml-[-50vw] mr-[-50vw] py-2">
-            <div class="max-w-md mx-auto">
+        <div class="copyright bg-black text-white w-screen left-2/4 relative right-2/4 ml-[-50vw] mr-[-50vw] p-4">
+            <div class="max-w-md mx-auto text-xs text-center">
                &copy; <?php echo date("Y"); ?> <?php echo  strip_tags($site_copyright, '<a>'); ?>
             </div>
         </div>

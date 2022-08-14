@@ -17,7 +17,7 @@
             <h1 class="mb-3"><?php echo $resources_header_text; ?></h1>
             <?php echo $resources_header_content; ?>
         </div>
-        <div class="mt-20 max-w-4xl mx-auto relative">
+        <div class="lg:mt-20 max-w-4xl mx-auto relative">
             <?php get_template_part('template-parts/global/pulsating-button-carousel-left'); ?>
             <?php get_template_part('template-parts/global/pulsating-button-carousel-right'); ?>
             <div class="carousel">
