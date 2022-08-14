@@ -25,14 +25,14 @@
         </ul>
 
     </article>
-    <div class="relative flex-none w-96 lg:w-2/5">
+    <div class="relative flex-none w-80 lg:w-2/5">
         <figure class="absolute bottom-0 right-0 z-10 w-24">
             <?php get_template_part('template-parts/global/life-circle'); ?>
         </figure>
         <div class="banner_images">
             <?php foreach($page_banner_images as $page_banner_image): $image = $page_banner_image['image']; $label = $page_banner_image['label'] ?>
                 <div class="absolute top-0">
-                    <p class="absolute -right-[-3rem] lg:-right-[-6rem] top-20 leading-3 text-white font-magdelinBold text-xs"><?php echo $label; ?></p>
+                    <p class="absolute -right-[-2rem] lg:-right-[-6rem] top-20 leading-3 text-white font-magdelinBold text-xs"><?php echo $label; ?></p>
                     <figure>
                         <img class="w-full rounded-[50%] banner_image" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
                     </figure>
