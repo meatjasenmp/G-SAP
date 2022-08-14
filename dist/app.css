@@ -499,6 +499,18 @@ video {
 .top-\[0\.5rem\]{
   top: 0.5rem;
 }
+.-right-\[-3rem\]{
+  right: 3rem;
+}
+.-right-\[-1\.5rem\]{
+  right: 1.5rem;
+}
+.-right-\[-1\.25rem\]{
+  right: 1.25rem;
+}
+.-right-\[-2rem\]{
+  right: 2rem;
+}
 .z-10{
   z-index: 10;
 }
@@ -688,6 +700,12 @@ video {
 }
 .w-32{
   width: 8rem;
+}
+.w-80{
+  width: 20rem;
+}
+.w-96{
+  width: 24rem;
 }
 .max-w-3xl{
   max-width: 48rem;
@@ -1118,6 +1136,9 @@ footer a, .copyright a {
   }
   .lg\:bottom-\[3\.5rem\]{
     bottom: 3.5rem;
+  }
+  .lg\:-right-\[-6rem\]{
+    right: 6rem;
   }
   .lg\:mr-28{
     margin-right: 7rem;
