@@ -57,7 +57,7 @@
         <?php endforeach; ?>
     </div>
     <div class="earned_results flex flex-col md:flex-row items-center max-w-screen-lg mx-auto relative w-screen left-2/4 right-2/4 ml-[-50vw] mr-[-50vw] md:-mx-0 md:w-auto md:left-0 md:right-0">
-        <div class="bg-gsap-blue text-white lg:flex-none mb-3 lg:w-[600px] lg:rounded-md p-8 lg:mr-8">
+        <div class="bg-gsap-blue text-white lg:flex-none mb-3 lg:w-[600px] md:rounded-md p-8 lg:mr-8">
             <div class="flex flex-col md:flex-row">
                 <div class="md:mr-6">
                     <figure class="w-12 mb-4">
