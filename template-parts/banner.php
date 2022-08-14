@@ -7,8 +7,8 @@
     $page_banner_images = $page_banner['page_banner_images'];
 ?>
 
-<section class="site_banner flex flex-col flex-col-reverse items-center my-10">
-    <article class="mt-10 lg:max-w-lg lg:mr-28">
+<section class="site_banner flex flex-col flex-col-reverse md:flex-row items-center my-10">
+    <article class="mt-10 md:mr-10 lg:max-w-lg lg:mr-28">
         <h1 class="text-gsap-blue"><?php echo $page_banner_header; ?></h1>
 
         <?php echo $page_banner_content_content; ?>

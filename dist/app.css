@@ -1127,6 +1127,15 @@ footer a, .copyright a {
   }
 }
 
+@media (min-width: 600px){
+  .md\:mr-10{
+    margin-right: 2.5rem;
+  }
+  .md\:flex-row{
+    flex-direction: row;
+  }
+}
+
 @media (min-width: 900px){
   .lg\:absolute{
     position: absolute;
