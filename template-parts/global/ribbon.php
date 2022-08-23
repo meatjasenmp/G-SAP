@@ -1,6 +1,6 @@
 <?php $ribbon_copy = get_field('ribbon_copy', 'option'); ?>
-<div class="ribbon absolute top-0 right-[10rem]">
-    <figure class="w-32">
+<div class="ribbon">
+    <figure>
         <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 160.7 190.5" xml:space="preserve">
            <style>.st1{opacity:.16;clip-path:url(#SVGID_00000002359480117316057180000001853023674537472408_)}.st3{fill:url(#SVGID_00000103977482309787303590000016506000085059565461_)}.st4{mask:url(#SVGID_00000048472313051664018970000016762121863239846295_)}</style>
                     <path style="fill:#ff9e18" d="M1.5 1.4v188l78.3-20.2 79.4 20.2V1.4z"/>
@@ -42,7 +42,7 @@
                     </g>
         </svg>
     </figure>
-    <div class="content absolute top-[0.5rem] bottom-0 left-0 right-0 mx-auto p-2 text-white font-magdelinBold text-center">
+    <div class="content">
         <?php echo $ribbon_copy; ?>
     </div>
 </div>
