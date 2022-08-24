@@ -11,13 +11,12 @@
 	--magdelinBold: MagdelinBold;
 }
 
-@import './global/reset';
-
 @import './global/navigation/primary';
 @import './global/ribbon';
 @import './global/typography';
 @import './global/pulstating-button';
 
 @import './sections/banner';
+@import './sections/how-does-gsap-work';
 
 @import './carousel';
