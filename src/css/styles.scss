@@ -2,9 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+	--gsap-orange: #FF8900;
+	--gsap-blue: #0D3691;
+	--gsap-green: #2EB16B;
+	--gsap-gray: #646464;
+	--magdelin: MagdelinRegular;
+	--magdelinBold: MagdelinBold;
+}
+
+@import './global/reset';
+
 @import './global/navigation/primary';
 @import './global/ribbon';
 @import './global/typography';
 @import './global/pulstating-button';
+
+@import './sections/banner';
 
 @import './carousel';

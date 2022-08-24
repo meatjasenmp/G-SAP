@@ -15,17 +15,23 @@ const banner = () => {
   if (siteBanner) {
     const bannerImagesContainer = siteBanner.querySelector(".banner_images");
     const images = siteBanner.querySelectorAll(".banner_image");
-    let imageHeight = images[0].clientHeight;
+    const imagesLoaded = images[0].complete && images[0].naturalHeight !== 0;
 
-    const setContainerHeight = () => {
-      imageHeight = images[0].clientHeight;
-      bannerImagesContainer.style.height = imageHeight + "px";
-    };
+    if (imagesLoaded) {
+      let imageHeight = images[0].clientHeight;
+      console.log(imageHeight);
 
-    window.addEventListener("resize", debounce(setContainerHeight, 100));
+      const setContainerHeight = () => {
+        imageHeight = images[0].clientHeight;
+        bannerImagesContainer.style.height = imageHeight + "px";
+      };
 
-    setContainerHeight();
+      window.addEventListener("resize", debounce(setContainerHeight, 100));
+
+      setContainerHeight();
+    }
   }
+
   return null;
 };
 

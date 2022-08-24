@@ -17,12 +17,12 @@
 
 .pulsating__button__container .bg {
 	animation: pulse 2s ease infinite;
-	border: 1px solid #FF8900;
+	border: 1px solid var(--gsap-orange);
 }
 
 .pulsating__button {
 	outline-width: 0;
-	background: #FF8900;
+	background: var(--gsap-orange);;
 	display: flex;
 	align-items: center;
 	z-index: 50;

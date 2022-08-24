@@ -17,7 +17,7 @@ h4,
 h5,
 h6,
 strong {
-	font-family: "MagdelinBold", sans-serif;
+	font-family: var(--magdelinBold), sans-serif;
 }
 
 h1,
@@ -58,7 +58,7 @@ li {
 
 
 footer h2 {
-	font-family: "Magdelin", sans-serif;
+	font-family: var(--magdelin), sans-serif;
 }
 
 footer, .copyright {
