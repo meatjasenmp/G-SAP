@@ -1,5 +1,56 @@
+.pulsating__button__container .bg,
+.pulsating__button,
+.plus_button {
+	width: 35px;
+	height: 35px;
+}
+
+.pulsating__button__container .bg,
+.pulsating__button {
+	border-radius: 9999px;
+	margin: 0 auto;
+	top: -1.25rem;
+	left: 0;
+	right: 0;
+	position: absolute;
+}
+
 .pulsating__button__container .bg {
 	animation: pulse 2s ease infinite;
+	border: 1px solid #FF8900;
+}
+
+.pulsating__button {
+	outline-width: 0;
+	background: #FF8900;
+	display: flex;
+	align-items: center;
+	z-index: 50;
+}
+
+.plus_button {
+	position: relative;
+}
+
+.plus_button__line {
+	background: #FFF;
+	position: absolute;
+}
+
+.plus__button__line-horizontal {
+	width: 20px;
+	height: .20rem;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.plus__button__line-vertical {
+	height: 20px;
+	width: 3px;
+	display: none;
 }
 
 .pulsating__button__container .bg:nth-child(2) {
