@@ -18,7 +18,7 @@
             <h3 class="uppercase"><?php echo $hatties_cta; ?></h3>
             <div class="content">
                 <article>
-                    <h1 class="uppercase"><?php echo $hatties_content_header; ?></h1>
+                    <h1><?php echo $hatties_content_header; ?></h1>
                     <?php echo $hatties_content_content; ?>
                 </article>
                 <div>
