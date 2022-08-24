@@ -562,9 +562,6 @@ video {
 .mb-1{
   margin-bottom: 0.25rem;
 }
-.mt-16{
-  margin-top: 4rem;
-}
 .mr-20{
   margin-right: 5rem;
 }
@@ -613,11 +610,11 @@ video {
 .table{
   display: table;
 }
-.h-full{
-  height: 100%;
-}
 .h-32{
   height: 8rem;
+}
+.h-full{
+  height: 100%;
 }
 .h-\[35px\]{
   height: 35px;
@@ -627,9 +624,6 @@ video {
 }
 .w-screen{
   width: 100vw;
-}
-.w-full{
-  width: 100%;
 }
 .w-1\/2{
   width: 50%;
@@ -642,6 +636,9 @@ video {
 }
 .w-8{
   width: 2rem;
+}
+.w-full{
+  width: 100%;
 }
 .w-1\/3{
   width: 33.333333%;
@@ -678,9 +675,6 @@ video {
 }
 .max-w-xl{
   max-width: 36rem;
-}
-.max-w-5xl{
-  max-width: 64rem;
 }
 .max-w-sm{
   max-width: 24rem;
@@ -837,11 +831,11 @@ video {
 .tracking-wider{
   letter-spacing: 0.05em;
 }
-.tracking-widest{
-  letter-spacing: 0.1em;
-}
 .tracking-\[\.5rem\]{
   letter-spacing: .5rem;
+}
+.tracking-widest{
+  letter-spacing: 0.1em;
 }
 .text-gsap-blue{
   --tw-text-opacity: 1;
@@ -1174,6 +1168,79 @@ footer a, .copyright a {
   .earned_results > div:last-child p {
     font-size: 0.875rem;
     line-height: 1.25rem; }
+
+.hatties_effect {
+  width: 100vw;
+  margin-top: 5rem;
+  margin-right: -50vw;
+  margin-left: -50vw;
+  right: 50%;
+  left: 50%;
+  position: relative; }
+
+.hatties_effect .background_dots {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover !important; }
+
+.hatties_effect .wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 3rem;
+  padding-bottom: 5rem; }
+
+.hatties_effect .inner_wrapper {
+  position: relative;
+  z-index: 10; }
+  .hatties_effect .inner_wrapper h3 {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.1em;
+    font-family: var(--magdelin), sans-serif; }
+
+.hatties_effect .content {
+  display: flex;
+  max-width: 64rem;
+  margin: 4rem auto 0 auto; }
+  .hatties_effect .content article {
+    flex: none;
+    max-width: 24em;
+    margin-right: 5rem; }
+    .hatties_effect .content article h1 {
+      text-transform: uppercase; }
+
+.hatties_effect table {
+  table-layout: auto;
+  text-indent: 0;
+  border-color: inherit;
+  border-collapse: collapse;
+  background: #FFF;
+  font-size: 0.875rem;
+  line-height: 1.25rem; }
+  .hatties_effect table thead tr {
+    background: var(--gsap-blue);
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    text-align: left; }
+  .hatties_effect table thead th {
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-color: #f1f5f9;
+    padding: .5rem 1rem .5rem 1rem; }
+  .hatties_effect table tbody tr:first-child {
+    background: var(--gsap-green);
+    font-family: var(--magdelinBold), sans-serif; }
+  .hatties_effect table tbody td {
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-color: #f1f5f9;
+    padding: .5rem 1rem .5rem 1rem; }
 
 .carousel-cell {
   min-height: 100%; }

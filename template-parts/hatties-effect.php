@@ -8,35 +8,35 @@
     $hatties_content_table = $hatties_content['table'];
 ?>
 
-<section class="hatties_effect relative mt-20 w-screen left-2/4 right-2/4 ml-[-50vw] mr-[-50vw]">
-    <figure class="absolute top-0 left-0 h-full w-full bg-cover"  style="background: url('<?php echo $hatties_background['url']; ?>')"></figure>
+<section class="hatties_effect">
+    <figure class="background_dots"  style="background: url('<?php echo $hatties_background['url']; ?>');"></figure>
 
     <?php get_template_part('template-parts/global/pulsating-button'); ?>
 
-    <div class="max-w-[1440px] mx-auto pt-12 pb-20">
-        <div class="relative z-10">
-            <h3 class="uppercase text-center font-magdelin tracking-widest"><?php echo $hatties_cta; ?></h3>
-            <div class="flex text-black mt-16 max-w-5xl mx-auto">
-                <div class="flex-none max-w-sm mr-20">
+    <div class="wrapper">
+        <div class="inner_wrapper">
+            <h3 class="uppercase"><?php echo $hatties_cta; ?></h3>
+            <div class="content">
+                <article>
                     <h1 class="uppercase"><?php echo $hatties_content_header; ?></h1>
                     <?php echo $hatties_content_content; ?>
-                </div>
+                </article>
                 <div>
-                    <table class="table-auto bg-white text-sm">
+                    <table>
                         <?php if($hatties_content_table['header']): ?>
                             <thead>
-                                <tr class="bg-gsap-blue text-xs text-white text-left uppercase">
+                                <tr>
                                     <?php foreach($hatties_content_table['header'] as $header): ?>
-                                        <th class="px-4 py-2 border-l border-b border-r dark:border-slate-100"><?php echo $header['c']; ?></th>
+                                        <th><?php echo $header['c']; ?></th>
                                     <?php endforeach; ?>
                                 </tr>
                             </thead>
                         <?php endif; ?>
                         <tbody>
                         <?php foreach($hatties_content_table['body'] as $body): ?>
-                            <tr class="first:bg-gsap-green first:font-magdelinBold">
+                            <tr>
                                 <?php foreach($body as $cell): ?>
-                                    <td class="px-4 py-2 border-l border-b border-r dark:border-slate-100"><?php echo $cell['c']; ?></td>
+                                    <td><?php echo $cell['c']; ?></td>
                                 <?php endforeach; ?>
                             </tr>
                         <?php endforeach; ?>
