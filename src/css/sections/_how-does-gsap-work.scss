@@ -11,11 +11,11 @@
 	display: flex;
 	justify-content: space-between;
 	margin-top: 2rem;
-	.column:first-child {
+	& > .column:first-child {
 		flex: none;
 		width: 18rem;
 	}
-	.column:last-child {
+	& > .column:last-child {
 		display: flex;
 		.column {
 			flex: none;
