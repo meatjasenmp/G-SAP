@@ -9,7 +9,6 @@ const carousel = () => {
     imagesLoaded: true,
     initialIndex: 1,
     wrapAround: true,
-    freeScroll: true,
     prevNextButtons: false,
   });
 
