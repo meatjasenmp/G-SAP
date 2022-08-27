@@ -15,7 +15,7 @@
 
     <div class="wrapper">
         <div class="inner_wrapper">
-            <h3 class="uppercase"><?php echo $hatties_cta; ?></h3>
+            <h4><?php echo $hatties_cta; ?></h4>
             <div class="content">
                 <article>
                     <h1><?php echo $hatties_content_header; ?></h1>
