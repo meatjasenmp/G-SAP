@@ -588,7 +588,6 @@ header .navigation_container {
 .page_wrap {
   position: relative;
   padding: 3rem;
-  overflow-x: hidden;
   font-family: var(--magdelin), sans-serif;
   font-weight: 300;
   max-width: 1440px;
@@ -628,7 +627,7 @@ header .navigation_container {
   display: none;
   position: absolute;
   top: 0;
-  right: 10rem;
+  right: 6rem;
   color: #FFF;
   font-family: var(--magdelinBold), sans-serif;
   text-align: center; }
@@ -735,7 +734,7 @@ footer a, .copyright a {
 
 .pulsating__button__container {
   display: none; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     .pulsating__button__container {
       display: block; } }
 
@@ -958,7 +957,7 @@ footer {
   display: flex;
   margin-top: 2rem;
   flex-direction: column; }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     .how .columns {
       flex-direction: row;
       justify-content: space-between; } }
@@ -1237,6 +1236,12 @@ footer {
       bottom: 3.5rem; } }
   .about .life_circle img {
     width: 6rem; }
+    @media screen and (min-width: 990px) {
+      .about .life_circle img {
+        width: 8rem; } }
+    @media screen and (min-width: 1200px) {
+      .about .life_circle img {
+        width: 12rem; } }
 
 .biography_wrapper {
   flex: none;
@@ -1251,12 +1256,6 @@ footer {
       .biography_wrapper h5 {
         display: block;
         margin-top: 0; } }
-  .biography_wrapper .arrow {
-    width: 318px;
-    height: 250px;
-    position: absolute;
-    right: -11rem;
-    bottom: -7.5rem; }
 
 .about .mission_statement {
   max-width: 36rem;
@@ -1425,7 +1424,8 @@ footer {
     .learn_more_columns_wrapper .columns {
       flex-direction: row; } }
   .learn_more_columns_wrapper .columns .column {
-    margin-top: 1.25rem; }
+    margin-top: 1.25rem;
+    max-width: 30rem; }
     .learn_more_columns_wrapper .columns .column span {
       display: block;
       font-family: var(--magdelinBold), sans-serif;
@@ -1439,7 +1439,8 @@ footer {
     @media screen and (min-width: 990px) {
       .learn_more_columns_wrapper .columns .column {
         width: 33.333333%;
-        margin-right: 3rem; }
+        margin-right: 3rem;
+        max-width: none; }
         .learn_more_columns_wrapper .columns .column:last-child {
           margin-right: 0; } }
 

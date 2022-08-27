@@ -41,9 +41,9 @@
             <h5 class="text-gsap-orange tracking-wider"><?php echo $biography_content_sub_header; ?></h5>
             <h2><?php echo $biography_content_header; ?></h2>
             <?php echo $biography_content_content; ?>
-            <figure class="arrow">
-                <img src="<?php echo $biography_arrow['url']; ?>" alt="<?php echo $biography_arrow['alt']; ?>">
-            </figure>
+<!--            <figure class="arrow">-->
+<!--                <img src="--><?php //echo $biography_arrow['url']; ?><!--" alt="--><?php //echo $biography_arrow['alt']; ?><!--">-->
+<!--            </figure>-->
         </div>
     </div>
     <div class="mission_statement">
