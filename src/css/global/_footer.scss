@@ -1,3 +1,12 @@
+footer {
+	width: 100vw;
+	margin-right: -50vw;
+	margin-left: -50vw;
+	right: 50%;
+	left: 50%;
+	position: relative;
+}
+
 .footer_wrapper {
 	text-align: center;
 	padding: 5rem 0;
@@ -6,6 +15,12 @@
 
 	h1 {
 		color: var(--gsap-blue);
+
+		@media screen and (min-width: 990px) {
+			br {
+				display: none;
+			}
+		}
 	}
 }
 
@@ -30,6 +45,12 @@
 	font-family: var(--magdelinBold), sans-serif;
 	color: var(--gsap-gray);
 	font-size: .75rem;
+
+	@media screen and (min-width: 990px) {
+		br {
+			display: none;
+		}
+	}
 }
 
 .copyright {

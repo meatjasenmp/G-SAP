@@ -809,6 +809,14 @@ footer a, .copyright a {
     transform: scale(1.5);
     opacity: 0; } }
 
+footer {
+  width: 100vw;
+  margin-right: -50vw;
+  margin-left: -50vw;
+  right: 50%;
+  left: 50%;
+  position: relative; }
+
 .footer_wrapper {
   text-align: center;
   padding: 5rem 0;
@@ -816,6 +824,9 @@ footer a, .copyright a {
   margin: 0 auto; }
   .footer_wrapper h1 {
     color: var(--gsap-blue); }
+    @media screen and (min-width: 990px) {
+      .footer_wrapper h1 br {
+        display: none; } }
 
 .footer_wrapper .gsap_logo_combined {
   display: flex;
@@ -833,6 +844,9 @@ footer a, .copyright a {
   font-family: var(--magdelinBold), sans-serif;
   color: var(--gsap-gray);
   font-size: .75rem; }
+  @media screen and (min-width: 990px) {
+    .site_tagline br {
+      display: none; } }
 
 .copyright {
   background: black;
@@ -1409,8 +1423,7 @@ footer a, .copyright a {
   padding: 0 2rem; }
   @media screen and (min-width: 990px) {
     .learn_more_columns_wrapper .columns {
-      flex-direction: row;
-      padding: 0; } }
+      flex-direction: row; } }
   .learn_more_columns_wrapper .columns .column {
     margin-top: 1.25rem; }
     .learn_more_columns_wrapper .columns .column span {
