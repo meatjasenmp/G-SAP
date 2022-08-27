@@ -1,8 +1,8 @@
-<div class="gsap_logo_combined flex w-64">
-    <div class="relative z-10">
+<div class="gsap_logo_combined">
+    <div class="logo">
         <?php get_template_part('template-parts/global/gsap-logo'); ?>
     </div>
-    <div class="relative -ml-[9rem]">
+    <div class="circle">
         <?php get_template_part('template-parts/global/life-circle'); ?>
     </div>
 </div>

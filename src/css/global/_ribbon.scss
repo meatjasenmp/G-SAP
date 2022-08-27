@@ -1,4 +1,5 @@
 .ribbon {
+	display: none;
 	position: absolute;
 	top: 0;
 	right: 10rem;
@@ -27,5 +28,9 @@
 
 	a {
 		text-decoration: underline;
+	}
+
+	@media screen and (min-width: 768px) {
+		display: block;
 	}
 }

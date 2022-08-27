@@ -553,9 +553,6 @@ video {
 .mr-\[-50vw\]{
   margin-right: -50vw;
 }
-.ml-\[10rem\]{
-  margin-left: 10rem;
-}
 .mt-20{
   margin-top: 5rem;
 }
@@ -643,9 +640,6 @@ video {
 .w-3{
   width: 0.75rem;
 }
-.w-64{
-  width: 16rem;
-}
 .w-\[35px\]{
   width: 35px;
 }
@@ -657,9 +651,6 @@ video {
 }
 .max-w-md{
   max-width: 28rem;
-}
-.max-w-\[1440px\]{
-  max-width: 1440px;
 }
 .max-w-7xl{
   max-width: 80rem;
@@ -675,6 +666,9 @@ video {
 }
 .max-w-lg{
   max-width: 32rem;
+}
+.max-w-\[1440px\]{
+  max-width: 1440px;
 }
 .max-w-4xl{
   max-width: 56rem;
@@ -707,9 +701,6 @@ video {
 .justify-between{
   justify-content: space-between;
 }
-.overflow-x-hidden{
-  overflow-x: hidden;
-}
 .rounded-full{
   border-radius: 9999px;
 }
@@ -741,9 +732,6 @@ video {
 }
 .bg-cover{
   background-size: cover;
-}
-.p-12{
-  padding: 3rem;
 }
 .py-20{
   padding-top: 5rem;
@@ -797,9 +785,6 @@ video {
   font-size: 0.75rem;
   line-height: 1rem;
 }
-.font-light{
-  font-weight: 300;
-}
 .uppercase{
   text-transform: uppercase;
 }
@@ -850,16 +835,56 @@ video {
   --magdelin: MagdelinRegular;
   --magdelinBold: MagdelinBold; }
 
+header .wrapper {
+  display: flex;
+  align-items: center; }
+
+header .navigation_container {
+  margin-left: 10rem; }
+
+body {
+  overflow-x: hidden;
+  font-family: var(--magdelin), sans-serif;
+  font-weight: 300;
+  max-width: 1440px;
+  margin: 0 auto; }
+
+.page_wrap {
+  position: relative;
+  padding: 3rem; }
+
+.gsap_logo_combined {
+  display: flex;
+  width: 13rem; }
+  @media screen and (min-width: 768px) {
+    .gsap_logo_combined {
+      width: 16rem; } }
+
+.gsap_logo_combined .logo {
+  position: relative;
+  z-index: 10; }
+
+.gsap_logo_combined .circle {
+  margin-left: -6rem;
+  position: relative; }
+  @media screen and (min-width: 768px) {
+    .gsap_logo_combined .circle {
+      width: -9rem; } }
+
 .primary_navigation ul {
-  display: flex; }
+  display: none; }
   .primary_navigation ul a {
     font-family: "MagdelinBold", sans-serif; }
   .primary_navigation ul li {
     margin-bottom: 0; }
   .primary_navigation ul li:not(:last-child) {
     margin-right: 2.5rem; }
+  @media screen and (min-width: 768px) {
+    .primary_navigation ul {
+      display: flex; } }
 
 .ribbon {
+  display: none;
   position: absolute;
   top: 0;
   right: 10rem;
@@ -881,6 +906,9 @@ video {
     margin-bottom: 0; }
   .ribbon a {
     text-decoration: underline; }
+  @media screen and (min-width: 768px) {
+    .ribbon {
+      display: block; } }
 
 h1,
 h2,
@@ -913,9 +941,9 @@ li {
   margin-bottom: 1rem; }
 
 h1 {
-  --min: 1rem;
+  --min: 2rem;
   --val: 4vw;
-  --max: 1.75rem;
+  --max: 2.5rem;
   --lh-min: 0.5;
   --lh-val: 1;
   --lh-max: 1.2; }
@@ -1012,11 +1040,20 @@ footer a, .copyright a {
 
 .site_banner {
   display: flex;
-  align-items: center; }
+  flex-direction: column-reverse;
+  align-items: center;
+  margin-top: 2rem; }
+  @media screen and (min-width: 768px) {
+    .site_banner {
+      flex-direction: row;
+      margin-top: 0; } }
 
 .site_banner article {
   max-width: 32rem;
-  margin-right: 7rem; }
+  margin-top: 1.5rem; }
+  @media screen and (min-width: 768px) {
+    .site_banner article {
+      margin-right: 7rem; } }
   .site_banner article h1 {
     color: var(--gsap-blue); }
   .site_banner article ul {
@@ -1028,11 +1065,16 @@ footer a, .copyright a {
       width: 1.5rem;
       margin-right: 0.5rem; }
 
-.banner__image {
+.banner_image_container {
   position: relative;
   flex: none;
-  width: 40%; }
-  .banner__image figure {
+  width: 100%; }
+  @media screen and (min-width: 768px) {
+    .banner_image_container {
+      width: 40%; } }
+  .banner_image_container .life_circle {
+    width: 8rem; }
+  .banner_image_container figure {
     bottom: 0;
     right: 0;
     z-index: 10; }
@@ -1043,12 +1085,15 @@ footer a, .copyright a {
 
 .banner_images p {
   position: absolute;
-  right: 6rem;
+  right: 2rem;
   font-size: 0.75rem;
   font-family: var(--magdelinBold), sans-serif;
   top: 5rem;
   line-height: .75rem;
   color: #fff; }
+  @media screen and (min-width: 768px) {
+    .banner_images p {
+      right: 6rem; } }
 
 .banner_images img {
   width: 100%;

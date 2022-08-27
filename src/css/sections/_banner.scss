@@ -1,11 +1,22 @@
 .site_banner {
 	display: flex;
+	flex-direction: column-reverse;
 	align-items: center;
+	margin-top: 2rem;
+
+	@media screen and (min-width: 768px) {
+		flex-direction: row;
+		margin-top: 0;
+	}
 }
 
 .site_banner article {
 	max-width: 32rem;
-	margin-right: 7rem;
+	margin-top: 1.5rem;
+
+	@media screen and (min-width: 768px) {
+		margin-right: 7rem;
+	}
 
 	h1 {
 		color: var(--gsap-blue);
@@ -26,10 +37,18 @@
 	}
 }
 
-.banner__image {
+.banner_image_container {
 	position: relative;
 	flex: none;
-	width: 40%;
+	width: 100%;
+
+	@media screen and (min-width: 768px) {
+		width: 40%;
+	}
+
+	.life_circle {
+		width: 8rem;
+	}
 
 	figure {
 		bottom: 0;
@@ -43,15 +62,21 @@
 		position: absolute;
 		top: 0;
 	}
+
 	p {
 		position: absolute;
-		right: 6rem;
+		right: 2rem;
 		font-size: 0.75rem;
 		font-family: var(--magdelinBold), sans-serif;
 		top: 5rem;
 		line-height: .75rem;
 		color: #fff;
+
+		@media screen and (min-width: 768px) {
+			right: 6rem;
+		}
 	}
+
 	img {
 		width: 100%;
 		border-radius: 50%;

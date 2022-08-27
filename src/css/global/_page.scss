@@ -1,0 +1,35 @@
+body {
+	overflow-x: hidden;
+	font-family: var(--magdelin), sans-serif;
+	font-weight: 300;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.page_wrap {
+	position: relative;
+	padding: 3rem;
+}
+
+.gsap_logo_combined {
+	display: flex;
+	width: 13rem;
+
+	@media screen and (min-width: 768px) {
+		width: 16rem;
+	}
+}
+
+.gsap_logo_combined .logo {
+	position: relative;
+	z-index: 10;
+}
+
+.gsap_logo_combined .circle {
+	margin-left: -6rem;
+	position: relative;
+
+	@media screen and (min-width: 768px) {
+		width: -9rem;
+	}
+}

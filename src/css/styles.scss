@@ -11,6 +11,8 @@
 	--magdelinBold: MagdelinBold;
 }
 
+@import './global/header';
+@import './global/page';
 @import './global/navigation/primary';
 @import './global/ribbon';
 @import './global/typography';

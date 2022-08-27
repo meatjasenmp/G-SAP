@@ -1,5 +1,5 @@
 .primary_navigation ul {
-	display: flex;
+	display: none;
 
 	a {
 		font-family: "MagdelinBold", sans-serif;
@@ -11,5 +11,9 @@
 
 	li:not(:last-child) {
 		margin-right: 2.5rem;
+	}
+
+	@media screen and (min-width: 768px) {
+		display: flex;
 	}
 }

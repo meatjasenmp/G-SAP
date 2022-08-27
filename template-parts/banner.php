@@ -25,8 +25,8 @@
         </ul>
 
     </article>
-    <div class="banner__image">
-        <figure class="absolute">
+    <div class="banner_image_container">
+        <figure class="absolute life_circle">
             <?php get_template_part('template-parts/global/life-circle'); ?>
         </figure>
         <div class="banner_images">
