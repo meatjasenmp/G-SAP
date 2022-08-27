@@ -589,9 +589,6 @@ video {
 .text-center{
   text-align: center;
 }
-.uppercase{
-  text-transform: uppercase;
-}
 .tracking-wider{
   letter-spacing: 0.05em;
 }
@@ -1130,7 +1127,7 @@ footer a, .copyright a {
 .hatties_effect .inner_wrapper {
   position: relative;
   z-index: 10; }
-  .hatties_effect .inner_wrapper h3 {
+  .hatties_effect .inner_wrapper h4 {
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 0.1em;
