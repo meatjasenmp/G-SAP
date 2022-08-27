@@ -9,15 +9,15 @@
     $resources_carousel_cells = $resources_carousel['cells'];
 ?>
 
-<section class="resources text-white pt-20 pb-40 relative w-screen left-2/4 right-2/4 ml-[-50vw] mr-[-50vw]">
-    <figure class="absolute top-0 left-0 h-full w-full bg-cover"  style="background: url('<?php echo $resources_background['url']; ?>')"></figure>
-    <div class="max-w-[1440px] mx-auto relative z-10">
-        <div class="max-w-xl mx-auto text-center">
-            <h5 class="uppercase tracking-widest text-sm"><?php echo $resources_sub_header; ?></h5>
-            <h1 class="mb-3"><?php echo $resources_header_text; ?></h1>
+<section class="resources">
+    <figure class="background_dots"  style="background: url('<?php echo $resources_background['url']; ?>')"></figure>
+    <div class="resources_wrapper">
+        <div class="resources_header max-w-xl mx-auto text-center">
+            <h5><?php echo $resources_sub_header; ?></h5>
+            <h1><?php echo $resources_header_text; ?></h1>
             <?php echo $resources_header_content; ?>
         </div>
-        <div class="mt-20 max-w-4xl mx-auto relative">
+        <div class="carousel_wrapper">
             <?php get_template_part('template-parts/global/pulsating-button-carousel-left'); ?>
             <?php get_template_part('template-parts/global/pulsating-button-carousel-right'); ?>
             <div class="carousel">
@@ -28,16 +28,16 @@
                                 <figure class="hero">
                                     <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
                                 </figure>
-                                <div class="max-w-xs mx-auto flex flex-col items-center text-center">
+                                <div class="cell_content">
                                     <div>
-                                        <h4 class="mb-0"><?php echo $sub_header; ?></h4>
+                                        <h4 ><?php echo $sub_header; ?></h4>
                                         <?php echo $content; ?>
                                     </div>
-                                    <div class="flex items-center">
-                                        <figure class="mr-1 w-3">
+                                    <div class="presentation_time">
+                                        <figure>
                                             <img src="<?php echo $footer['image']['url']; ?>" alt="<?php echo $footer['image']['alt']; ?>" />
                                         </figure>
-                                        <span class="text-xs uppercase font-magdelinBold block"><?php echo $footer['text']; ?></span>
+                                        <span><?php echo $footer['text']; ?></span>
                                     </div>
                                 </div>
                             </div>

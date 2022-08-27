@@ -1,3 +1,11 @@
+.pulsating__button__container {
+	display: none;
+
+	@media screen and (min-width: 768px) {
+		display: block;
+	}
+}
+
 .pulsating__button__container .bg,
 .pulsating__button,
 .plus_button {
