@@ -13,15 +13,24 @@
 	display: flex;
 	flex-direction: column;
 
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: 990px) {
 		flex-direction: row;
 	}
 }
 
 .icap .image_container {
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: 990px) {
 		width: 50%;
 		flex: none;
+
+		figure {
+			height: 100%;
+
+			img {
+				height: 100%;
+				object-fit: cover;
+			}
+		}
 	}
 }
 
@@ -31,7 +40,7 @@
 	justify-content: center;
 	background: var(--gsap-blue);
 
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: 990px) {
 		width: 50%;
 	}
 }
@@ -46,7 +55,7 @@
 		font-family: var(--magdelinBold), sans-serif;
 	 	margin: 1.5rem 0;
 
-		@media screen and (min-width: 768px) {
+		@media screen and (min-width: 990px) {
 			margin-bottom: 1.5rem;
 		}
 	}
@@ -135,7 +144,7 @@
 	max-width: 32rem;
 	padding: 0 1.25rem;
 
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: 990px) {
 		padding: 0;
 	}
 }
@@ -176,7 +185,7 @@
 	max-width: 80rem;
 	padding: 0 2rem;
 
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: 990px) {
 		flex-direction: row;
 		padding: 0;
 	}
@@ -198,7 +207,7 @@
 			margin-bottom: 0.25rem;
 		}
 
-		@media screen and (min-width: 768px) {
+		@media screen and (min-width: 990px) {
 			width: 33.333333%;
 			margin-right: 3rem;
 

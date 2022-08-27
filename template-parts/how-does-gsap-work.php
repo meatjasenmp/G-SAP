@@ -57,7 +57,7 @@
         <?php endforeach; ?>
     </div>
     <div class="earned_results">
-        <div class="container">
+        <div class="earned_results_container">
             <div class="wrapper">
                 <div class="column_1">
                     <figure>

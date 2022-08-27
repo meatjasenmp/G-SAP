@@ -1,8 +1,6 @@
 .footer_wrapper {
 	text-align: center;
 	padding: 5rem 0;
-	display: flex;
-	flex-direction: column;
 	max-width: 48rem;
 	margin: 0 auto;
 
@@ -14,7 +12,7 @@
 .footer_wrapper .gsap_logo_combined {
 	display: flex;
 	width: 16rem;
-	margin: 2rem 0;
+	margin: 2rem auto;
 
 	.image {
 		position: relative;

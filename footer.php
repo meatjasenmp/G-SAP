@@ -4,7 +4,7 @@
     $site_copyright = get_group_field('site_footer', 'copyright', 'option');
 ?>
             <footer>
-                <div class="footer_wrapper max-w-3xl mx-auto py-20 flex flex-col items-center text-center">
+                <div class="footer_wrapper">
                     <h1><?php echo $site_footer_cta['header']; ?></h1>
                     <?php echo $site_footer_cta['content']; ?>
                     <div class="gsap_logo_combined">

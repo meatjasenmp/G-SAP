@@ -15,6 +15,12 @@
 	}
 }
 
+.about .portrait_image_container {
+	@media screen and (min-width: 768px) {
+		margin-right: 1rem;
+	}
+}
+
 .about .portrait_image_wrapper {
 	position: relative;
 }
@@ -64,7 +70,7 @@
 	right: 0;
 	z-index: 10;
 
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: 990px) {
 		bottom: 3.5rem;
 	}
 
@@ -125,7 +131,15 @@
 	margin-top: 5rem;
 
 	figure {
-		max-width: 42rem;
+		max-width: 22rem;
 		margin: 0 auto;
+
+		@media screen and (min-width: 990px) {
+			max-width: 30rem;
+		}
+
+		@media screen and (min-width: 1200px) {
+			max-width: 42rem;
+		}
 	}
 }
