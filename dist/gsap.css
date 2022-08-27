@@ -889,8 +889,9 @@ footer a, .copyright a {
 .copyright_wrapper {
   margin: 0 auto;
   max-width: 28rem;
-  font-size: .75rem;
-  text-align: center; }
+  font-size: .65rem;
+  text-align: center;
+  padding: 0 0.20rem; }
 
 .site_banner {
   display: flex;
