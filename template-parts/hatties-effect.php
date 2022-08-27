@@ -21,7 +21,7 @@
                     <h1><?php echo $hatties_content_header; ?></h1>
                     <?php echo $hatties_content_content; ?>
                 </article>
-                <div>
+                <div class="table_wrapper">
                     <table>
                         <?php if($hatties_content_table['header']): ?>
                             <thead>

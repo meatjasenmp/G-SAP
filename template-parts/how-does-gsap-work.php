@@ -7,6 +7,7 @@
     $columns = $content['columns'];
     $hero_image = $content['hero_image'];
     $desktop_image = $hero_image['desktop_image'];
+    $mobile_images = $hero_image['mobile_images'];
     $earned_results = $content['earned_results'];
     $earned_results_column = $earned_results['earned_results_column'];
     $earned_results_column_image = $earned_results_column['image'];
@@ -46,6 +47,14 @@
     </div>
     <div class="hero_image">
         <img src="<?php echo $desktop_image['url']; ?>" alt="<?php echo $desktop_image['alt']; ?>">
+    </div>
+    <div class="hero_images_mobile">
+        <?php foreach($mobile_images as $image): ?>
+            <div>
+                <h3><?php echo $image['label']; ?></h3>
+                <img src="<?php echo $image['image']['url']; ?>" alt="<?php echo $image['image']['alt']; ?>">
+            </div>
+        <?php endforeach; ?>
     </div>
     <div class="earned_results">
         <div class="container">

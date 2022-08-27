@@ -1,11 +1,14 @@
 .hatties_effect  {
 	width: 100vw;
-	margin-top: 5rem;
 	margin-right: -50vw;
 	margin-left: -50vw;
 	right: 50%;
 	left: 50%;
 	position: relative;
+
+	@media screen and (min-width: 768px) {
+		margin-top: 5rem;
+	}
 }
 
 .hatties_effect .background_dots {
@@ -20,8 +23,7 @@
 .hatties_effect .wrapper {
 	max-width: 1440px;
 	margin: 0 auto;
-	padding-top: 3rem;
-	padding-bottom: 5rem;
+	padding: 3rem 0;
 }
 
 .hatties_effect .inner_wrapper {
@@ -36,17 +38,32 @@
 }
 
 .hatties_effect .content {
-	display: flex;
-	max-width: 64rem;
-	margin: 4rem auto 0 auto;
+	@media screen and (min-width: 768px) {
+		display: flex;
+		max-width: 64rem;
+		margin: 4rem auto 0 auto;
+	}
+
 	article {
-		flex: none;
-		max-width: 24em;
-		margin-right: 5rem;
+		padding: 0 1.35rem;
+		text-align: center;
+
+		@media screen and (min-width: 768px) {
+			flex: none;
+			max-width: 24em;
+			margin-right: 5rem;
+			text-align: left;
+			padding: 0;
+		}
+
 		h1 {
 			text-transform: uppercase;
 		}
 	}
+}
+
+.hatties_effect .table_wrapper {
+	padding: 0 1rem;
 }
 
 .hatties_effect table {
@@ -57,13 +74,21 @@
 	background: #FFF;
 	font-size: 0.875rem;
 	line-height: 1.25rem;
+	margin-top: 1.5rem;
+
+	@media screen and (min-width: 768px) {
+		margin-top: 0;
+	}
+
 	thead tr {
 		background: var(--gsap-blue);
+		color: #FFF;
 		text-transform: uppercase;
 		font-size: 0.75rem;
 		line-height: 1rem;
 		text-align: left;
 	}
+
 	thead th {
 		border-left-width: 1px;
 		border-right-width: 1px;
@@ -71,10 +96,12 @@
 		border-color: rgb(241, 245, 249);
 		padding: .5rem 1rem .5rem 1rem;
 	}
+
 	tbody tr:first-child {
 		background: var(--gsap-green);
 		font-family: var(--magdelinBold), sans-serif;
 	}
+
 	tbody td {
 		border-left-width: 1px;
 		border-right-width: 1px;
