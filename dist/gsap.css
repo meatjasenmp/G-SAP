@@ -624,17 +624,14 @@ header .wrapper {
 header .navigation_container {
   margin-left: 10rem; }
 
-body {
+.page_wrap {
+  position: relative;
+  padding: 3rem;
   overflow-x: hidden;
   font-family: var(--magdelin), sans-serif;
   font-weight: 300;
   max-width: 1440px;
   margin: 0 auto; }
-
-.page_wrap {
-  position: relative;
-  padding: 3rem;
-  overflow-x: hidden; }
 
 .gsap_logo_combined {
   display: flex;
@@ -1386,7 +1383,11 @@ footer a, .copyright a {
 .icap_banner_content_footer_header_content {
   text-align: center;
   margin: 0 auto;
-  max-width: 32rem; }
+  max-width: 32rem;
+  padding: 0 1.25rem; }
+  @media screen and (min-width: 768px) {
+    .icap_banner_content_footer_header_content {
+      padding: 0; } }
 
 .learn_more_columns {
   position: relative;
@@ -1406,7 +1407,7 @@ footer a, .copyright a {
   margin: 0 auto;
   padding-bottom: 5rem;
   padding-top: 3rem; }
-  .learn_more_columns_wrapper h3 {
+  .learn_more_columns_wrapper .sub_header {
     text-transform: uppercase;
     text-align: center;
     font-family: var(--magdelin), sans-serif;
@@ -1415,7 +1416,7 @@ footer a, .copyright a {
 .learn_more_columns_wrapper .columns {
   display: flex;
   flex-direction: column;
-  margin: 3rem auto 0 auto;
+  margin: 1rem auto 0 auto;
   max-width: 80rem;
   padding: 0 2rem; }
   @media screen and (min-width: 768px) {
@@ -1469,7 +1470,8 @@ footer a, .copyright a {
 .resources_header {
   text-align: center;
   margin: 0 auto;
-  max-width: 36rem; }
+  max-width: 36rem;
+  padding: 0 1.25rem; }
   .resources_header h5 {
     text-transform: uppercase;
     letter-spacing: 0.1em;

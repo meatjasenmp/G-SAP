@@ -1,15 +1,11 @@
-body {
+.page_wrap {
+	position: relative;
+	padding: 3rem;
 	overflow-x: hidden;
 	font-family: var(--magdelin), sans-serif;
 	font-weight: 300;
 	max-width: 1440px;
 	margin: 0 auto;
-}
-
-.page_wrap {
-	position: relative;
-	padding: 3rem;
-	overflow-x: hidden;
 }
 
 .gsap_logo_combined {

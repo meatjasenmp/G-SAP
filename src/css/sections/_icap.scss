@@ -133,6 +133,11 @@
 	text-align: center;
 	margin: 0 auto;
 	max-width: 32rem;
+	padding: 0 1.25rem;
+
+	@media screen and (min-width: 768px) {
+		padding: 0;
+	}
 }
 
 .learn_more_columns {
@@ -156,7 +161,7 @@
 	padding-bottom: 5rem;
 	padding-top: 3rem;
 
-	h3 {
+	.sub_header {
 		text-transform: uppercase;
 		text-align: center;
 		font-family: var(--magdelin), sans-serif;
@@ -167,7 +172,7 @@
 .learn_more_columns_wrapper .columns {
 	display: flex;
 	flex-direction: column;
-	margin: 3rem auto 0 auto;
+	margin: 1rem auto 0 auto;
 	max-width: 80rem;
 	padding: 0 2rem;
 

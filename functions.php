@@ -22,6 +22,6 @@ if ( function_exists( 'get_field' ) ) {
 }
 
 
-wp_enqueue_style('css', get_template_directory_uri()."/dist/app.css", null, "1.0.0", false);
-wp_enqueue_script('js', get_template_directory_uri()."/dist/app.js", null, "1.0.0", true);
+wp_enqueue_style('css', get_template_directory_uri()."/dist/gsap.css", null, "1.0.0", false);
+wp_enqueue_script('js', get_template_directory_uri()."/dist/gsap.js", null, "1.0.0", true);
 wp_enqueue_style('custom-font', get_template_directory_uri()."/MyFontsWebfontsKit.css", null, "1.0.0", false);
