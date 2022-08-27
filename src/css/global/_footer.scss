@@ -1,0 +1,54 @@
+.footer_wrapper {
+	text-align: center;
+	padding: 5rem 0;
+	display: flex;
+	flex-direction: column;
+	max-width: 48rem;
+	margin: 0 auto;
+
+	h1 {
+		color: var(--gsap-blue);
+	}
+}
+
+.footer_wrapper .gsap_logo_combined {
+	display: flex;
+	width: 16rem;
+	margin: 2rem 0;
+
+	.image {
+		position: relative;
+		z-index: 10;
+	}
+
+	.life_circle {
+		margin-left: -7rem;
+	}
+}
+
+.site_tagline {
+	text-transform: uppercase;
+	display: block;
+	font-family: var(--magdelinBold), sans-serif;
+	color: var(--gsap-gray);
+	font-size: .75rem;
+}
+
+.copyright {
+	background: black;
+	color: white;
+	width: 100vw;
+	margin-right: -50vw;
+	margin-left: -50vw;
+	right: 50%;
+	left: 50%;
+	position: relative;
+	padding: 1rem 0;
+}
+
+.copyright_wrapper {
+	margin: 0 auto;
+	max-width: 28rem;
+	font-size: .75rem;
+	text-align: center;
+}
