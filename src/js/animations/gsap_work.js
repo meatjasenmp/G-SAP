@@ -25,7 +25,7 @@ const gsapWorkColumnAnimations = () => {
     ".column_content",
     { opacity: 0, x: 50 },
     { opacity: 1, x: 0, duration: 1.5, ease: "power4.out", stagger: 0.25 },
-    "-=.90"
+    "-=1.15"
   );
 };
 
@@ -44,6 +44,21 @@ const gsapWorkColumnContentImagesAnimations = () => {
   );
 };
 
+const gsapImageAnimations = () => {
+  gsapWorkTimeline.fromTo(
+    ".hero_image",
+    { opacity: 0, y: 50 },
+    { opacity: 1, y: 0, duration: 1.5, ease: "power4.out", stagger: 0.25 },
+    "-=1.75"
+  );
+  gsapWorkTimeline.fromTo(
+    ".hero_images_mobile div",
+    { opacity: 0, y: 50 },
+    { opacity: 1, y: 0, duration: 1.5, ease: "power4.out", stagger: 0.25 },
+    "-=1.75"
+  );
+};
+
 const gsapWorkScrollTrigger = () => {
   ScrollTrigger.create({
     trigger: ".how",
@@ -51,6 +66,7 @@ const gsapWorkScrollTrigger = () => {
       gsapWorkHeaderAnimations();
       gsapWorkColumnAnimations();
       gsapWorkColumnContentImagesAnimations();
+      gsapImageAnimations();
     },
   });
 };

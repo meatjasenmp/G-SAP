@@ -47,12 +47,12 @@
             <?php endforeach; ?>
         </div>
     </div>
-    <div class="hero_image">
+    <div class="hero_image opacity-0">
         <img src="<?php echo $desktop_image['url']; ?>" alt="<?php echo $desktop_image['alt']; ?>">
     </div>
     <div class="hero_images_mobile">
         <?php foreach($mobile_images as $image): ?>
-            <div>
+            <div class="opacity-0">
                 <h3><?php echo $image['label']; ?></h3>
                 <img src="<?php echo $image['image']['url']; ?>" alt="<?php echo $image['image']['alt']; ?>">
             </div>
