@@ -9,16 +9,16 @@
 
 <section class="site_banner">
     <article>
-        <h1><?php echo $page_banner_header; ?></h1>
+        <h1 class="banner_header opacity-0"><?php echo $page_banner_header; ?></h1>
 
-        <div class="banner_content">
+        <div class="banner_content opacity-0">
             <?php echo $page_banner_content_content; ?>
         </div>
 
-        <ul>
+        <ul class="banner_content_bullets">
             <?php foreach($page_banner_content_list as $list): ?>
                 <?php foreach($list as $item): $content = $item['list_content']; $list_bullet = $item['list_bullet'] ?>
-                    <li>
+                    <li class="opacity-0">
                         <img src="<?php echo $list_bullet['url']; ?>" alt="<?php echo $list_bullet['alt']; ?>">
                         <span><?php echo $content; ?></span>
                     </li>

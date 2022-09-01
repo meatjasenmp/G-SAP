@@ -4,21 +4,44 @@ import { GSDevTools } from "gsap/GSDevTools";
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(GSDevTools);
+const bannerTimeline = gsap.timeline();
 
 const bannerImageContainerAnimations = () => {
-  const tl = gsap.timeline();
-  tl.fromTo(
+  bannerTimeline.fromTo(
     ".banner_images",
     { opacity: 0, y: 100 },
     { opacity: 1, y: 0, duration: 1.5, ease: "power4.out" }
   );
-  tl.fromTo(
+  bannerTimeline.fromTo(
     ".life_circle",
     { opacity: 0, y: 100, rotate: 90 },
     { opacity: 1, y: 0, rotate: 0, duration: 1.5, ease: "power4.out" },
-    "-=.99"
+    "-=1.20"
   );
-  GSDevTools.create({ animation: tl });
+};
+
+const bannerImageTextAnimations = () => {
+  bannerTimeline.fromTo(
+    ".banner_header",
+    { opacity: 0, y: 100 },
+    { opacity: 1, y: 0, duration: 1.5, ease: "power4.out" },
+    "-=2.15"
+  );
+  bannerTimeline.fromTo(
+    ".banner_content",
+    { opacity: 0, y: 100 },
+    { opacity: 1, y: 0, duration: 1.5, ease: "power4.out", delay: 0.25 },
+    "-=2.20"
+  );
+};
+
+const bannerImageBulletAnimations = () => {
+  bannerTimeline.fromTo(
+    ".banner_content_bullets li",
+    { opacity: 0, y: 25 },
+    { opacity: 1, y: 0, duration: 1.5, ease: "power4.out", stagger: 0.2 },
+    "-=1.5"
+  );
 };
 
 const bannerScrollTrigger = () => {
@@ -26,8 +49,17 @@ const bannerScrollTrigger = () => {
     trigger: ".site_banner",
     onEnter: () => {
       bannerImageContainerAnimations();
+      bannerImageTextAnimations();
+    },
+  });
+  ScrollTrigger.create({
+    trigger: ".banner_content_bullets",
+    onEnter: () => {
+      bannerImageBulletAnimations();
     },
   });
 };
+
+GSDevTools.create({ animation: bannerTimeline });
 
 export default bannerScrollTrigger;
