@@ -564,6 +564,9 @@ video {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
 }
+.opacity-0{
+  opacity: 0;
+}
 .outline-0{
   outline-width: 0px;
 }

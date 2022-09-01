@@ -12,6 +12,7 @@
     "chart.js": "^3.9.1",
     "flickity": "^3.0.0",
     "fslightbox": "^3.3.1",
+    "gsap": "npm:@gsap/business",
     "plyr": "^3.6.12"
   },
   "devDependencies": {

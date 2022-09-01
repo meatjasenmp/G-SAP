@@ -11,7 +11,9 @@
     <article>
         <h1><?php echo $page_banner_header; ?></h1>
 
-        <?php echo $page_banner_content_content; ?>
+        <div class="banner_content">
+            <?php echo $page_banner_content_content; ?>
+        </div>
 
         <ul>
             <?php foreach($page_banner_content_list as $list): ?>
@@ -26,10 +28,10 @@
 
     </article>
     <div class="banner_image_container">
-        <figure class="absolute life_circle">
+        <figure class="absolute life_circle opacity-0">
             <?php get_template_part('template-parts/global/life-circle'); ?>
         </figure>
-        <div class="banner_images">
+        <div class="banner_images opacity-0">
             <?php foreach($page_banner_images as $page_banner_image): $image = $page_banner_image['image']; $label = $page_banner_image['label'] ?>
                 <div>
                     <p><?php echo $label; ?></p>
