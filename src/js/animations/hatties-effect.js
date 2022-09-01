@@ -1,9 +1,7 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { GSDevTools } from "gsap/GSDevTools";
 
 gsap.registerPlugin(ScrollTrigger);
-gsap.registerPlugin(GSDevTools);
 const hattiesEffectTimeline = gsap.timeline();
 
 const hattiesEffectPulsatingButtonAnimation = () => {
@@ -50,7 +48,5 @@ const hattiesEffectScrollTrigger = () => {
     },
   });
 };
-
-GSDevTools.create({ animation: hattiesEffectTimeline });
 
 export default hattiesEffectScrollTrigger;

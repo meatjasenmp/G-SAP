@@ -21,18 +21,18 @@
 <section class="about">
     <div class="wrapper">
         <div class="portrait_image_title portrait_image_title_mobile">
-            <h5 class="text-gsap-orange tracking-wider"><?php echo $biography_content_sub_header; ?></h5>
-            <span class="biography_image_name"><?php echo $biography_image_title_name; ?></span>
-            <span class="biography_image_title"><?php echo $biography_image_title_title; ?></span>
+            <h5 class="text-gsap-orange tracking-wider opacity-0"><?php echo $biography_content_sub_header; ?></h5>
+            <span class="biography_image_name opacity-0"><?php echo $biography_image_title_name; ?></span>
+            <span class="biography_image_title opacity-0"><?php echo $biography_image_title_title; ?></span>
         </div>
         <div class="portrait_image_container">
             <figure class="portrait_image_wrapper">
                 <div class="portrait_image_title">
-                    <span class="biography_image_name"><?php echo $biography_image_title_name; ?></span>
-                    <span class="biography_image_title"><?php echo $biography_image_title_title; ?></span>
+                    <span class="biography_image_name opacity-0"><?php echo $biography_image_title_name; ?></span>
+                    <span class="biography_image_title opacity-0"><?php echo $biography_image_title_title; ?></span>
                 </div>
-                <img class="portrait_image" src="<?php echo $biography_image_image['url']; ?>" alt="<?php echo $biography_image_image['alt']; ?>">
-                <figure class="life_circle">
+                <img class="portrait_image opacity-0" src="<?php echo $biography_image_image['url']; ?>" alt="<?php echo $biography_image_image['alt']; ?>">
+                <figure class="life_circle opacity-0">
                     <?php get_template_part('template-parts/global/life-circle'); ?>
                 </figure>
             </figure>
@@ -40,7 +40,9 @@
         <div class="biography_wrapper">
             <h5 class="text-gsap-orange tracking-wider"><?php echo $biography_content_sub_header; ?></h5>
             <h2><?php echo $biography_content_header; ?></h2>
-            <?php echo $biography_content_content; ?>
+            <div class="biography_wrapper_content">
+                <?php echo $biography_content_content; ?>
+            </div>
 <!--            <figure class="arrow">-->
 <!--                <img src="--><?php //echo $biography_arrow['url']; ?><!--" alt="--><?php //echo $biography_arrow['alt']; ?><!--">-->
 <!--            </figure>-->

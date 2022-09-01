@@ -12,7 +12,7 @@ const bannerImageContainerAnimations = () => {
     { opacity: 1, y: 0, duration: 1.5, ease: "power4.out" }
   );
   bannerTimeline.fromTo(
-    ".life_circle",
+    ".banner_image_container .life_circle",
     { opacity: 0, y: 100, rotate: 90 },
     { opacity: 1, y: 0, rotate: 0, duration: 1.5, ease: "power4.out" },
     "-=1.20"

@@ -5,6 +5,7 @@ import charts from "./js/charts";
 import bannerScrollTrigger from "./js/animations/banner";
 import gsapWorkScrollTrigger from "./js/animations/gsap_work";
 import hattiesEffectScrollTrigger from "./js/animations/hatties-effect";
+import aboutScrollTrigger from "./js/animations/about";
 
 window.addEventListener(
   "load",
@@ -13,6 +14,7 @@ window.addEventListener(
     bannerScrollTrigger();
     gsapWorkScrollTrigger();
     hattiesEffectScrollTrigger();
+    aboutScrollTrigger();
     carousel();
     charts();
   },

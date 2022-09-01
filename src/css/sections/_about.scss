@@ -26,9 +26,7 @@
 }
 
 .about .portrait_image_title {
-	position: absolute;
-	left: 3rem;
-	top: 3rem;
+	position: relative;
 	display: none;
 
 	span {
@@ -37,6 +35,10 @@
 
 	.biography_image_name {
 		font-family: var(--magdelinBold), sans-serif;
+	}
+
+	@media screen and (min-width: 768px) {
+		display: block;
 	}
 }
 

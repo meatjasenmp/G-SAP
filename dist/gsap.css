@@ -1200,14 +1200,15 @@ footer {
   position: relative; }
 
 .about .portrait_image_title {
-  position: absolute;
-  left: 3rem;
-  top: 3rem;
+  position: relative;
   display: none; }
   .about .portrait_image_title span {
     display: block; }
   .about .portrait_image_title .biography_image_name {
     font-family: var(--magdelinBold), sans-serif; }
+  @media screen and (min-width: 768px) {
+    .about .portrait_image_title {
+      display: block; } }
 
 .about .portrait_image_title_mobile {
   position: relative;
