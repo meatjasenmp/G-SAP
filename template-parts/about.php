@@ -49,10 +49,10 @@
         </div>
     </div>
     <div class="mission_statement">
-        <h5><?php echo $about_mission_statement_subheader; ?></h5>
-        <p><?php echo strip_tags($about_mission_statement_content, ''); ?></p>
+        <h5 class="opacity-0"><?php echo $about_mission_statement_subheader; ?></h5>
+        <p class="opacity-0"><?php echo strip_tags($about_mission_statement_content, ''); ?></p>
     </div>
-    <div class="quote_image">
+    <div class="quote_image opacity-0">
         <figure>
             <img src="<?php echo $about_quote_image['url'] ?>" alt="<?php echo $about_quote_image['alt'] ?>">
         </figure>

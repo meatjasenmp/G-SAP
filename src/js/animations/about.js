@@ -41,12 +41,38 @@ const aboutImageContainerAnimations = () => {
   );
 };
 
+const missionStatementAnimations = () => {
+  aboutTimeline.fromTo(
+    ".mission_statement h5",
+    { opacity: 0, y: 50 },
+    { opacity: 1, y: 0, duration: 1.5, ease: "power4.out" },
+    "-=1.25"
+  );
+  aboutTimeline.fromTo(
+    ".mission_statement p",
+    { opacity: 0, y: 50 },
+    { opacity: 1, y: 0, duration: 1.5, ease: "power4.out" },
+    "-=1.25"
+  );
+};
+
+const quoteImageAnimation = () => {
+  aboutTimeline.fromTo(
+    ".quote_image",
+    { opacity: 0, y: 50 },
+    { opacity: 1, y: 0, duration: 1.5, ease: "power4.out" },
+    "-=1.35"
+  );
+};
+
 const aboutScrollTrigger = () => {
   ScrollTrigger.create({
     trigger: ".about",
     onEnter: () => {
       aboutAboutTextAnimations();
       aboutImageContainerAnimations();
+      missionStatementAnimations();
+      quoteImageAnimation();
     },
   });
 };
