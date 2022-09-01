@@ -24,22 +24,24 @@
 ?>
 
 <section class="how">
-    <h1><?php echo $content_header; ?></h1>
-    <figure class="down_arrow">
+    <h1 class="how_header opacity-0"><?php echo $content_header; ?></h1>
+    <figure class="down_arrow opacity-0">
         <img src="<?php echo $arrow['url']; ?>" alt="<?php echo $arrow['alt']; ?>">
     </figure>
     <div class="columns">
-        <div class="column">
+        <div class="column column_content opacity-0">
             <?php echo $content_content; ?>
         </div>
-        <div class="column">
+        <div class="column column_content_images">
             <?php foreach($columns as $column):  ?>
                 <?php foreach($column as $item): $image = $item['image']; $content = $item['content'] ?>
                     <div class="column">
-                        <figure>
+                        <figure class="opacity-0">
                             <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
                         </figure>
-                        <?php echo $content; ?>
+                       <article class="opacity-0">
+                           <?php echo $content; ?>
+                       </article>
                     </div>
                 <?php endforeach; ?>
             <?php endforeach; ?>

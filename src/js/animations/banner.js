@@ -1,9 +1,8 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { GSDevTools } from "gsap/GSDevTools";
 
 gsap.registerPlugin(ScrollTrigger);
-gsap.registerPlugin(GSDevTools);
+
 const bannerTimeline = gsap.timeline();
 
 const bannerImageContainerAnimations = () => {
@@ -59,7 +58,5 @@ const bannerScrollTrigger = () => {
     },
   });
 };
-
-GSDevTools.create({ animation: bannerTimeline });
 
 export default bannerScrollTrigger;
