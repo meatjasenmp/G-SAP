@@ -1,4 +1,4 @@
-<div class="pulsating__button__container">
+<div class="pulsating__button__container opacity-0">
     <div class="bg"></div>
     <div class="bg"></div>
     <button class="pulsating__button">

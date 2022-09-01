@@ -15,13 +15,15 @@
 
     <div class="wrapper">
         <div class="inner_wrapper">
-            <h4><?php echo $hatties_cta; ?></h4>
+            <h4 class="opacity-0"><?php echo $hatties_cta; ?></h4>
             <div class="content">
                 <article>
-                    <h1><?php echo $hatties_content_header; ?></h1>
-                    <?php echo $hatties_content_content; ?>
+                    <h1 class="opacity-0"><?php echo $hatties_content_header; ?></h1>
+                    <div class="hatties_effect_content opacity-0">
+                        <?php echo $hatties_content_content; ?>
+                    </div>
                 </article>
-                <div class="table_wrapper">
+                <div class="table_wrapper opacity-0">
                     <table>
                         <?php if($hatties_content_table['header']): ?>
                             <thead>

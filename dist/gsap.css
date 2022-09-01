@@ -594,7 +594,8 @@ header .navigation_container {
   font-family: var(--magdelin), sans-serif;
   font-weight: 300;
   max-width: 1440px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow-x: hidden; }
 
 .gsap_logo_combined {
   display: flex;
@@ -736,10 +737,7 @@ footer a, .copyright a {
   text-decoration: underline; }
 
 .pulsating__button__container {
-  display: none; }
-  @media screen and (min-width: 1200px) {
-    .pulsating__button__container {
-      display: block; } }
+  display: block; }
 
 .pulsating__button__container .bg,
 .pulsating__button,

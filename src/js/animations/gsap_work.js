@@ -1,9 +1,8 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { GSDevTools } from "gsap/GSDevTools";
 
 gsap.registerPlugin(ScrollTrigger);
-gsap.registerPlugin(GSDevTools);
+
 const gsapWorkTimeline = gsap.timeline();
 
 const gsapWorkHeaderAnimations = () => {
@@ -84,6 +83,18 @@ const earnedResultsAnimations = () => {
     { opacity: 1, x: 0, duration: 1.5, ease: "power4.out", stagger: 0.25 },
     "-=1.45"
   );
+  gsapWorkTimeline.fromTo(
+    ".student_invest_of_time header",
+    { opacity: 0, x: 25 },
+    { opacity: 1, x: 0, duration: 1.5, ease: "power4.out", stagger: 0.25 },
+    "-=1.25"
+  );
+  gsapWorkTimeline.fromTo(
+    ".student_invest_of_time_content",
+    { opacity: 0, y: 25 },
+    { opacity: 1, y: 0, duration: 1.5, ease: "power4.out", stagger: 0.25 },
+    "-=1.20"
+  );
 };
 
 const gsapWorkScrollTrigger = () => {
@@ -98,7 +109,5 @@ const gsapWorkScrollTrigger = () => {
     },
   });
 };
-
-GSDevTools.create({ animation: gsapWorkTimeline });
 
 export default gsapWorkScrollTrigger;

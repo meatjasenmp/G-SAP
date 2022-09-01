@@ -87,11 +87,13 @@
             </div>
         </div>
         <div class="student_invest_of_time">
-            <header>
+            <header class="opacity-0">
                 <img src="<?php echo $student_investment_of_time_header_image['url']; ?>" alt="<?php echo $student_investment_of_time_header_image['alt']; ?>">
                 <span><?php echo $student_invest_of_time_header_text; ?></span>
             </header>
-            <?php echo $student_investment_of_time_content; ?>
+            <div class="student_invest_of_time_content opacity-0">
+                <?php echo $student_investment_of_time_content; ?>
+            </div>
         </div>
     </div>
 </section>
