@@ -62,17 +62,17 @@
         <div class="earned_results_container">
             <div class="wrapper">
                 <div class="column_1">
-                    <figure>
+                    <figure class="opacity-0">
                         <img src="<?php echo $earned_results_column_image['url']; ?>" alt="<?php echo $earned_results_column_image['alt']; ?>">
                     </figure>
-                    <h1><?php echo $earned_results_column_title; ?></h1>
+                    <h1 class="opacity-0"><?php echo $earned_results_column_title; ?></h1>
                 </div>
                 <div class="column_2">
                     <div class="column_2_wrapper">
                         <?php $i = 0; foreach($earned_results_list as $list): ?>
                             <?php foreach($list as $item ): $checkbox = $item['checkbox']; $text = $item['text']; ?>
                                 <?php echo ($i % 2 === 0) ? '<div>' : '';  $i++; ?>
-                                    <div class="column_2_item">
+                                    <div class="column_2_item opacity-0">
                                         <img src="<?php echo $checkbox['url']; ?>" alt="<?php echo $checkbox['alt']; ?>">
                                         <span><?php echo $text; ?></span>
                                     </div>
@@ -80,7 +80,7 @@
                             <?php endforeach; ?>
                         <?php endforeach; ?>
                     </div>
-                    <div class="column_2_text">
+                    <div class="column_2_text opacity-0">
                         <?php echo strip_tags($earned_results_content_column_content, '<strong><em>'); ?>
                     </div>
                 </div>

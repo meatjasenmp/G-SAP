@@ -59,6 +59,33 @@ const gsapImageAnimations = () => {
   );
 };
 
+const earnedResultsAnimations = () => {
+  gsapWorkTimeline.fromTo(
+    ".column_1 figure",
+    { opacity: 0, x: 50 },
+    { opacity: 1, x: 0, duration: 1.5, ease: "power4.out" },
+    "-=1.95"
+  );
+  gsapWorkTimeline.fromTo(
+    ".column_1 h1",
+    { opacity: 0, y: 50 },
+    { opacity: 1, y: 0, duration: 1.5, ease: "power4.out" },
+    "-=2"
+  );
+  gsapWorkTimeline.fromTo(
+    ".column_2 .column_2_item",
+    { opacity: 0, y: 25 },
+    { opacity: 1, y: 0, duration: 1.5, ease: "power4.out", stagger: 0.25 },
+    "-=1.95"
+  );
+  gsapWorkTimeline.fromTo(
+    ".column_2 .column_2_text",
+    { opacity: 0, x: 25 },
+    { opacity: 1, x: 0, duration: 1.5, ease: "power4.out", stagger: 0.25 },
+    "-=1.45"
+  );
+};
+
 const gsapWorkScrollTrigger = () => {
   ScrollTrigger.create({
     trigger: ".how",
@@ -67,6 +94,7 @@ const gsapWorkScrollTrigger = () => {
       gsapWorkColumnAnimations();
       gsapWorkColumnContentImagesAnimations();
       gsapImageAnimations();
+      earnedResultsAnimations();
     },
   });
 };
