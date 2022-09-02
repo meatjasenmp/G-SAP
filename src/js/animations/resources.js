@@ -15,18 +15,20 @@ const resourceHeaderAnimation = () => {
     ".resources_header h1",
     { opacity: 0, y: 50 },
     { opacity: 1, y: 0, duration: 1.5, ease: "power4.out" },
-    "-=1.5"
+    "-=1.25"
   );
   resourcesTimeline.fromTo(
     ".resources_header article",
     { opacity: 0, y: 50 },
     { opacity: 1, y: 0, duration: 1.5, ease: "power4.out" },
-    "-=1.35"
+    "-=1.25"
   );
 };
 const resourcesScrollTrigger = () => {
   ScrollTrigger.create({
     trigger: ".resources",
+    markers: true,
+    start: "+=75",
     onEnter: () => {
       resourceHeaderAnimation();
     },
