@@ -77,6 +77,6 @@ const aboutScrollTrigger = () => {
   });
 };
 
-GSDevTools.create({ animation: aboutTimeline });
+// GSDevTools.create({ animation: aboutTimeline });
 
 export default aboutScrollTrigger;
