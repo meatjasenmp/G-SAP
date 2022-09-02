@@ -41,14 +41,12 @@ const hattiesEffectContentAnimations = () => {
 const hattiesEffectScrollTrigger = () => {
   ScrollTrigger.create({
     trigger: ".hatties_effect",
-    once: true,
     onEnter: () => {
       hattiesEffectPulsatingButtonAnimation();
     },
   });
   ScrollTrigger.create({
     trigger: ".hatties_effect .inner_wrapper",
-    once: true,
     onEnter: () => {
       hattiesEffectContentAnimations();
     },
