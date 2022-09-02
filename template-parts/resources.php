@@ -13,9 +13,11 @@
     <figure class="background_dots"  style="background: url('<?php echo $resources_background['url']; ?>')"></figure>
     <div class="resources_wrapper">
         <div class="resources_header max-w-xl mx-auto text-center">
-            <h5><?php echo $resources_sub_header; ?></h5>
-            <h1><?php echo $resources_header_text; ?></h1>
-            <?php echo $resources_header_content; ?>
+            <h5 class="opacity-0"><?php echo $resources_sub_header; ?></h5>
+            <h1 class="opacity-0"><?php echo $resources_header_text; ?></h1>
+            <article class="opacity-0">
+                <?php echo $resources_header_content; ?>
+            </article>
         </div>
         <div class="carousel_wrapper">
             <?php get_template_part('template-parts/global/pulsating-button-carousel-left'); ?>

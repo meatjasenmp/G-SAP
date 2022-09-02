@@ -7,6 +7,7 @@ import gsapWorkScrollTrigger from "./js/animations/gsap_work";
 import hattiesEffectScrollTrigger from "./js/animations/hatties-effect";
 import aboutScrollTrigger from "./js/animations/about";
 import icapScrollTrigger from "./js/animations/icap";
+import resourcesScrollTrigger from "./js/animations/resources";
 
 window.addEventListener(
   "load",
@@ -17,6 +18,7 @@ window.addEventListener(
     hattiesEffectScrollTrigger();
     aboutScrollTrigger();
     icapScrollTrigger();
+    resourcesScrollTrigger();
     carousel();
     charts();
   },

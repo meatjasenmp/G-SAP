@@ -1,9 +1,7 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { GSDevTools } from "gsap/GSDevTools";
 
 gsap.registerPlugin(ScrollTrigger);
-gsap.registerPlugin(GSDevTools);
 
 const icapTimeline = gsap.timeline();
 
@@ -85,7 +83,5 @@ const iCapScrollTrigger = () => {
     },
   });
 };
-
-GSDevTools.create({ animation: icapTimeline });
 
 export default iCapScrollTrigger;
