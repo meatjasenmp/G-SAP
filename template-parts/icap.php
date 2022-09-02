@@ -18,19 +18,19 @@
 ?>
 <section class="icap">
     <div class="wrapper">
-        <div class="image_container">
+        <div class="image_container opacity-0">
             <figure>
                 <img src="<?php echo $icap_banner_image['url']; ?>" alt="<?php echo $icap_banner_image['alt']; ?>">
             </figure>
         </div>
         <div class="icap_columns">
             <div class="icap_columns_wrapper">
-                <div class="icap_banner_content_header">
+                <div class="icap_banner_content_header opacity-0">
                     <?php echo $icap_banner_content_header; ?>
                 </div>
                 <div class="columns">
                     <?php foreach($icap_banner_content_columns as $item): $column_image = $item['column']['image']; $column_image_list = $item['column']['list']; $column_arrow = $item['column']['arrow'] ?>
-                        <div class="column">
+                        <div class="column opacity-0">
                             <figure class="column_image">
                                 <img src="<?php echo $column_image['url']; ?>" alt="<?php echo $column_image['alt']; ?>" />
                             </figure>
@@ -50,18 +50,18 @@
                 <div class="graduation">
                     <div class="graduation_wrapper">
                         <div class="graduation_graphic">
-                            <div class="graduation_graphic_text">
+                            <div class="graduation_graphic_text opacity-0">
                                 <figure>
                                     <img src="<?php echo $icap_banner_content_footer_header_image['url']; ?>" alt="<?php echo $icap_banner_content_footer_header_image['alt']; ?>" />
                                 </figure>
                                 <h4><?php echo $icap_banner_content_footer_header_text; ?></h4>
                             </div>
-                            <figure class="graduation_graphic_underline">
+                            <figure class="graduation_graphic_underline opacity-0">
                                 <img src="<?php echo $icap_banner_content_footer_header_underline['url'];?>" alt="<?php echo $icap_banner_content_footer_header_underline['alt'];?>" />
                             </figure>
                         </div>
                     </div>
-                    <div class="icap_banner_content_footer_header_content">
+                    <div class="icap_banner_content_footer_header_content opacity-0">
                         <?php echo $icap_banner_content_footer_header_content; ?>
                     </div>
                 </div>

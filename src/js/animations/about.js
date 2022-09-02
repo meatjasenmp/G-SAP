@@ -1,9 +1,7 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { GSDevTools } from "gsap/GSDevTools";
 
 gsap.registerPlugin(ScrollTrigger);
-gsap.registerPlugin(GSDevTools);
 const aboutTimeline = gsap.timeline();
 
 const aboutAboutTextAnimations = () => {
@@ -76,7 +74,5 @@ const aboutScrollTrigger = () => {
     },
   });
 };
-
-// GSDevTools.create({ animation: aboutTimeline });
 
 export default aboutScrollTrigger;
