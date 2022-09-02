@@ -113,7 +113,6 @@ const gsapWorkScrollTrigger = () => {
   ScrollTrigger.create({
     trigger: ".hero_images",
     once: true,
-    markers: true,
     start: "top bottom-=100px",
     onEnter: () => {
       gsapImageAnimations();
