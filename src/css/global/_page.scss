@@ -5,6 +5,11 @@
 	font-weight: 300;
 	max-width: 1440px;
 	margin: 0 auto;
+	overflow-x: hidden;
+
+	@media screen and (min-width: 1440px) {
+		overflow-x: visible;
+	}
 }
 
 .gsap_logo_combined {

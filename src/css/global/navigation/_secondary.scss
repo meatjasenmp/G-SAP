@@ -4,9 +4,12 @@
 	bottom: 50%;
 	right: 2rem;
 	z-index: 100;
-	display: flex;
 	align-items: center;
+	display: none;
 
+	@media (hover: hover) and (min-width: 1200px) {
+		display: flex;
+	}
 
 	.badges div,
 	.bullets div {

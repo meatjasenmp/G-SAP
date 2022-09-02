@@ -594,7 +594,11 @@ header .navigation_container {
   font-family: var(--magdelin), sans-serif;
   font-weight: 300;
   max-width: 1440px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow-x: hidden; }
+  @media screen and (min-width: 1440px) {
+    .page_wrap {
+      overflow-x: visible; } }
 
 .gsap_logo_combined {
   display: flex;
@@ -632,8 +636,11 @@ header .navigation_container {
   bottom: 50%;
   right: 2rem;
   z-index: 100;
-  display: flex;
-  align-items: center; }
+  align-items: center;
+  display: none; }
+  @media (hover: hover) and (min-width: 1200px) {
+    .secondary_nav {
+      display: flex; } }
   .secondary_nav .badges div,
   .secondary_nav .bullets div {
     margin-bottom: .5rem; }
