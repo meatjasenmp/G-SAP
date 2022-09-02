@@ -9,12 +9,13 @@ import aboutScrollTrigger from "./js/animations/about";
 import icapScrollTrigger from "./js/animations/icap";
 import resourcesScrollTrigger from "./js/animations/resources";
 import footerScrollTrigger from "./js/animations/footer";
-import navigation from "./js/navigation";
+import { navigation, navigationBadges } from "./js/navigation";
 
 window.addEventListener(
   "load",
   function () {
     navigation();
+    navigationBadges();
     banner();
     bannerScrollTrigger();
     gsapWorkScrollTrigger();

@@ -3,48 +3,77 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
 gsap.registerPlugin(ScrollToPlugin);
 
-const navigation = () => {
-  const homeNav = document.querySelector(".home_nav a");
-  homeNav.addEventListener("click", (e) => {
-    e.preventDefault();
-    gsap.to(window, { duration: 1, scrollTo: ".page_wrap" });
-  });
+export const navigation = () => {
+  const homeNav = document.querySelectorAll(".home_nav a");
+  for (let nav of homeNav) {
+    nav.addEventListener("click", (e) => {
+      e.preventDefault();
+      gsap.to(window, { duration: 1, scrollTo: ".page_wrap" });
+    });
+  }
 
-  const overviewNav = document.querySelector(".overview_nav a");
-  overviewNav.addEventListener("click", (e) => {
-    e.preventDefault();
-    gsap.to(window, { duration: 1, scrollTo: ".hatties_effect" });
-  });
+  const overviewNav = document.querySelectorAll(".overview_nav a");
+  for (let nav of overviewNav) {
+    nav.addEventListener("click", (e) => {
+      e.preventDefault();
+      gsap.to(window, { duration: 1, scrollTo: ".hatties_effect" });
+    });
+  }
 
-  const aboutNav = document.querySelector(".about_nav a");
-  aboutNav.addEventListener("click", (e) => {
-    e.preventDefault();
-    gsap.to(window, { duration: 1, scrollTo: ".about" });
-  });
+  const aboutNav = document.querySelectorAll(".about_nav a");
+  for (let nav of aboutNav) {
+    nav.addEventListener("click", (e) => {
+      e.preventDefault();
+      gsap.to(window, { duration: 1, scrollTo: ".about" });
+    });
+  }
 
-  const resultsNav = document.querySelector(".results_nav a");
-  resultsNav.addEventListener("click", (e) => {
-    e.preventDefault();
-    gsap.to(window, { duration: 1, scrollTo: ".results" });
-  });
+  const resultsNav = document.querySelectorAll(".results_nav a");
+  for (let nav of resultsNav) {
+    nav.addEventListener("click", (e) => {
+      e.preventDefault();
+      gsap.to(window, { duration: 1, scrollTo: ".results" });
+    });
+  }
 
-  const resourcesNav = document.querySelector(".resources_nav a");
-  resourcesNav.addEventListener("click", (e) => {
-    e.preventDefault();
-    gsap.to(window, { duration: 1, scrollTo: ".resources" });
-  });
+  const resourcesNav = document.querySelectorAll(".resources_nav a");
+  for (let nav of resourcesNav) {
+    nav.addEventListener("click", (e) => {
+      e.preventDefault();
+      gsap.to(window, { duration: 1, scrollTo: ".resources" });
+    });
+  }
 
-  const ribbonNav = document.querySelector(".ribbon a");
-  ribbonNav.addEventListener("click", (e) => {
-    e.preventDefault();
-    gsap.to(window, { duration: 1, scrollTo: "footer" });
-  });
+  const ribbonNav = document.querySelectorAll(".ribbon a");
+  for (let nav of ribbonNav) {
+    nav.addEventListener("click", (e) => {
+      e.preventDefault();
+      gsap.to(window, { duration: 1, scrollTo: "footer" });
+    });
+  }
 
-  const contactNav = document.querySelector(".contact_nav a");
-  contactNav.addEventListener("click", (e) => {
-    e.preventDefault();
-    gsap.to(window, { duration: 1, scrollTo: "footer" });
-  });
+  const contactNav = document.querySelectorAll(".contact_nav a");
+  for (let nav of contactNav) {
+    nav.addEventListener("click", (e) => {
+      e.preventDefault();
+      gsap.to(window, { duration: 1, scrollTo: "footer" });
+    });
+  }
 };
 
-export default navigation;
+export const navigationBadges = () => {
+  const bullets = document.querySelectorAll(".bullets div a");
+  for (let bullet of bullets) {
+    const badgeName = bullet.dataset.badge;
+    const currentBadge = document.querySelector(
+      `div[data-badge="${badgeName}"]`
+    );
+
+    bullet.addEventListener("mouseenter", (e) => {
+      currentBadge.classList.add("active");
+    });
+    bullet.addEventListener("mouseleave", (e) => {
+      currentBadge.classList.remove("active");
+    });
+  }
+};

@@ -12,10 +12,10 @@
             <a data-badge="home" href=""></a>
         </div>
         <div class="overview_nav">
-          <a data-badge="home" href=""></a>
+          <a data-badge="overview" href=""></a>
         </div>
         <div class="about_nav">
-            <a data-badge="home" href=""></a>
+            <a data-badge="about" href=""></a>
         </div>
         <div class="results_nav">
             <a data-badge="results" href=""></a>
