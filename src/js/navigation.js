@@ -7,7 +7,7 @@ const navigation = () => {
   const homeNav = document.querySelector(".home_nav a");
   homeNav.addEventListener("click", (e) => {
     e.preventDefault();
-    gsap.to(window, { duration: 1, scrollTo: ".site_banner" });
+    gsap.to(window, { duration: 1, scrollTo: ".page_wrap" });
   });
 
   const overviewNav = document.querySelector(".overview_nav a");

@@ -1,0 +1,51 @@
+.secondary_nav {
+	position: fixed;
+	top: 50%;
+	bottom: 50%;
+	right: 1.5rem;
+	width: 20px;
+	z-index: 100;
+
+	div {
+		margin-bottom: .95rem;
+	}
+
+	a {
+		display: flex;
+		align-items: center;
+		position: relative;
+
+		.badge {
+			background: var(--gsap-blue);
+			color: white;
+			font-family: var(--magdelinBold), sans-serif;
+			font-size: 1rem;
+			padding: .5rem 1.35rem;
+			border-radius: 20px;
+			position: absolute;
+			left: -5.5rem;
+			top: -1rem;
+			transition: all .3s ease-in-out;
+			opacity: 0;
+		}
+
+		span {
+			background: #C7C7C7;
+			border-radius: 50%;
+			width: 11px;
+			height: 11px;
+			display: block;
+			transition: all 0.3s ease;
+		}
+
+		&:hover {
+			span {
+				background: var(--gsap-blue);
+			}
+			.badge {
+				opacity: 1;
+			}
+		}
+	}
+
+}

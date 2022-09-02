@@ -12,6 +12,7 @@
 <body>
     <div class="<?php echo is_front_page() ? 'page-home' : 'page' ?> page_wrap">
         <?php get_template_part('template-parts/global/ribbon'); ?>
+        <?php get_template_part('template-parts/navigation/secondary'); ?>
         <header>
             <div class="wrapper">
                 <div>
