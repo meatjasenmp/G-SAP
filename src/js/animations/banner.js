@@ -49,11 +49,6 @@ const bannerScrollTrigger = () => {
     onEnter: () => {
       bannerImageContainerAnimations();
       bannerImageTextAnimations();
-    },
-  });
-  ScrollTrigger.create({
-    trigger: ".banner_content_bullets",
-    onEnter: () => {
       bannerImageBulletAnimations();
     },
   });

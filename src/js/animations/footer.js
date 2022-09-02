@@ -1,9 +1,7 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { GSDevTools } from "gsap/GSDevTools";
 
 gsap.registerPlugin(ScrollTrigger);
-gsap.registerPlugin(GSDevTools);
 
 const footerTimeline = gsap.timeline();
 
@@ -47,7 +45,5 @@ const footerScrollTrigger = () => {
     },
   });
 };
-
-GSDevTools.create({ animation: footerTimeline });
 
 export default footerScrollTrigger;

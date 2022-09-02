@@ -594,8 +594,7 @@ header .navigation_container {
   font-family: var(--magdelin), sans-serif;
   font-weight: 300;
   max-width: 1440px;
-  margin: 0 auto;
-  overflow-x: hidden; }
+  margin: 0 auto; }
 
 .gsap_logo_combined {
   display: flex;
