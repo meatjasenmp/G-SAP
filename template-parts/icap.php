@@ -72,13 +72,15 @@
         <?php get_template_part('template-parts/global/pulsating-button'); ?>
         <figure class="background_dots" style="background: url('<?php echo $icap_learn_more_background_image['url']; ?>')"></figure>
         <div class="learn_more_columns_wrapper">
-            <h4 class="sub_header"><?php echo $icap_learn_more_sub_header; ?></h4>
+            <h4 class="sub_header opacity-0"><?php echo $icap_learn_more_sub_header; ?></h4>
             <div class="columns">
                 <?php foreach($icap_learn_more_columns as $column): $column_sub_header = $column['column']['sub_header']; $column_header = $column['column']['header']; $column_content = $column['column']['content']; ?>
                     <div class="column">
-                        <span><?php echo $column_sub_header; ?></span>
-                        <h4><?php echo $column_header; ?></h4>
-                        <?php echo $column_content; ?>
+                        <span class="opacity-0"><?php echo $column_sub_header; ?></span>
+                        <h4 class="opacity-0"><?php echo $column_header; ?></h4>
+                        <article class="opacity-0">
+                            <?php echo $column_content; ?>
+                        </article>
                     </div>
                 <?php endforeach; ?>
             </div>
