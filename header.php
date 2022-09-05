@@ -13,6 +13,12 @@
     <div class="<?php echo is_front_page() ? 'page-home' : 'page' ?> page_wrap">
         <?php get_template_part('template-parts/global/ribbon'); ?>
         <?php get_template_part('template-parts/navigation/secondary'); ?>
+        <?php get_template_part('template-parts/navigation/mobile'); ?>
+        <div class="mobile_menu_icon">
+            <div class="mobile_menu_icon_line"></div>
+            <div class="mobile_menu_icon_line"></div>
+            <div class="mobile_menu_icon_line"></div>
+        </div>
         <header>
             <div class="wrapper">
                 <div>
@@ -20,15 +26,6 @@
                 </div>
                 <div class="navigation_container">
                     <?php get_template_part('template-parts/navigation/primary'); ?>
-                </div>
-                <div class="mobile_menu_container">
-                    <div class="mobile_menu">
-                        <div class="mobile_menu_icon">
-                            <div class="mobile_menu_icon_line"></div>
-                            <div class="mobile_menu_icon_line"></div>
-                            <div class="mobile_menu_icon_line"></div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </header>

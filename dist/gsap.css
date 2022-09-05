@@ -632,19 +632,21 @@ header .navigation_container {
 
 .mobile_menu_icon {
   display: block;
-  position: relative;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
   width: 25px;
   height: 15px;
   padding: 10px;
   cursor: pointer;
-  z-index: 100; }
+  z-index: 99999; }
   .mobile_menu_icon .mobile_menu_icon_line {
     position: absolute;
     left: 0;
     width: 100%;
     height: 2px;
     background-color: var(--gsap-blue);
-    transition: all 0.2s ease-in-out; }
+    transition: all 0.25s ease-in-out; }
     .mobile_menu_icon .mobile_menu_icon_line:nth-child(1) {
       top: 0; }
     .mobile_menu_icon .mobile_menu_icon_line:nth-child(2) {
@@ -652,14 +654,48 @@ header .navigation_container {
       transform: translateY(-50%); }
     .mobile_menu_icon .mobile_menu_icon_line:nth-child(3) {
       bottom: 0; }
-  .mobile_menu_icon.active .mobile_menu_icon_line:nth-child(1) {
-    top: 50%;
-    transform: translateY(-50%) rotate(45deg); }
-  .mobile_menu_icon.active .mobile_menu_icon_line:nth-child(2) {
-    opacity: 0; }
-  .mobile_menu_icon.active .mobile_menu_icon_line:nth-child(3) {
-    bottom: 50%;
-    transform: translateY(50%) rotate(-45deg); }
+  .mobile_menu_icon.active .mobile_menu_icon_line {
+    background-color: white; }
+    .mobile_menu_icon.active .mobile_menu_icon_line:nth-child(1) {
+      top: 50%;
+      transform: translateY(-50%) rotate(45deg); }
+    .mobile_menu_icon.active .mobile_menu_icon_line:nth-child(2) {
+      opacity: 0; }
+    .mobile_menu_icon.active .mobile_menu_icon_line:nth-child(3) {
+      bottom: 50%;
+      transform: translateY(50%) rotate(-45deg); }
+  @media screen and (min-width: 990px) {
+    .mobile_menu_icon {
+      display: none; } }
+
+aside .primary_navigation {
+  height: 100vh;
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50vw;
+  padding: 3rem 1.25rem;
+  transform: translateX(100%);
+  transition: all 0.3s ease;
+  background: var(--gsap-blue); }
+  @media screen and (min-width: 768px) {
+    aside .primary_navigation {
+      width: 350px; } }
+  aside .primary_navigation.active {
+    transform: translateX(0); }
+
+aside a {
+  color: white; }
+
+aside .primary_navigation ul {
+  display: block; }
+  aside .primary_navigation ul li {
+    margin-bottom: .65rem; }
+
+@media screen and (min-width: 990px) {
+  aside {
+    display: none; } }
 
 .secondary_nav {
   position: fixed;

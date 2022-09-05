@@ -1,18 +1,21 @@
+
 .mobile_menu_icon {
 	display: block;
-	position: relative;
+	position: fixed;
+	top: 2rem;
+	right: 2rem;
 	width: 25px;
 	height: 15px;
 	padding: 10px;
 	cursor: pointer;
-	z-index: 100;
+	z-index: 99999;
 	.mobile_menu_icon_line {
 		position: absolute;
 		left: 0;
 		width: 100%;
 		height: 2px;
 		background-color: var(--gsap-blue);
-		transition: all 0.2s ease-in-out;
+		transition: all 0.25s ease-in-out;
 		&:nth-child(1) {
 			top: 0;
 		}
@@ -26,6 +29,7 @@
 	}
 	&.active {
 		.mobile_menu_icon_line {
+			background-color: white;
 			&:nth-child(1) {
 				top: 50%;
 				transform: translateY(-50%) rotate(45deg);
@@ -38,5 +42,48 @@
 				transform: translateY(50%) rotate(-45deg);
 			}
 		}
+	}
+
+	@media screen and (min-width: 990px) {
+		display: none;
+	}
+}
+
+aside {
+	.primary_navigation {
+		height: 100vh;
+		z-index: 9999;
+		position: fixed;
+		top: 0;
+		right: 0;
+		width: 50vw;
+		padding: 3rem 1.25rem;
+		transform: translateX(100%);
+		transition: all 0.3s ease;
+		background: var(--gsap-blue);
+
+		@media screen and (min-width: 768px) {
+			width: 350px;
+		}
+
+		&.active {
+			transform: translateX(0);
+		}
+	}
+
+	a {
+		color: white;
+	}
+
+	.primary_navigation ul {
+		display: block;
+
+		li {
+			margin-bottom: .65rem;
+		}
+	}
+
+	@media screen and (min-width: 990px) {
+		display: none;
 	}
 }

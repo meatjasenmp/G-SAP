@@ -80,8 +80,12 @@ export const navigationBadges = () => {
 
 export const mobileMenu = () => {
   const menu = document.querySelector(".mobile_menu_icon");
+  const offCanvasMobileMenu = document.querySelector(
+    ".off-canvas_mobile_menu .primary_navigation"
+  );
 
   menu.addEventListener("click", (e) => {
     menu.classList.toggle("active");
+    offCanvasMobileMenu.classList.toggle("active");
   });
 };
