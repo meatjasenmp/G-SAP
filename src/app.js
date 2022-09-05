@@ -9,11 +9,12 @@ import aboutScrollTrigger from "./js/animations/about";
 import icapScrollTrigger from "./js/animations/icap";
 import resourcesScrollTrigger from "./js/animations/resources";
 import footerScrollTrigger from "./js/animations/footer";
-import { navigation, navigationBadges } from "./js/navigation";
+import { navigation, navigationBadges, mobileMenu } from "./js/navigation";
 
 window.addEventListener(
   "load",
   function () {
+    mobileMenu();
     navigation();
     navigationBadges();
     banner();

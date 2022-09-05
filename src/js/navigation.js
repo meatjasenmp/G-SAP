@@ -77,3 +77,11 @@ export const navigationBadges = () => {
     });
   }
 };
+
+export const mobileMenu = () => {
+  const menu = document.querySelector(".mobile_menu_icon");
+
+  menu.addEventListener("click", (e) => {
+    menu.classList.toggle("active");
+  });
+};

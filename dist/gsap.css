@@ -630,6 +630,37 @@ header .navigation_container {
     .primary_navigation ul {
       display: flex; } }
 
+.mobile_menu_icon {
+  display: block;
+  position: relative;
+  width: 25px;
+  height: 15px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 100; }
+  .mobile_menu_icon .mobile_menu_icon_line {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--gsap-blue);
+    transition: all 0.2s ease-in-out; }
+    .mobile_menu_icon .mobile_menu_icon_line:nth-child(1) {
+      top: 0; }
+    .mobile_menu_icon .mobile_menu_icon_line:nth-child(2) {
+      top: 50%;
+      transform: translateY(-50%); }
+    .mobile_menu_icon .mobile_menu_icon_line:nth-child(3) {
+      bottom: 0; }
+  .mobile_menu_icon.active .mobile_menu_icon_line:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg); }
+  .mobile_menu_icon.active .mobile_menu_icon_line:nth-child(2) {
+    opacity: 0; }
+  .mobile_menu_icon.active .mobile_menu_icon_line:nth-child(3) {
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg); }
+
 .secondary_nav {
   position: fixed;
   top: 50%;

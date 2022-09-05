@@ -21,5 +21,14 @@
                 <div class="navigation_container">
                     <?php get_template_part('template-parts/navigation/primary'); ?>
                 </div>
+                <div class="mobile_menu_container">
+                    <div class="mobile_menu">
+                        <div class="mobile_menu_icon">
+                            <div class="mobile_menu_icon_line"></div>
+                            <div class="mobile_menu_icon_line"></div>
+                            <div class="mobile_menu_icon_line"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </header>
