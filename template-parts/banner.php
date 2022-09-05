@@ -32,8 +32,8 @@
             <?php get_template_part('template-parts/global/life-circle'); ?>
         </figure>
         <div class="banner_images opacity-0">
-            <?php foreach($page_banner_images as $page_banner_image): $image = $page_banner_image['image']; $label = $page_banner_image['label'] ?>
-                <div>
+            <?php foreach($page_banner_images as $key => $page_banner_image): $image = $page_banner_image['image']; $label = $page_banner_image['label']; ?>
+                <div class="banner_image_slide <?php echo $key === 0 ? 'active' : '' ?>">
                     <p><?php echo $label; ?></p>
                     <figure>
                         <img class="banner_image" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">

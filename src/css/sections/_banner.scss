@@ -82,3 +82,11 @@
 		border-radius: 50%;
 	}
 }
+
+.banner_image_slide {
+	opacity: 0;
+	transition: opacity 0.8s ease;
+	&.active {
+		opacity: 1;
+	}
+}

@@ -10,7 +10,7 @@ const debounce = (func, delay) => {
   };
 };
 
-const banner = () => {
+export const banner = () => {
   const siteBanner = document.querySelector(".site_banner");
   if (siteBanner) {
     const bannerImagesContainer = siteBanner.querySelector(".banner_images");
