@@ -1,13 +1,14 @@
 import { gsap } from "gsap";
 
 const animateDrawer = (drawerTimeline, element) => {
-  drawerTimeline.set(element, { autoAlpha: 0 });
   drawerTimeline.to(element, {
     height: 0,
     duration: 0.5,
-    ease: "power4.easeOut",
+    ease: "power4.ease",
   });
-  drawerTimeline.reversed() ? drawerTimeline.play() : drawerTimeline.reverse();
+  drawerTimeline.reversed()
+    ? drawerTimeline.play()
+    : drawerTimeline.reverse(1.5);
 };
 
 const drawers = () => {

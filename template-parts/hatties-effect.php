@@ -11,7 +11,7 @@
 <section class="hatties_effect">
     <figure class="background_dots"  style="background: url('<?php echo $hatties_background['url']; ?>');"></figure>
     <?php get_template_part('template-parts/global/pulsating-button', null, array('id' => 'hatties_effect_drawer')); ?>
-    <div class="drawer" id="hatties_effect_drawer">
+    <div class="drawer overflow-hidden" id="hatties_effect_drawer">
         <div class="wrapper">
             <div class="inner_wrapper">
                 <h4 class="opacity-0"><?php echo $hatties_cta; ?></h4>
