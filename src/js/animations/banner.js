@@ -66,6 +66,7 @@ const bannerImageBulletAnimations = () => {
 export const bannerScrollTrigger = () => {
   ScrollTrigger.create({
     trigger: ".site_banner",
+    once: true,
     onEnter: () => {
       bannerImageContainerAnimations();
       bannerImageTextAnimations();

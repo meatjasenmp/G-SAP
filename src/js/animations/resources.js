@@ -27,6 +27,7 @@ const resourceHeaderAnimation = () => {
 const resourcesScrollTrigger = () => {
   ScrollTrigger.create({
     trigger: ".resources",
+    once: true,
     start: "-=75",
     onEnter: () => {
       resourceHeaderAnimation();

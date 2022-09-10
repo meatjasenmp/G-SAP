@@ -98,6 +98,7 @@ const earnedResultsAnimations = () => {
 const gsapWorkScrollTrigger = () => {
   ScrollTrigger.create({
     trigger: ".how",
+    once: true,
     onEnter: () => {
       gsapWorkHeaderAnimations();
       gsapWorkColumnAnimations();
@@ -106,6 +107,7 @@ const gsapWorkScrollTrigger = () => {
   });
   ScrollTrigger.create({
     trigger: ".earned_results",
+    once: true,
     onEnter: () => {
       earnedResultsAnimations();
     },
@@ -113,6 +115,7 @@ const gsapWorkScrollTrigger = () => {
   ScrollTrigger.create({
     trigger: ".hero_images",
     start: "top bottom-=100px",
+    once: true,
     onEnter: () => {
       gsapImageAnimations();
     },

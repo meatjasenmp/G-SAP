@@ -40,6 +40,7 @@ const footerContentAnimation = () => {
 const footerScrollTrigger = () => {
   ScrollTrigger.create({
     trigger: ".footer_wrapper",
+    once: true,
     onEnter: () => {
       footerContentAnimation();
     },

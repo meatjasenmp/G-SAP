@@ -85,24 +85,28 @@ const icapColumnAnimation = () => {
 const iCapScrollTrigger = () => {
   ScrollTrigger.create({
     trigger: ".icap",
+    once: true,
     onEnter: () => {
       icapHeroImageAnimation();
     },
   });
   ScrollTrigger.create({
     trigger: ".icap .icap_columns",
+    once: true,
     onEnter: () => {
       icapHeroContentAnimation();
     },
   });
   ScrollTrigger.create({
     trigger: ".icap .graduation",
+    once: true,
     onEnter: () => {
       icapGraduationAnimation();
     },
   });
   ScrollTrigger.create({
     trigger: ".icap .learn_more_columns",
+    once: true,
     onEnter: () => {
       icapPulsatingButtonAnimation();
       icapColumnAnimation();

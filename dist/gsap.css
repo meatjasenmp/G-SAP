@@ -879,6 +879,8 @@ footer a, .copyright a {
   display: flex;
   align-items: center;
   z-index: 50; }
+  .pulsating__button.active .plus__button__line-vertical {
+    opacity: 1; }
 
 .plus_button {
   position: relative;
@@ -887,21 +889,22 @@ footer a, .copyright a {
 .plus_button__line {
   background: #FFF;
   position: absolute;
-  pointer-events: none; }
-
-.plus__button__line-horizontal {
-  width: 20px;
-  height: .20rem;
+  pointer-events: none;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto; }
 
+.plus__button__line-horizontal {
+  width: 20px;
+  height: .20rem; }
+
 .plus__button__line-vertical {
   height: 20px;
   width: 3px;
-  display: none; }
+  opacity: 0;
+  transition: opacity .2s ease-in-out; }
 
 .pulsating__button__container .bg:nth-child(2) {
   -webkit-animation-delay: 0.5s;

@@ -65,24 +65,29 @@ const quoteImageAnimation = () => {
 const aboutScrollTrigger = () => {
   ScrollTrigger.create({
     trigger: ".about",
+    once: true,
     onEnter: () => {
       aboutAboutTextAnimations();
     },
   });
   ScrollTrigger.create({
     trigger: ".about .portrait_image",
+    once: true,
     onEnter: () => {
       aboutImageContainerAnimations();
     },
   });
   ScrollTrigger.create({
     trigger: ".about .mission_statement",
+
+    once: true,
     onEnter: () => {
       missionStatementAnimations();
     },
   });
   ScrollTrigger.create({
     trigger: ".about .quote_image",
+    once: true,
     onEnter: () => {
       quoteImageAnimation();
     },
