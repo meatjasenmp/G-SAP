@@ -52,7 +52,7 @@
                         <?php endforeach; ?>
                     </div>
                     <div class="column_2_text opacity-0">
-                        <?php echo strip_tags($earned_results_content_column_content, '<strong><em>'); ?>
+                        <?php echo strip_tags($earned_results_content_column_content, '<strong><em><a>'); ?>
                     </div>
                 </div>
             </div>
