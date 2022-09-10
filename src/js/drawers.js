@@ -6,9 +6,7 @@ const animateDrawer = (drawerTimeline, element) => {
     duration: 0.5,
     ease: "power4.ease",
   });
-  drawerTimeline.reversed()
-    ? drawerTimeline.play()
-    : drawerTimeline.reverse(1.5);
+  drawerTimeline.reversed() ? drawerTimeline.play() : drawerTimeline.reverse(0);
 };
 
 const drawers = () => {
