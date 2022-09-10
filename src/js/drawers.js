@@ -1,11 +1,10 @@
 import { gsap } from "gsap";
 
-const animateDrawer = (element) => {
-  const tl = gsap
-    .timeline({ reversed: true, paused: true })
-    .to(element, { height: 0, autoAlpha: 0, duration: 0.5 }, "start+=0.001");
+const tl = gsap.timeline({ reversed: true, paused: true });
 
-  return tl.reversed() ? tl.play() : tl.reverse();
+const animateDrawer = (element) => {
+  tl.to(element, { height: 0, autoAlpha: 0, duration: 0.5 }, "start+=0.001");
+  tl.reversed() ? tl.play() : tl.reverse();
 };
 
 const drawers = () => {
