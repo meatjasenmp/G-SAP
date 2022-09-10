@@ -852,9 +852,10 @@ footer a, .copyright a {
   text-decoration: underline; }
 
 .pulsating__button__container {
-  display: block;
-  position: relative;
-  z-index: 15; }
+  display: block; }
+  .pulsating__button__container:not(.carousel_button) {
+    position: relative;
+    z-index: 15; }
 
 .pulsating__button__container .bg,
 .pulsating__button,

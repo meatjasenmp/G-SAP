@@ -1,7 +1,9 @@
 .pulsating__button__container {
 	display: block;
-	position: relative;
-	z-index: 15;
+	&:not(.carousel_button) {
+		position: relative;
+		z-index: 15;
+	}
 }
 
 .pulsating__button__container .bg,
