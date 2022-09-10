@@ -849,7 +849,9 @@ footer a, .copyright a {
   text-decoration: underline; }
 
 .pulsating__button__container {
-  display: block; }
+  display: block;
+  position: relative;
+  z-index: 2; }
 
 .pulsating__button__container .bg,
 .pulsating__button,

@@ -10,6 +10,7 @@ import icapScrollTrigger from "./js/animations/icap";
 import resourcesScrollTrigger from "./js/animations/resources";
 import footerScrollTrigger from "./js/animations/footer";
 import { navigation, navigationBadges, mobileMenu } from "./js/navigation";
+import drawers from "./js/drawers";
 
 window.addEventListener(
   "load",
@@ -27,6 +28,7 @@ window.addEventListener(
     footerScrollTrigger();
     carousel();
     charts();
+    drawers();
   },
   false
 );

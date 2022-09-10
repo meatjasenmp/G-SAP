@@ -3,7 +3,13 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const icapTimeline = gsap.timeline();
+const icapPulsatingButtonAnimation = () => {
+  gsap.fromTo(
+    ".icap .pulsating__button__container",
+    { opacity: 0, y: 50 },
+    { opacity: 1, y: 0, duration: 1.5, ease: "power4.out" }
+  );
+};
 
 const icapHeroImageAnimation = () => {
   gsap.fromTo(
@@ -98,6 +104,7 @@ const iCapScrollTrigger = () => {
   ScrollTrigger.create({
     trigger: ".icap .learn_more_columns",
     onEnter: () => {
+      icapPulsatingButtonAnimation();
       icapColumnAnimation();
     },
   });
