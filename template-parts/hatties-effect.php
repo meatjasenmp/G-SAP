@@ -8,7 +8,7 @@
     $hatties_content_table = $hatties_content['table'];
 ?>
 
-<section class="hatties_effect drawer" >
+<section class="hatties_effect">
     <figure class="background_dots"  style="background: url('<?php echo $hatties_background['url']; ?>');"></figure>
     <?php get_template_part('template-parts/global/pulsating-button', null, array('id' => 'hatties_effect_drawer')); ?>
     <div id="hatties_effect_drawer">

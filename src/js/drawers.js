@@ -3,7 +3,8 @@ import { gsap } from "gsap";
 const tl = gsap.timeline({ reversed: true, paused: true });
 
 const animateDrawer = (element) => {
-  tl.to(element, { height: 0, autoAlpha: 0, duration: 0.5 }, "start+=0.001");
+  tl.set(element, { autoAlpha: 0 });
+  tl.to(element, { height: 0, duration: 0.5, ease: "power4.easeOut" });
   tl.reversed() ? tl.play() : tl.reverse();
 };
 
