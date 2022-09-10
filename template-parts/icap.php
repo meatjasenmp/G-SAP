@@ -68,7 +68,7 @@
             </div>
         </div>
     </div>
-    <div class="learn_more_columns" id="learn_more_columns_drawer">
+    <div class="learn_more_columns drawer" id="learn_more_columns_drawer">
         <?php get_template_part('template-parts/global/pulsating-button', null, array('id' => 'learn_more_columns_drawer')); ?>
         <figure class="background_dots" style="background: url('<?php echo $icap_learn_more_background_image['url']; ?>')"></figure>
         <div class="learn_more_columns_wrapper">
