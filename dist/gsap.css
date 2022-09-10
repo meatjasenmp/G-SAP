@@ -851,7 +851,7 @@ footer a, .copyright a {
 .pulsating__button__container {
   display: block;
   position: relative;
-  z-index: 2; }
+  z-index: 15; }
 
 .pulsating__button__container .bg,
 .pulsating__button,
@@ -881,11 +881,13 @@ footer a, .copyright a {
   z-index: 50; }
 
 .plus_button {
-  position: relative; }
+  position: relative;
+  pointer-events: none; }
 
 .plus_button__line {
   background: #FFF;
-  position: absolute; }
+  position: absolute;
+  pointer-events: none; }
 
 .plus__button__line-horizontal {
   width: 20px;

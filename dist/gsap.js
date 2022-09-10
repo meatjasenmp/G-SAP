@@ -384,7 +384,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst drawers = () => {\n  const drawerButton = document.querySelectorAll(\".drawer-button\");\n\n  drawerButton.forEach((button) => {\n    button.addEventListener(\"click\", (e) => {\n      const drawerId = e.target.getAttribute(\"data-drawer\");\n      const drawer = document.getElementById(drawerId);\n      drawer.classList.toggle(\"open\");\n    });\n  });\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (drawers);\n\n\n//# sourceURL=webpack://gps/./src/js/drawers.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst drawers = () => {\n  const drawerButton = document.querySelectorAll(\".drawer-button\");\n\n  drawerButton.forEach((button) => {\n    button.addEventListener(\"click\", (e) => {\n      const drawerId = e.target.getAttribute(\"data-drawer\");\n      const drawer = document.getElementById(drawerId);\n      drawer.classList.toggle(\"closed\");\n    });\n  });\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (drawers);\n\n\n//# sourceURL=webpack://gps/./src/js/drawers.js?");
 
 /***/ }),
 

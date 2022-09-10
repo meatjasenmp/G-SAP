@@ -1,7 +1,7 @@
 .pulsating__button__container {
 	display: block;
 	position: relative;
-	z-index: 2;
+	z-index: 15;
 }
 
 .pulsating__button__container .bg,
@@ -36,11 +36,13 @@
 
 .plus_button {
 	position: relative;
+	pointer-events: none;
 }
 
 .plus_button__line {
 	background: #FFF;
 	position: absolute;
+	pointer-events: none;
 }
 
 .plus__button__line-horizontal {

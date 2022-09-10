@@ -5,7 +5,7 @@ const drawers = () => {
     button.addEventListener("click", (e) => {
       const drawerId = e.target.getAttribute("data-drawer");
       const drawer = document.getElementById(drawerId);
-      drawer.classList.toggle("open");
+      drawer.classList.toggle("closed");
     });
   });
 };
