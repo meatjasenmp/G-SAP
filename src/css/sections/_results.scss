@@ -1,0 +1,29 @@
+.life_results {
+	max-width: 470px;
+	h3 {
+		color: var(--gsap-blue);
+		font-family: var(--magdelinBold), sans-serif;
+		margin-bottom: 0;
+	}
+}
+
+.results .charts .columns {
+	@media screen and (min-width: 768px) {
+		display: flex;
+	}
+	div {
+		@media screen and (min-width: 768px) {
+			width: 50%;
+		}
+	}
+}
+
+.results .earned_results {
+	max-width: 700px;
+	margin-top: 2.5rem;
+}
+
+.results .earned_results_container {
+	width: 100%;
+	background: var(--gsap-dark-green);
+}

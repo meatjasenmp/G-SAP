@@ -29,6 +29,139 @@ const percentage = (partialValue, totalValue) => {
   return Number((partialValue / totalValue) * 100).toFixed(2);
 };
 
+const tickConfig = {
+  ticks: {
+    color: "black",
+    font: {
+      family: "MagdelinBold",
+    },
+  },
+};
+
+const titleConfig = {
+  display: true,
+  color: "black",
+  font: {
+    family: "MagdelinBold",
+    size: 20,
+  },
+};
+
+const getOrCreateTooltip = (chart) => {
+  let tooltipEl = chart.canvas.parentNode.querySelector("div");
+
+  if (!tooltipEl) {
+    tooltipEl = document.createElement("div");
+    tooltipEl.style.background = "rgba(0, 0, 0, 0.7)";
+    tooltipEl.style.borderRadius = "3px";
+    tooltipEl.style.color = "white";
+    tooltipEl.style.opacity = 1;
+    tooltipEl.style.pointerEvents = "none";
+    tooltipEl.style.position = "absolute";
+    tooltipEl.style.transform = "translate(-50%, 0)";
+    tooltipEl.style.transition = "all .1s ease";
+    tooltipEl.style.boxShadow =
+      "0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%)";
+
+    const toolTipContainer = document.createElement("div");
+    toolTipContainer.className = "tooltip-container";
+
+    tooltipEl.appendChild(toolTipContainer);
+    chart.canvas.parentNode.appendChild(tooltipEl);
+  }
+
+  return tooltipEl;
+};
+
+const externalTooltipHandler = (context) => {
+  // Tooltip Element
+  const { chart, tooltip } = context;
+  const tooltipEl = getOrCreateTooltip(chart);
+
+  // Hide if no tooltip
+  if (tooltip.opacity === 0) {
+    tooltipEl.style.opacity = 0;
+    return;
+  }
+
+  // Set Text
+  if (tooltip.body) {
+    const titleLines = tooltip.title || [];
+    const bodyLines = tooltip.body.map((b) => b.lines);
+
+    const toolTipHeader = document.createElement("header");
+
+    titleLines.forEach((title) => {
+      const titleLineDiv = document.createElement("div");
+
+      titleLineDiv.style.color = "black";
+      const text = document.createTextNode(title);
+      const h3 = document.createElement("h3");
+      h3.style.fontFamily = "MagdelinRegular";
+      h3.style.fontSize = "14px";
+      h3.style.margin = "0";
+
+      h3.appendChild(text);
+      titleLineDiv.appendChild(h3);
+      toolTipHeader.appendChild(titleLineDiv);
+    });
+
+    const toolTipBody = document.createElement("tbody");
+    bodyLines.forEach((body, i) => {
+      const colors = tooltip.labelColors[i];
+
+      const span = document.createElement("span");
+      span.style.background = colors.backgroundColor;
+      span.style.borderColor = colors.borderColor;
+      span.style.borderWidth = "2px";
+      span.style.marginRight = "10px";
+      span.style.height = "10px";
+      span.style.width = "10px";
+      span.style.display = "block";
+
+      const flexBox = document.createElement("div");
+      flexBox.style.display = "flex";
+      flexBox.style.alignItems = "center";
+
+      const p = document.createElement("p");
+      p.style.color = "black";
+      p.style.margin = "0";
+      p.style.fontFamily = "MagdelinBold";
+      p.style.textTransform = "uppercase";
+      p.style.fontSize = "12px";
+
+      const text = document.createTextNode(body[0]);
+
+      flexBox.appendChild(span);
+      p.appendChild(text);
+      flexBox.appendChild(p);
+      toolTipBody.appendChild(flexBox);
+    });
+
+    const tableRoot = tooltipEl.querySelector(".tooltip-container");
+
+    // Remove old children
+    while (tableRoot.firstChild) {
+      tableRoot.firstChild.remove();
+    }
+
+    // Add new children
+    tableRoot.appendChild(toolTipHeader);
+    tableRoot.appendChild(toolTipBody);
+  }
+
+  const { offsetLeft: positionX, offsetTop: positionY } = chart.canvas;
+
+  // Display, position, and set styles for font
+  tooltipEl.style.opacity = 1;
+  tooltipEl.style.left = positionX + tooltip.caretX + "px";
+  tooltipEl.style.top = positionY + tooltip.caretY + "px";
+  tooltipEl.style.font = tooltip.options.bodyFont.string;
+  tooltipEl.style.backgroundColor = "#FFF";
+  tooltipEl.style.padding =
+    tooltip.options.padding + "px " + tooltip.options.padding + "px";
+};
+
 const creditSufficientStudy = () => {
   const ctx = document
     .getElementById("credit-sufficient-students")
@@ -80,28 +213,39 @@ const creditSufficientStudy = () => {
       },
       options: {
         plugins: {
+          tooltip: {
+            enabled: false,
+            position: "nearest",
+            external: externalTooltipHandler,
+          },
           title: {
-            display: true,
             text: "CREDIT SUFFICIENT STUDENTS",
-            font: {
-              family: "MagdelinRegular",
-              size: 14,
-            },
+            ...titleConfig,
           },
           legend: {
             position: "bottom",
+            labels: {
+              color: "black",
+              font: {
+                family: "MagdelinBold",
+                size: 16,
+              },
+            },
           },
         },
         scales: {
           x: {
             stacked: true,
+            ...tickConfig,
           },
           y: {
             stacked: true,
+            ...tickConfig,
           },
           y2: {
             display: true,
             position: "right",
+            ...tickConfig,
           },
         },
       },

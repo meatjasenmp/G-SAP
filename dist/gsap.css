@@ -580,6 +580,7 @@ video {
   --gsap-orange: #FF8900;
   --gsap-blue: #0D3691;
   --gsap-green: #2EB16B;
+  --gsap-dark-green: #2FB26B;
   --gsap-gray: #646464;
   --magdelin: MagdelinRegular;
   --magdelinBold: MagdelinBold; }
@@ -1574,6 +1575,27 @@ footer {
         max-width: none; }
         .learn_more_columns_wrapper .columns .column:last-child {
           margin-right: 0; } }
+
+.life_results {
+  max-width: 470px; }
+  .life_results h3 {
+    color: var(--gsap-blue);
+    font-family: var(--magdelinBold), sans-serif;
+    margin-bottom: 0; }
+
+@media screen and (min-width: 768px) {
+  .results .charts .columns {
+    display: flex; }
+  .results .charts .columns div {
+    width: 50%; } }
+
+.results .earned_results {
+  max-width: 700px;
+  margin-top: 2.5rem; }
+
+.results .earned_results_container {
+  width: 100%;
+  background: var(--gsap-dark-green); }
 
 .resources {
   color: #fff;
