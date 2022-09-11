@@ -22,10 +22,10 @@
         </div>
         <div class="columns">
             <div>
-                <canvas id="chart-one"></canvas>
+                <canvas id="graduation-rate"></canvas>
             </div>
             <div>
-                <canvas id="chart-two"></canvas>
+                <canvas id="dropouts"></canvas>
             </div>
         </div>
     </section>

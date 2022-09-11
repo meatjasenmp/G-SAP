@@ -182,15 +182,15 @@ const creditSufficientStudy = () => {
         ],
         datasets: [
           {
-            label: "Total Number of Students Enrolled",
-            data: [1164, 1201, 1218, 1238, 1201, 1164, 1285],
-            backgroundColor: "#0D3691",
-            order: 1,
-          },
-          {
             label: "Total Number of Credit Sufficient Students",
             data: [995, 1061, 1027, 1011, 1012, 819, 1086],
             backgroundColor: "#FF8900",
+            order: 1,
+          },
+          {
+            label: "Total Number of Students Enrolled",
+            data: [1164, 1201, 1218, 1238, 1201, 1164, 1285],
+            backgroundColor: "#0D3691",
             order: 1,
           },
           {
@@ -253,45 +253,36 @@ const creditSufficientStudy = () => {
   }
 };
 
-const chart_one = () => {
-  const ctx = document.getElementById("chart-one").getContext("2d");
+const graduationRate = () => {
+  const ctx = document.getElementById("graduation-rate").getContext("2d");
 
   if (ctx) {
     return new Chart(ctx, {
       type: "bar",
       data: {
-        labels: [
-          2016,
-          2017,
-          2018,
-          2019,
-          2020,
-          "COVID Year 2021",
-          "Post-COVID Year 2022",
-        ],
+        labels: [2016, 2017, 2018, 2019, 2020, 2021],
         datasets: [
           {
-            label: "Total Number of Students Enrolled",
-            data: [1164, 1201, 1218, 1238, 1201, 1164, 1285],
-            backgroundColor: "#0D3691",
-            order: 1,
-          },
-          {
-            label: "Total Number of Credit Sufficient Students",
-            data: [995, 1061, 1027, 1011, 1012, 819, 1086],
+            label: "Total Number of 2 or 3-Year Cumulative Dropouts",
+            data: [136, 124, 121, 91, 107, 91],
             backgroundColor: "#FF8900",
             order: 1,
           },
           {
-            label: "Percentage of Credit Sufficient Students",
+            label: "Total Number of Students Graduating in 4 Years",
+            data: [1025, 1090, 1014, 1151, 1025, 1151],
+            backgroundColor: "#0D3691",
+            order: 1,
+          },
+          {
+            label: "API Graduation Rate",
             data: [
-              percentage(995, 1164),
-              percentage(1061, 1201),
-              percentage(1027, 1218),
-              percentage(1011, 1238),
-              percentage(1012, 1201),
-              percentage(819, 1164),
-              percentage(1086, 1285),
+              percentage(1025, 136),
+              percentage(1090, 124),
+              percentage(1014, 121),
+              percentage(1151, 91),
+              percentage(1025, 107),
+              percentage(1151, 91),
             ],
             backgroundColor: "#A5A5A5",
             type: "line",
@@ -302,28 +293,42 @@ const chart_one = () => {
       },
       options: {
         plugins: {
+          tooltip: {
+            enabled: false,
+            position: "nearest",
+            external: externalTooltipHandler,
+          },
           title: {
-            display: true,
-            text: "CREDIT SUFFICIENT STUDENTS",
-            font: {
-              family: "MagdelinRegular",
-              size: 14,
-            },
+            text: "GRADUATION RATE",
+            ...titleConfig,
           },
           legend: {
             position: "bottom",
+            labels: {
+              color: "black",
+              font: {
+                family: "MagdelinBold",
+                size: 16,
+              },
+            },
           },
+        },
+        layout: {
+          padding: 10,
         },
         scales: {
           x: {
             stacked: true,
+            ...tickConfig,
           },
           y: {
             stacked: true,
+            ...tickConfig,
           },
           y2: {
             display: true,
             position: "right",
+            ...tickConfig,
           },
         },
       },
@@ -331,77 +336,74 @@ const chart_one = () => {
   }
 };
 
-const chart_two = () => {
-  const ctx = document.getElementById("chart-two").getContext("2d");
+const dropOuts = () => {
+  const ctx = document.getElementById("dropouts").getContext("2d");
 
   if (ctx) {
     return new Chart(ctx, {
       type: "bar",
       data: {
         labels: [
-          2016,
-          2017,
-          2018,
-          2019,
-          2020,
-          "COVID Year 2021",
-          "Post-COVID Year 2022",
+          "2015-2016",
+          "2016-2017",
+          "2017-2018",
+          "2018-2019",
+          "2019-2020",
+          "2020-2021",
         ],
         datasets: [
           {
-            label: "Total Number of Students Enrolled",
-            data: [1164, 1201, 1218, 1238, 1201, 1164, 1285],
-            backgroundColor: "#0D3691",
-            order: 1,
-          },
-          {
-            label: "Total Number of Credit Sufficient Students",
-            data: [995, 1061, 1027, 1011, 1012, 819, 1086],
+            label: "Total Number of Dropouts",
+            data: [15, 8, 7, 7, 29, 20],
             backgroundColor: "#FF8900",
             order: 1,
           },
           {
-            label: "Percentage of Credit Sufficient Students",
-            data: [
-              percentage(995, 1164),
-              percentage(1061, 1201),
-              percentage(1027, 1218),
-              percentage(1011, 1238),
-              percentage(1012, 1201),
-              percentage(819, 1164),
-              percentage(1086, 1285),
-            ],
-            backgroundColor: "#A5A5A5",
-            type: "line",
-            yAxisID: "y2",
-            order: 0,
+            label: "Total Number of Students Enrolled",
+            data: [1301, 1238, 1267, 1264, 1217, 1196],
+            backgroundColor: "#0D3691",
+            order: 1,
           },
         ],
       },
       options: {
         plugins: {
+          tooltip: {
+            enabled: false,
+            position: "nearest",
+            external: externalTooltipHandler,
+          },
           title: {
-            display: true,
-            text: "CREDIT SUFFICIENT STUDENTS",
-            font: {
-              family: "MagdelinRegular",
-              size: 14,
-            },
+            text: "9TH GRADE GRADUATION RATE",
+            ...titleConfig,
           },
           legend: {
             position: "bottom",
+            labels: {
+              color: "black",
+              font: {
+                family: "MagdelinBold",
+                size: 16,
+              },
+            },
           },
+        },
+        layout: {
+          padding: 10,
         },
         scales: {
           x: {
             stacked: true,
+            ...tickConfig,
           },
           y: {
             stacked: true,
+            ...tickConfig,
           },
           y2: {
             display: true,
             position: "right",
+            ...tickConfig,
           },
         },
       },
@@ -411,8 +413,8 @@ const chart_two = () => {
 
 const charts = () => {
   creditSufficientStudy();
-  chart_one();
-  chart_two();
+  graduationRate();
+  dropOuts();
 };
 
 export default charts;
