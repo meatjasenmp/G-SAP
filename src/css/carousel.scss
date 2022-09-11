@@ -2,7 +2,7 @@
 
 .carousel-cell {
 	min-height: 100%;
-	.cell-wrap {
+	.cell-wrap .hero {
 		transform: scale(0.85);
 		transition: all 0.5s ease-out;
 	}
@@ -17,8 +17,8 @@
 }
 
 .carousel-cell.is-selected {
-	.cell-wrap {
-		transform: scale(1);
+	.cell-wrap .hero {
+		transform: scale(1.3);
 	}
 }
 

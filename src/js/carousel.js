@@ -14,10 +14,12 @@ const carousel = () => {
 
   carouselNext.addEventListener("click", function () {
     flkty.next(true);
+    flkty.resize();
   });
 
   carouselPrev.addEventListener("click", function () {
     flkty.previous(true);
+    flkty.resize();
   });
 
   return flkty;

@@ -1670,7 +1670,7 @@ footer {
 
 .carousel-cell {
   min-height: 100%; }
-  .carousel-cell .cell-wrap {
+  .carousel-cell .cell-wrap .hero {
     transform: scale(0.85);
     transition: all 0.5s ease-out; }
 
@@ -1680,8 +1680,8 @@ footer {
   .carousel-cell.is-selected {
     opacity: 1 !important; }
 
-.carousel-cell.is-selected .cell-wrap {
-  transform: scale(1); }
+.carousel-cell.is-selected .cell-wrap .hero {
+  transform: scale(1.3); }
 
 .carousel-cell .hero {
   max-width: 16rem;
