@@ -1,7 +1,7 @@
 import "./css/styles.scss";
 import banner from "./js/banner";
 import carousel from "./js/carousel";
-import charts from "./js/charts";
+import resultsScrollTrigger from "./js/animations/results";
 import bannerScrollTrigger from "./js/animations/banner";
 import gsapWorkScrollTrigger from "./js/animations/gsap_work";
 import hattiesEffectScrollTrigger from "./js/animations/hatties-effect";
@@ -27,7 +27,7 @@ window.addEventListener(
     resourcesScrollTrigger();
     footerScrollTrigger();
     carousel();
-    charts();
+    resultsScrollTrigger();
     drawers();
   },
   false

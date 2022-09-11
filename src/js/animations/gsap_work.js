@@ -59,36 +59,36 @@ const gsapImageAnimations = () => {
 const earnedResultsAnimations = () => {
   const earnedResultsTimeline = gsap.timeline();
   earnedResultsTimeline.fromTo(
-    ".column_1 figure",
+    ".how .column_1 figure",
     { opacity: 0, x: 50 },
     { opacity: 1, x: 0, duration: 1.5, ease: "power4.out" }
   );
   earnedResultsTimeline.fromTo(
-    ".column_1 h1",
+    ".how .column_1 h1",
     { opacity: 0, y: 50 },
     { opacity: 1, y: 0, duration: 1.5, ease: "power4.out" },
     "-=1.25"
   );
   earnedResultsTimeline.fromTo(
-    ".column_2 .column_2_item",
+    ".how .column_2 .column_2_item",
     { opacity: 0, y: 25 },
     { opacity: 1, y: 0, duration: 1.5, ease: "power4.out", stagger: 0.25 },
     "-=1.95"
   );
   earnedResultsTimeline.fromTo(
-    ".column_2 .column_2_text",
+    ".how .column_2 .column_2_text",
     { opacity: 0, x: 25 },
     { opacity: 1, x: 0, duration: 1.5, ease: "power4.out", stagger: 0.25 },
     "-=2"
   );
   earnedResultsTimeline.fromTo(
-    ".student_invest_of_time header",
+    ".how .student_invest_of_time header",
     { opacity: 0, x: 25 },
     { opacity: 1, x: 0, duration: 1.5, ease: "power4.out", stagger: 0.25 },
     "-=1.85"
   );
   earnedResultsTimeline.fromTo(
-    ".student_invest_of_time_content",
+    ".how .student_invest_of_time_content",
     { opacity: 0, y: 25 },
     { opacity: 1, y: 0, duration: 1.5, ease: "power4.out", stagger: 0.25 },
     "-=1.90"
@@ -106,7 +106,7 @@ const gsapWorkScrollTrigger = () => {
     },
   });
   ScrollTrigger.create({
-    trigger: ".earned_results",
+    trigger: ".how .earned_results",
     once: true,
     onEnter: () => {
       earnedResultsAnimations();

@@ -47,6 +47,19 @@ const titleConfig = {
   },
 };
 
+const legendConfig = {
+  legend: {
+    position: "bottom",
+    labels: {
+      color: "black",
+      font: {
+        family: "MagdelinRegular",
+        size: 14,
+      },
+    },
+  },
+};
+
 const getOrCreateTooltip = (chart) => {
   let tooltipEl = chart.canvas.parentNode.querySelector("div");
 
@@ -62,9 +75,11 @@ const getOrCreateTooltip = (chart) => {
     tooltipEl.style.transition = "all .1s ease";
     tooltipEl.style.boxShadow =
       "0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%)";
+    tooltipEl.style.maxWidth = "350px";
 
     const toolTipContainer = document.createElement("div");
     toolTipContainer.className = "tooltip-container";
+    toolTipContainer.style.width = "100%";
 
     tooltipEl.appendChild(toolTipContainer);
     chart.canvas.parentNode.appendChild(tooltipEl);
@@ -95,18 +110,21 @@ const externalTooltipHandler = (context) => {
       const titleLineDiv = document.createElement("div");
 
       titleLineDiv.style.color = "black";
+      titleLineDiv.style.width = "100%";
       const text = document.createTextNode(title);
       const h3 = document.createElement("h3");
       h3.style.fontFamily = "MagdelinRegular";
       h3.style.fontSize = "14px";
-      h3.style.margin = "0";
+      h3.style.marginBottom = "0.25rem";
 
       h3.appendChild(text);
       titleLineDiv.appendChild(h3);
       toolTipHeader.appendChild(titleLineDiv);
     });
 
-    const toolTipBody = document.createElement("tbody");
+    const toolTipBody = document.createElement("div");
+    toolTipBody.style.width = "100%";
+
     bodyLines.forEach((body, i) => {
       const colors = tooltip.labelColors[i];
 
@@ -121,6 +139,7 @@ const externalTooltipHandler = (context) => {
 
       const flexBox = document.createElement("div");
       flexBox.style.display = "flex";
+      flexBox.style.width = "100%";
       flexBox.style.alignItems = "center";
 
       const p = document.createElement("p");
@@ -130,7 +149,7 @@ const externalTooltipHandler = (context) => {
       p.style.textTransform = "uppercase";
       p.style.fontSize = "12px";
 
-      const text = document.createTextNode(body[0]);
+      const text = document.createTextNode(body);
 
       flexBox.appendChild(span);
       p.appendChild(text);
@@ -222,16 +241,7 @@ const creditSufficientStudy = () => {
             text: "CREDIT SUFFICIENT STUDENTS",
             ...titleConfig,
           },
-          legend: {
-            position: "bottom",
-            labels: {
-              color: "black",
-              font: {
-                family: "MagdelinBold",
-                size: 16,
-              },
-            },
-          },
+          ...legendConfig,
         },
         scales: {
           x: {
@@ -302,16 +312,7 @@ const graduationRate = () => {
             text: "GRADUATION RATE",
             ...titleConfig,
           },
-          legend: {
-            position: "bottom",
-            labels: {
-              color: "black",
-              font: {
-                family: "MagdelinBold",
-                size: 16,
-              },
-            },
-          },
+          ...legendConfig,
         },
         layout: {
           padding: 10,
@@ -374,19 +375,10 @@ const dropOuts = () => {
             external: externalTooltipHandler,
           },
           title: {
-            text: "9TH GRADE GRADUATION RATE",
+            text: "9TH GRADE  GRADUATION RATE",
             ...titleConfig,
           },
-          legend: {
-            position: "bottom",
-            labels: {
-              color: "black",
-              font: {
-                family: "MagdelinBold",
-                size: 16,
-              },
-            },
-          },
+          ...legendConfig,
         },
         layout: {
           padding: 10,

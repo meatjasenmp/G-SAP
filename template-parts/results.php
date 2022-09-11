@@ -13,8 +13,10 @@
 
 <section class="results py-20">
     <div class="life_results">
-        <h3><?php echo $results_content['header']; ?></h3>
-        <?php echo $results_content['content']; ?>
+        <h3 class="opacity-0"><?php echo $results_content['header']; ?></h3>
+       <article class="opacity-0">
+           <?php echo $results_content['content']; ?>
+       </article>
     </div>
     <section class="charts">
         <div>
