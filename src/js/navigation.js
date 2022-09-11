@@ -16,7 +16,7 @@ export const navigation = () => {
   for (let nav of overviewNav) {
     nav.addEventListener("click", (e) => {
       e.preventDefault();
-      gsap.to(window, { duration: 1, scrollTo: ".hatties_effect" });
+      gsap.to(window, { duration: 1, scrollTo: ".how" });
     });
   }
 
