@@ -2,6 +2,7 @@
     $results = get_group_field('content_blocks', 'g-sap_life_results', 29);
     $results_content = $results['content'];
     $earned_results = $results['earned_results'];
+    $earned_results_bg = $earned_results['earned_results_bg'];
     $earned_results_column = $earned_results['earned_results_column'];
     $earned_results_column_image = $earned_results_column['image'];
     $earned_results_column_title = $earned_results_column['title'];
@@ -31,7 +32,8 @@
             </div>
         </div>
     </section>
-    <div class="earned_results">
+    <div class="earned_results results">
+        <figure class="background_dots"  style="background: url('<?php echo $earned_results_bg['url']; ?>');"></figure>
         <div class="earned_results_container">
             <div class="wrapper">
                 <div class="column_1">
