@@ -1680,7 +1680,7 @@ footer {
   .carousel-cell .cell-wrap {
     padding-top: 1rem; }
   .carousel-cell .cell_content {
-    padding: 1rem 0; }
+    padding: 1rem; }
   .carousel-cell.is-selected {
     opacity: 1 !important; }
 
