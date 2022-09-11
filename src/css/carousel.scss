@@ -11,6 +11,15 @@
 .carousel-cell {
 	opacity: 0.5 !important;
 	transition: opacity 1s ease !important;
+
+	.cell-wrap {
+		padding-top: 1rem;
+	}
+
+	.cell_content {
+		padding: 1rem 0;
+	}
+
 	&.is-selected {
 		opacity: 1 !important;
 	}
@@ -24,7 +33,7 @@
 
 .carousel-cell .hero {
 	max-width: 16rem;
-	margin: 0 auto;
+	margin: 0 auto 1.5rem auto;
 }
 
 .flickity-page-dots {

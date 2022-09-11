@@ -1677,6 +1677,10 @@ footer {
 .carousel-cell {
   opacity: 0.5 !important;
   transition: opacity 1s ease !important; }
+  .carousel-cell .cell-wrap {
+    padding-top: 1rem; }
+  .carousel-cell .cell_content {
+    padding: 1rem 0; }
   .carousel-cell.is-selected {
     opacity: 1 !important; }
 
@@ -1685,7 +1689,7 @@ footer {
 
 .carousel-cell .hero {
   max-width: 16rem;
-  margin: 0 auto; }
+  margin: 0 auto 1.5rem auto; }
 
 .flickity-page-dots {
   bottom: -45px; }
