@@ -2,7 +2,7 @@ import { gsap } from "gsap";
 
 const animateDrawer = (drawerTimeline, element) => {
   drawerTimeline.to(element, {
-    height: 0,
+    height: "auto",
     duration: 0.25,
     ease: "power4.ease",
   });

@@ -71,7 +71,7 @@
     <div class="learn_more_columns">
         <?php get_template_part('template-parts/global/pulsating-button', null, array('id' => 'learn_more_columns_drawer')); ?>
         <figure class="background_dots" style="background: url('<?php echo $icap_learn_more_background_image['url']; ?>')"></figure>
-        <div class="drawer overflow-hidden" id="learn_more_columns_drawer">
+        <div class="drawer overflow-hidden h-0" id="learn_more_columns_drawer">
             <div class="learn_more_columns_wrapper">
                 <h4 class="sub_header opacity-0"><?php echo $icap_learn_more_sub_header; ?></h4>
                 <div class="columns">
