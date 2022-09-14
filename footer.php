@@ -5,19 +5,19 @@
 ?>
             <footer>
                 <div class="footer_wrapper">
-                    <h1 class="opacity-0"><?php echo $site_footer_cta['header']; ?></h1>
-                    <article class="opacity-0">
+                    <h1><?php echo $site_footer_cta['header']; ?></h1>
+                    <article>
                         <?php echo $site_footer_cta['content']; ?>
                     </article>
                     <div class="gsap_logo_combined">
-                        <div class="image opacity-0">
+                        <div class="image">
                             <?php get_template_part('template-parts/global/gsap-logo'); ?>
                         </div>
-                        <div class="life_circle opacity-0">
+                        <div class="life_circle">
                             <?php get_template_part('template-parts/global/life-circle'); ?>
                         </div>
                     </div>
-                    <span class="site_tagline opacity-0"><?php echo $site_tagline; ?></span>
+                    <span class="site_tagline"><?php echo $site_tagline; ?></span>
                 </div>
             </footer>
         </div>

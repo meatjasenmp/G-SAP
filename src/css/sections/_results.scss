@@ -1,5 +1,6 @@
 .life_results {
-	max-width: 470px;
+	max-width: 350px;
+	margin-bottom: 1.5rem;
 	h3 {
 		color: var(--gsap-blue);
 		font-family: var(--magdelinBold), sans-serif;
@@ -12,12 +13,45 @@
 	padding-bottom: 5rem;
 }
 
+.chart_content {
+	h4 {
+		margin-bottom: 0;
+	}
+}
+
+.chart_content_sm {
+	margin-top: 2rem;
+	@media screen and (min-width: 768px) {
+		padding-left: 2rem;
+		max-width: 350px;
+	}
+}
+
+.chart_content_columns {
+	margin-top: 2rem;
+	@media screen and (min-width: 768px) {
+		display: flex;
+		justify-content: space-between;
+		max-width: 850px;
+		margin: 2rem auto 0 auto;
+	}
+}
+
+.chart_content_columns div {
+	@media screen and (min-width: 768px) {
+		width: 48%;
+		&:first-child {
+			margin-right: 1.25rem;
+		}
+	}
+}
+
 .results .charts .columns {
 	margin-top: 2rem;
 	@media screen and (min-width: 768px) {
 		display: flex;
 	}
-	div {
+	.column {
 		@media screen and (min-width: 768px) {
 			width: 50%;
 		}

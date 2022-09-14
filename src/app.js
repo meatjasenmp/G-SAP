@@ -8,7 +8,6 @@ import hattiesEffectScrollTrigger from "./js/animations/hatties-effect";
 import aboutScrollTrigger from "./js/animations/about";
 import icapScrollTrigger from "./js/animations/icap";
 import resourcesScrollTrigger from "./js/animations/resources";
-import footerScrollTrigger from "./js/animations/footer";
 import { navigation, navigationBadges, mobileMenu } from "./js/navigation";
 import drawers from "./js/drawers";
 
@@ -25,7 +24,6 @@ window.addEventListener(
     aboutScrollTrigger();
     icapScrollTrigger();
     resourcesScrollTrigger();
-    footerScrollTrigger();
     carousel();
     resultsScrollTrigger();
     drawers();

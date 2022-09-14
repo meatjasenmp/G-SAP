@@ -504,11 +504,17 @@ video {
 .h-0{
   height: 0px;
 }
+.h-\[40vh\]{
+  height: 40vh;
+}
 .h-\[35px\]{
   height: 35px;
 }
 .w-16{
   width: 4rem;
+}
+.w-full{
+  width: 100%;
 }
 .w-\[35px\]{
   width: 35px;
@@ -619,7 +625,7 @@ header .navigation_container {
   position: relative; }
   @media screen and (min-width: 768px) {
     .gsap_logo_combined .circle {
-      width: -9rem; } }
+      width: 9rem; } }
 
 .primary_navigation ul {
   display: none; }
@@ -708,7 +714,7 @@ aside .primary_navigation ul {
   z-index: 100;
   align-items: center;
   display: none; }
-  @media (hover: hover) and (min-width: 1200px) {
+  @media (hover: hover) and (min-width: 1440px) {
     .secondary_nav {
       display: flex; } }
   .secondary_nav .badges div,
@@ -962,7 +968,8 @@ footer {
     position: relative;
     z-index: 10; }
   .footer_wrapper .gsap_logo_combined .life_circle {
-    margin-left: -7rem; }
+    margin-left: -7rem;
+    width: 10rem; }
 
 .site_tagline {
   text-transform: uppercase;
@@ -1607,7 +1614,8 @@ footer {
           margin-right: 0; } }
 
 .life_results {
-  max-width: 470px; }
+  max-width: 350px;
+  margin-bottom: 1.5rem; }
   .life_results h3 {
     color: var(--gsap-blue);
     font-family: var(--magdelinBold), sans-serif;
@@ -1617,12 +1625,35 @@ footer {
   padding-top: 10rem;
   padding-bottom: 5rem; }
 
+.chart_content h4 {
+  margin-bottom: 0; }
+
+.chart_content_sm {
+  margin-top: 2rem; }
+  @media screen and (min-width: 768px) {
+    .chart_content_sm {
+      padding-left: 2rem;
+      max-width: 350px; } }
+
+.chart_content_columns {
+  margin-top: 2rem; }
+  @media screen and (min-width: 768px) {
+    .chart_content_columns {
+      display: flex;
+      justify-content: space-between;
+      max-width: 850px;
+      margin: 2rem auto 0 auto; }
+  .chart_content_columns div {
+    width: 48%; }
+    .chart_content_columns div:first-child {
+      margin-right: 1.25rem; } }
+
 .results .charts .columns {
   margin-top: 2rem; }
   @media screen and (min-width: 768px) {
     .results .charts .columns {
       display: flex; }
-    .results .charts .columns div {
+    .results .charts .columns .column {
       width: 50%; } }
 
 .results .earned_results {

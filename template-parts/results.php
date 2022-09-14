@@ -1,6 +1,9 @@
 <?php
     $results = get_group_field('content_blocks', 'g-sap_life_results', 29);
     $results_content = $results['content'];
+    $credit_sufficient_students = $results_content['credit_sufficient_students'];
+    $graduation_rate = $results_content['graduation_rate'];
+    $dropout_rate = $results_content['dropout_rate'];
     $earned_results = $results['earned_results'];
     $earned_results_bg = $earned_results['earned_results_bg'];
     $earned_results_column = $earned_results['earned_results_column'];
@@ -21,14 +24,37 @@
     </div>
     <section class="charts">
         <div>
-            <canvas id="credit-sufficient-students"></canvas>
+            <div class="relative h-[40vh] w-full">
+                <canvas id="credit-sufficient-students"></canvas>
+            </div>
+            <div class="chart_content">
+                <div class="chart_content_columns">
+                    <?php foreach ($credit_sufficient_students as $student): ?>
+                        <div>
+                            <h4><?php echo $student['header']; ?></h4>
+                            <?php echo $student['content']; ?>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+            </div>
         </div>
         <div class="columns">
-            <div>
-                <canvas id="graduation-rate"></canvas>
+            <div class="column">
+                <div class="relative h-[40vh]">
+                    <canvas id="graduation-rate"></canvas>
+                </div>
+                <div class="chart_content chart_content_sm">
+                    <h4><?php echo $graduation_rate['header']; ?></h4>
+                    <?php echo $graduation_rate['content']; ?>
+                </div>
             </div>
-            <div>
-                <canvas id="dropouts"></canvas>
+            <div class="column">
+                <div class="relative h-[40vh]">
+                    <canvas id="dropouts"></canvas>
+                </div>
+                <div class="chart_content chart_content_sm">
+                    <?php echo $dropout_rate; ?>
+                </div>
             </div>
         </div>
     </section>

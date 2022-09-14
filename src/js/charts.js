@@ -243,6 +243,8 @@ const creditSufficientStudy = () => {
           },
           ...legendConfig,
         },
+        responsive: true,
+        maintainAspectRatio: false,
         scales: {
           x: {
             stacked: true,
@@ -315,8 +317,10 @@ const graduationRate = () => {
           ...legendConfig,
         },
         layout: {
-          padding: 10,
+          padding: 20,
         },
+        responsive: true,
+        maintainAspectRatio: false,
         scales: {
           x: {
             stacked: true,
@@ -381,8 +385,10 @@ const dropOuts = () => {
           ...legendConfig,
         },
         layout: {
-          padding: 10,
+          padding: 20,
         },
+        responsive: true,
+        maintainAspectRatio: false,
         scales: {
           x: {
             stacked: true,
