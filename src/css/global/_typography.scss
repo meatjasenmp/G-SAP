@@ -61,7 +61,7 @@ h3 {
 h4 {
 	--min: 1rem;
 	--val: 3vw;
-	--max: 1.25rem;
+	--max: 1rem;
 	--lh-min: 0.65;
 	--lh-val: 1.2;
 	--lh-max: 1.35;
@@ -92,4 +92,8 @@ footer, .copyright {
 	a {
 		text-decoration: underline;
 	}
+}
+
+p a {
+	text-decoration: underline;
 }

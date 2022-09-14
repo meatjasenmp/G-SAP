@@ -19,7 +19,7 @@ const hattiesEffectContentAnimations = () => {
     { opacity: 1, y: 0, duration: 1.5, ease: "power4.out" }
   );
   hattiesEffectContentAnimationsTimeline.fromTo(
-    ".hatties_effect article h1",
+    ".hatties_effect article h2",
     { opacity: 0, y: 50 },
     { opacity: 1, y: 0, duration: 1.5, ease: "power4.out" },
     "-=1.25"

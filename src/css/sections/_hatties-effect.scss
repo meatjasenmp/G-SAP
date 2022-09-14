@@ -20,6 +20,15 @@
 	background-size: cover !important;
 }
 
+.hatties_effect .outer_wrapper {
+	position: absolute;
+	margin: 0 auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
 .hatties_effect .wrapper {
 	max-width: 1440px;
 	margin: 0 auto;
@@ -39,10 +48,11 @@
 }
 
 .hatties_effect .content {
+	margin-top: 6rem;
 	@media screen and (min-width: 990px) {
 		display: flex;
 		max-width: 64rem;
-		margin: 4rem auto 0 auto;
+		margin: 8rem auto 0 auto;
 		padding: 0 2rem;
 	}
 
@@ -54,16 +64,20 @@
 
 		@media screen and (min-width: 990px) {
 			flex: none;
-			max-width: 24em;
+			max-width: 20em;
 			margin-right: 5rem;
 			text-align: left;
 			padding: 0;
 		}
 
-		h1 {
+		h2 {
 			text-transform: uppercase;
 		}
 	}
+}
+
+.hatties_effect_content p:last-child {
+	font-size: 0.7rem;
 }
 
 .hatties_effect .table_wrapper {
@@ -98,7 +112,8 @@
 		border-right-width: 1px;
 		border-bottom-width: 1px;
 		border-color: rgb(241, 245, 249);
-		padding: .5rem 1rem .5rem 1rem;
+		padding: .5rem;
+		letter-spacing: .1rem;
 	}
 
 	tbody tr:first-child {
