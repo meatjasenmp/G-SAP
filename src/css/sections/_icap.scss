@@ -152,6 +152,19 @@
 .learn_more_columns {
 	position: relative;
 	color: #000;
+
+	.sub_header {
+		text-transform: uppercase;
+		text-align: center;
+		font-family: var(--magdelin), sans-serif;
+		letter-spacing: 0.1em;
+		position: absolute;
+		margin: 0 auto;
+		top: 2.5rem;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
 }
 
 .learn_more_columns .background_dots {
@@ -167,15 +180,7 @@
 	position: relative;
 	z-index: 10;
 	margin: 0 auto;
-	padding-bottom: 5rem;
-	padding-top: 3rem;
-
-	.sub_header {
-		text-transform: uppercase;
-		text-align: center;
-		font-family: var(--magdelin), sans-serif;
-		letter-spacing: 0.1em;
-	}
+	padding: 5rem 0;
 }
 
 .learn_more_columns_wrapper .columns {

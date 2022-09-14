@@ -552,10 +552,6 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 137 0 / var(--tw-bg-opacity));
 }
-.py-20{
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
 .text-center{
   text-align: center;
 }
@@ -1554,6 +1550,17 @@ footer {
 .learn_more_columns {
   position: relative;
   color: #000; }
+  .learn_more_columns .sub_header {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: var(--magdelin), sans-serif;
+    letter-spacing: 0.1em;
+    position: absolute;
+    margin: 0 auto;
+    top: 2.5rem;
+    left: 0;
+    right: 0;
+    bottom: 0; }
 
 .learn_more_columns .background_dots {
   width: 100%;
@@ -1567,13 +1574,7 @@ footer {
   position: relative;
   z-index: 10;
   margin: 0 auto;
-  padding-bottom: 5rem;
-  padding-top: 3rem; }
-  .learn_more_columns_wrapper .sub_header {
-    text-transform: uppercase;
-    text-align: center;
-    font-family: var(--magdelin), sans-serif;
-    letter-spacing: 0.1em; }
+  padding: 5rem 0; }
 
 .learn_more_columns_wrapper .columns {
   display: flex;
@@ -1611,6 +1612,10 @@ footer {
     color: var(--gsap-blue);
     font-family: var(--magdelinBold), sans-serif;
     margin-bottom: 0; }
+
+.results {
+  padding-top: 10rem;
+  padding-bottom: 5rem; }
 
 .results .charts .columns {
   margin-top: 2rem; }
