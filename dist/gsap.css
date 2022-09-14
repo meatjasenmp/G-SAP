@@ -1358,6 +1358,13 @@ footer {
   @media screen and (min-width: 768px) {
     .about .portrait_image_title {
       display: block; } }
+  @media screen and (min-width: 990px) {
+    .about .portrait_image_title {
+      top: 5rem;
+      z-index: 2; } }
+  @media screen and (min-width: 1020px) {
+    .about .portrait_image_title {
+      top: 10rem; } }
 
 .about .portrait_image_title_mobile {
   position: relative;
@@ -1399,6 +1406,9 @@ footer {
   max-width: 400px;
   margin-top: 1rem;
   position: relative; }
+  @media screen and (min-width: 1440px) {
+    .biography_wrapper {
+      margin-right: 4rem; } }
   .biography_wrapper h5 {
     color: var(--gsap-orange);
     letter-spacing: 0.05em;
@@ -1611,8 +1621,10 @@ footer {
       width: 50%; } }
 
 .results .earned_results {
-  max-width: 700px;
   margin-top: 2.5rem; }
+  @media screen and (min-width: 990px) {
+    .results .earned_results {
+      max-width: 700px; } }
 
 .results .earned_results_container {
   width: 100%;

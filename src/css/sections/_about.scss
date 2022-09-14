@@ -40,6 +40,15 @@
 	@media screen and (min-width: 768px) {
 		display: block;
 	}
+
+	@media screen and (min-width: 990px) {
+		top: 5rem;
+		z-index: 2;
+	}
+
+	@media screen and (min-width: 1020px) {
+		top: 10rem;
+	}
 }
 
 .about .portrait_image_title_mobile {
@@ -94,6 +103,10 @@
 	margin-top: 1rem;
 	position: relative;
 
+	@media screen and (min-width: 1440px) {
+		margin-right: 4rem;
+	}
+
 	h5 {
 		color: var(--gsap-orange);
 		letter-spacing: 0.05em;
@@ -104,14 +117,6 @@
 			margin-top: 0;
 		}
 	}
-
-	//.arrow {
-	//	width: 318px;
-	//	height: 250px;
-	//	position: absolute;
-	//	right: -11rem;
-	//	bottom: -7.5rem;
-	//}
 }
 
 .about .mission_statement {
