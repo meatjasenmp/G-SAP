@@ -828,7 +828,7 @@ h3 {
   --lh-max: 1.35; }
 
 h4 {
-  --min: 1rem;
+  --min: 0.85rem;
   --val: 3vw;
   --max: 1rem;
   --lh-min: 0.65;
@@ -1630,9 +1630,11 @@ footer {
     font-family: var(--magdelinBold), sans-serif;
     margin-bottom: 0; }
 
-.results {
-  padding-top: 10rem;
-  padding-bottom: 5rem; }
+section.results {
+  padding-top: 7rem; }
+  @media screen and (min-width: 768px) {
+    section.results {
+      padding-bottom: 5rem; } }
 
 .chart_content h4 {
   margin-bottom: 0; }
