@@ -58,7 +58,7 @@
             </div>
         </div>
     </section>
-    <div class="earned_results results">
+    <div class="earned_results">
         <figure class="background_dots"  style="background: url('<?php echo $earned_results_bg['url']; ?>');"></figure>
         <div class="earned_results_container">
             <div class="wrapper">

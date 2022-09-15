@@ -12,13 +12,21 @@
 	.down_arrow {
 		width: 2rem;
 	}
+
+	& > header,
+	.columns {
+		padding: 0 3rem;
+	}
 }
+
+
 
 .how .hero_image {
 	display: none;
 
 	@media screen and (min-width: 768px) {
 		display: block;
+		padding: 0 3rem;
 	}
 }
 
@@ -26,10 +34,15 @@
 	h3 {
 		color: var(--gsap-blue);
 		margin: 0;
+		padding: 0 3rem;
 	}
 
 	@media screen and (min-width: 768px) {
 		display: none;
+	}
+
+	img {
+		padding: 0 1.25rem;
 	}
 
 	div {

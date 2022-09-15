@@ -592,14 +592,15 @@ video {
 
 header .wrapper {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  padding: 0 3rem; }
 
 header .navigation_container {
   margin-left: 6rem; }
 
 .page_wrap {
   position: relative;
-  padding: 3rem;
+  padding: 3rem 0;
   font-family: var(--magdelin), sans-serif;
   font-weight: 300;
   max-width: 1440px;
@@ -1099,7 +1100,8 @@ footer {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-  margin-top: 2rem; }
+  margin-top: 2rem;
+  padding: 0 3rem; }
   @media screen and (min-width: 768px) {
     .site_banner {
       flex-direction: row;
@@ -1171,20 +1173,28 @@ footer {
     color: var(--gsap-blue); }
   .how .down_arrow {
     width: 2rem; }
+  .how > header,
+  .how .columns {
+    padding: 0 3rem; }
 
 .how .hero_image {
   display: none; }
   @media screen and (min-width: 768px) {
     .how .hero_image {
-      display: block; } }
+      display: block;
+      padding: 0 3rem; } }
 
 .how .hero_images_mobile h3 {
   color: var(--gsap-blue);
-  margin: 0; }
+  margin: 0;
+  padding: 0 3rem; }
 
 @media screen and (min-width: 768px) {
   .how .hero_images_mobile {
     display: none; } }
+
+.how .hero_images_mobile img {
+  padding: 0 1.25rem; }
 
 .how .hero_images_mobile div {
   margin-bottom: 1rem; }
@@ -1342,7 +1352,8 @@ footer {
     padding: .5rem 1rem .5rem 1rem; }
 
 .about {
-  margin-top: 10rem; }
+  margin-top: 10rem;
+  padding: 0 3rem; }
 
 .about .wrapper {
   display: flex;
@@ -1630,9 +1641,13 @@ footer {
     font-family: var(--magdelinBold), sans-serif;
     margin-bottom: 0; }
 
+.life_results,
+.charts {
+  padding: 0 3rem; }
+
 section.results {
   padding-top: 7rem; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 990px) {
     section.results {
       padding-bottom: 5rem; } }
 

@@ -1,6 +1,7 @@
 .life_results {
 	max-width: 350px;
 	margin-bottom: 1.5rem;
+
 	h3 {
 		color: var(--gsap-blue);
 		font-family: var(--magdelinBold), sans-serif;
@@ -8,9 +9,15 @@
 	}
 }
 
+.life_results,
+.charts {
+	padding: 0 3rem;
+}
+
+
 section.results {
 	padding-top: 7rem;
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: 990px) {
 		padding-bottom: 5rem;
 	}
 }

@@ -24,10 +24,12 @@
 ?>
 
 <section class="how">
-    <h1 class="how_header opacity-0"><?php echo $content_header; ?></h1>
-    <figure class="down_arrow opacity-0">
-        <img src="<?php echo $arrow['url']; ?>" alt="<?php echo $arrow['alt']; ?>">
-    </figure>
+    <header>
+        <h1 class="how_header opacity-0"><?php echo $content_header; ?></h1>
+        <figure class="down_arrow opacity-0">
+            <img src="<?php echo $arrow['url']; ?>" alt="<?php echo $arrow['alt']; ?>">
+        </figure>
+    </header>
     <div class="columns">
         <div class="column column_content opacity-0">
             <?php echo $content_content; ?>
