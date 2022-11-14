@@ -272,34 +272,13 @@ const graduationRate = () => {
     return new Chart(ctx, {
       type: "bar",
       data: {
-        labels: [2016, 2017, 2018, 2019, 2020, 2021],
+        labels: [2015, 2016, 2017, 2018, 2019, 2020, 2021],
         datasets: [
           {
-            label: "Total Number of 2 or 3-Year Cumulative Dropouts",
-            data: [136, 124, 121, 91, 107, 91],
-            backgroundColor: "#FF8900",
-            order: 1,
-          },
-          {
             label: "Total Number of Students Graduating in 4 Years",
-            data: [1025, 1090, 1014, 1151, 1025, 1151],
+            data: [985, 1014, 1054, 1090, 1014, 1151, 1025],
             backgroundColor: "#0D3691",
             order: 1,
-          },
-          {
-            label: "API Graduation Rate",
-            data: [
-              percentage(1025, 136),
-              percentage(1090, 124),
-              percentage(1014, 121),
-              percentage(1151, 91),
-              percentage(1025, 107),
-              percentage(1151, 91),
-            ],
-            backgroundColor: "#A5A5A5",
-            type: "line",
-            yAxisID: "y2",
-            order: 0,
           },
         ],
       },
@@ -330,11 +309,6 @@ const graduationRate = () => {
             stacked: true,
             ...tickConfig,
           },
-          y2: {
-            display: true,
-            position: "right",
-            ...tickConfig,
-          },
         },
       },
     });
@@ -349,6 +323,7 @@ const dropOuts = () => {
       type: "bar",
       data: {
         labels: [
+          "2014-2015",
           "2015-2016",
           "2016-2017",
           "2017-2018",
@@ -359,13 +334,7 @@ const dropOuts = () => {
         datasets: [
           {
             label: "Total Number of Dropouts",
-            data: [15, 8, 7, 7, 29, 20],
-            backgroundColor: "#FF8900",
-            order: 1,
-          },
-          {
-            label: "Total Number of Students Enrolled",
-            data: [1301, 1238, 1267, 1264, 1217, 1196],
+            data: [17, 15, 8, 11, 7, 29, 20],
             backgroundColor: "#0D3691",
             order: 1,
           },
@@ -396,11 +365,6 @@ const dropOuts = () => {
           },
           y: {
             stacked: true,
-            ...tickConfig,
-          },
-          y2: {
-            display: true,
-            position: "right",
             ...tickConfig,
           },
         },

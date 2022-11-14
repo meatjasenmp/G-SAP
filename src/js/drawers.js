@@ -1,4 +1,5 @@
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const animateDrawer = (drawerTimeline, element) => {
   drawerTimeline.to(element, {
@@ -19,6 +20,7 @@ const drawers = () => {
       button.classList.toggle("active");
       const drawerId = e.target.getAttribute("data-drawer");
       const drawer = document.getElementById(drawerId);
+      ScrollTrigger.refresh();
       animateDrawer(tl, drawer);
     });
   });
